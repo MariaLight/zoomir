@@ -1,0 +1,10 @@
+@use "../mixins";
+
+/**
+ * Базовые стили типографики
+ */
+
+@include mixins.font-face('SFProDisplay', '../resources/fonts/sfprodisplay-bold', 700, normal, swap);
+@include mixins.font-face('SFProDisplay', '../resources/fonts/sfprodisplay-semibold', 600, normal, swap);
+@include mixins.font-face('SFProDisplay', '../resources/fonts/sfprodisplay-medium', 500, normal, swap);
+@include mixins.font-face('SFProDisplay', '../resources/fonts/sfprodisplay-regular', 400, normal, swap);

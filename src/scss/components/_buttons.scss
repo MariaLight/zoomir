@@ -1,0 +1,56 @@
+@use "../mixins";
+@use "../variables";
+
+/**
+ * Стили кнопок
+ */
+.btn {
+    &-main {
+        display: block;
+        text-align: center;
+        font-family: variables.$font-family-primary;
+        font-size: variables.$font-size-base;
+        font-weight: variables.$font-weight-semibold;
+        line-height: variables.$line-height-base;
+        color: variables.$text-color;
+        background-color: variables.$white-color;
+        padding: 13px 15px;
+        transition: variables.$transition-base;
+        border-radius: variables.$border-radius-xs;
+
+        @include mixins.hover {
+            opacity: 0.8;
+        }
+
+        // &:disabled {
+        //     background-color: #FBF4FF;
+        //     color: #CBD5E1;
+        //     cursor: not-allowed;
+        //     box-shadow: none;
+
+        //     &:hover,
+        //     &:active,
+        //     &:focus {
+        //         background-color: #FBF4FF;
+        //         color: #CBD5E1;
+        //     }
+        // }
+    }
+
+    &-black {
+        color: variables.$text-white;
+        background-color: variables.$black-color;
+        padding: 20px 40px;
+
+    }
+}
+
+@include mixins.media-down(sm) {
+    // .btn {
+    //     &-main {
+    //         font-size: variables.$font-size-sm;
+    //         padding: variables.$spacing-md variables.$spacing-md;
+
+    //     }
+    // }
+}

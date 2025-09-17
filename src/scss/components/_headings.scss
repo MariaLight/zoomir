@@ -1,0 +1,15 @@
+@use "../variables";
+
+/**
+ * Стили заголовков
+ */
+
+.title {
+    font-family: variables.$font-family-primary;
+    font-size: 48px;
+    font-weight: variables.$font-weight-bold;
+    line-height: variables.$line-height-base;
+    color: variables.$text-color;
+    padding: 0;
+    margin-bottom: 10px;
+}

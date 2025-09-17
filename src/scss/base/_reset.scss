@@ -1,0 +1,158 @@
+@use "../variables";
+@use "../mixins";
+
+/**
+ * Сброс стилей
+ */
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+*,
+::after,
+::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.page {
+    height: 100%;
+    font-family: variables.$font-family-primary;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    &__body {
+        margin: 0;
+        min-width: 320px;
+        min-height: 100%;
+        font-size: variables.$font-size-base;
+        background-color: variables.$background-color;
+        color: variables.$text-color;
+        line-height: normal;
+        font-weight: variables.$font-weight-regular;
+        position: relative;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.main {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    flex: 1 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100vh;
+}
+
+.content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto
+}
+
+.footer {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto
+}
+
+
+img {
+    height: auto;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a,
+button {
+    -webkit-transition: color .2s, background-color .2s, background .2s, opacity .2s, -webkit-transform .2s;
+    transition: color .2s, background-color .2s, background .2s, opacity .2s, transform .2s, -webkit-transform .2s;
+    -o-transition: color .2s, background-color .2s, background .2s, opacity .2s, transform .2s;
+    cursor: pointer;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    padding: 0;
+    margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+dl,
+dt,
+dd {
+    margin: 0;
+}
+
+p:not(:last-child),
+ul:not(:last-child),
+ol:not(:last-child) {
+    margin-bottom: variables.$spacing-sm;
+}
+
+button {
+    border: none;
+    padding: 0;
+    background: 0 0;
+    cursor: pointer;
+    appearance: none;
+    transition: variables.$transition-base;
+}
+
+input {
+    appearance: none;
+    border: none;
+    border-radius: 0;
+    background-color: variables.$background-white;
+    transition: variables.$transition-base;
+    cursor: pointer;
+    box-shadow: none;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.container {
+    max-width: variables.$container-max-width;
+    margin: 0 auto;
+    padding: 0 variables.$container-padding;
+}
+
+*:focus {
+    outline-color: variables.$primary-color;
+}
+
+.section {
+    padding: 100px 0;
+}
