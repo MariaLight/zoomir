@@ -19,7 +19,7 @@
         border-radius: variables.$border-radius-xs;
 
         @include mixins.hover {
-            opacity: 0.8;
+            background-color: #819C19;
         }
 
         // &:disabled {
@@ -42,6 +42,29 @@
         background-color: variables.$black-color;
         padding: 20px 40px;
 
+    }
+
+    &-icon {
+        display: block;
+        width: 34px;
+        height: 34px;
+        background-color: variables.$accent-color;
+        border-radius: variables.$border-radius-xs;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img,
+        svg {
+            width: 20px;
+            height: 20px;
+
+        }
+
+        &:hover {
+            background-color: #960C63;
+        }
     }
 }
 

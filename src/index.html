@@ -10,6 +10,45 @@
 
 <body class="page__body">
   <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <!-- На главной тег <div>, на остальных - a href="/" -->
+        <a href="/" class="header__logo">
+          <img src="./img/base/logo.svg" alt="Логотип">
+        </a>
+        <div class="header__address">
+          <div class="header__address__inner">
+            <!-- Если указан адрес, то выводим его, иначе выводим "Укажите адрес и способ получения" -->
+            <span class="header__address__location">Укажите адрес и способ получения</span>
+            <!-- Если указан адрес, то выводим ссылку на изменение адреса "Изменить", иначе выводим ссылку на указание адреса "Указать" -->
+            <a href="" class="header__address__link">Указать</a>
+          </div>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav__list list-reset">
+            <li class="header__nav__item"><a href="#" class="header__nav__link">Оплата и доставка</a></li>
+            <li class="header__nav__item"><a href="#" class="header__nav__link">Магазин</a></li>
+            <li class="header__nav__item"><a href="#" class="header__nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__btns">
+          <a href="" class="header__btn btn-icon">
+            <img src="./img/svg/heart.svg" alt="Избранное">
+          </a>
+          <a href="" class="header__btn btn-icon">
+            <img src="./img/svg/user.svg" alt="Личный кабинет">
+          </a>
+          <a href="" class="header__btn btn-icon">
+            <!-- Выводим счётчик, только если есть товары в корзине -->
+            <span class="header__btn__counter">12</span>
+            <img src="./img/svg/cart.svg" alt="Корзина">
+          </a>
+        </div>
+      </div>
+      <div class="header__middle"></div>
+      <div class="header__bottom"></div>
+    </div>
   </header>
   <div class="wrapper">
     <main class="main">
