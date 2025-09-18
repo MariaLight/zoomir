@@ -137,7 +137,7 @@
         display: flex;
         align-items: center;
         gap: 20px;
-
+        margin-bottom: 13px;
 
 
     }
@@ -317,7 +317,7 @@
             outline: none;
             border: none;
             background-color: #F2F2F2;
-            padding: 9px 44px 9px 15px ;
+            padding: 9px 44px 9px 15px;
             border-radius: variables.$border-radius-xs;
             width: 100%;
             font-size: variables.$font-size-md;
@@ -352,5 +352,42 @@
         }
     }
 
+
+    &__bottom {
+        &__list {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: space-between;
+        }
+
+        &__item {
+            &.active {
+                .header__bottom__link {
+                    background-color: variables.$primary-color;
+
+                    &:hover {
+                        background-color: variables.$primary-color-hover;
+                    }
+                }
+            }
+        }
+
+        &__link {
+            font-size: variables.$font-size-base;
+            font-weight: variables.$font-weight-semibold;
+            line-height: variables.$line-height-base;
+            color: variables.$text-color;
+            transition: variables.$transition-base;
+            padding: 8px 15px;
+            text-align: center;
+            border-radius: variables.$border-radius-xs;
+            text-wrap: nowrap;
+
+            &:hover {
+                background-color: variables.$primary-color;
+            }
+        }
+    }
 
 }
