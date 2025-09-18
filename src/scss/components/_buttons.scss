@@ -14,9 +14,20 @@
         line-height: variables.$line-height-base;
         color: variables.$text-color;
         background-color: variables.$white-color;
-        padding: 13px 15px;
+        padding: 10px;
         transition: variables.$transition-base;
         border-radius: variables.$border-radius-xs;
+        background-color: variables.$primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 210px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+
 
         @include mixins.hover {
             background-color: #819C19;
