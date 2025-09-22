@@ -1,6 +1,103 @@
 @use "../mixins";
 @use "../variables";
+@use "../components/_swipers";
 
 /**
  * Стили главной страницы
  */
+.banner {
+    margin-bottom: 60px;
+
+    &__block {
+        position: relative;
+        height: 550px;
+
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            z-index: 1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        &__left {
+            max-width: 50%;
+
+            &__title {
+                font-size: 48px;
+                font-weight: variables.$font-weight-bold;
+                line-height: variables.$line-height-base;
+                margin-bottom: 20px;
+                text-wrap: balance;
+
+            }
+
+            &__text {
+                font-size: variables.$font-size-base;
+                font-weight: variables.$font-weight-semibold;
+                line-height: variables.$line-height-base;
+                margin-bottom: 30px;
+                text-wrap: balance;
+
+            }
+
+            &__btn {
+                &__link {
+                    font-size: variables.$font-size-base;
+                    font-weight: variables.$font-weight-semibold;
+                    line-height: variables.$line-height-base;
+                    text-wrap: balance;
+                    padding: 12px 10px;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 18px;
+                        height: 18px;
+                        background-image: url('../img/svg/arrow-right.svg');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+        }
+    }
+
+    &__btns {
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+
+
+        .swiper-button-prev {
+            left: -50px;
+        }
+
+        .swiper-button-next {
+            right: -50px;
+        }
+    }
+}

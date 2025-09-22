@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная - ЗооМир</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./scss/style.scss">
 </head>
 
@@ -123,7 +124,7 @@
 
                 <!-- Контент для категории "Кошки" -->
                 <div class="header__catalog__subcategories" data-category="cats">
-                   <div class="header__catalog__subcategories__main__title"><a href="#">Кошки</a></div>
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Кошки</a></div>
 
                   <div class="header__catalog__subcategories__grid">
                     <div class="header__catalog__subcategories__column">
@@ -167,7 +168,7 @@
 
                 <!-- Контент для категории "Рыбы" -->
                 <div class="header__catalog__subcategories" data-category="fish">
-                   <div class="header__catalog__subcategories__main__title"><a href="#">Рыбы</a></div>
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Рыбы</a></div>
 
                   <div class="header__catalog__subcategories__grid">
                     <div class="header__catalog__subcategories__column">
@@ -211,7 +212,7 @@
 
                 <!-- Контент для категории "Птицы" -->
                 <div class="header__catalog__subcategories" data-category="birds">
-                   <div class="header__catalog__subcategories__main__title"><a href="#">Птицы</a></div>
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Птицы</a></div>
                   <div class="header__catalog__subcategories__grid">
                     <div class="header__catalog__subcategories__column">
                       <div class="header__catalog__subcategories__title"><a href="#">Корм для птиц</a></div>
@@ -254,7 +255,7 @@
 
                 <!-- Контент для категории "Рептилии" -->
                 <div class="header__catalog__subcategories" data-category="reptiles">
-                   <div class="header__catalog__subcategories__main__title"><a href="#">Рептилии</a></div>
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Рептилии</a></div>
                   <div class="header__catalog__subcategories__grid">
                     <div class="header__catalog__subcategories__column">
                       <div class="header__catalog__subcategories__title"><a href="#">Корм для рептилий</a></div>
@@ -317,7 +318,8 @@
             <li class="header__bottom__item"><a href="#" class="header__bottom__link">Грызуны</a></li>
             <li class="header__bottom__item"><a href="#" class="header__bottom__link">Рептилии</a></li>
             <li class="header__bottom__item"><a href="#" class="header__bottom__link">Ветаптека</a></li>
-            <li class="header__bottom__item active"><a href="#" class="header__bottom__link">Защита от паразитов</a></li>
+            <li class="header__bottom__item active"><a href="#" class="header__bottom__link">Защита от паразитов</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -325,10 +327,70 @@
   </header>
   <div class="wrapper">
     <main class="main">
+      <section class="banner">
+        <div class="swiper banner__swiper">
+          <div class="swiper-wrapper banner__swiper-wrapper">
+            <div class="swiper-slide banner__swiper-slide">
+              <div class="banner__block">
+                <div class="banner__block__img">
+                  <img src="./img/temp/banner.png" alt="">
+                </div>
+                <div class="banner__block__content container">
+                  <div class="banner__block__left">
+                    <div class="banner__block__left__title">
+                      Название акции или товара
+                    </div>
+                    <div class="banner__block__left__text">
+                      Описание акции товара в 1-3 строки
+                      Описание акции товара в 1-3 строки
+                    </div>
+                    <div class="banner__block__left__btn">
+                      <a href="" class="banner__block__left__btn__link btn-main">Перейти</a>
+                    </div>
+                  </div>
+                  <div class="banner__block__right"></div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="swiper-slide banner__swiper-slide">
+              <div class="banner__block">
+                <div class="banner__block__img">
+                  <img src="./img/temp/banner.png" alt="">
+                </div>
+                <div class="banner__block__content container">
+                  <div class="banner__block__left">
+                    <div class="banner__block__left__title">
+                      Название акции или товара 2
+                    </div>
+                    <div class="banner__block__left__text">
+                      Описание акции товара в 1-3 строки
+                      Описание акции товара в 1-3 строки
+                    </div>
+                    <div class="banner__block__left__btn">
+                      <a href="" class="banner__block__left__btn__link btn-main">Перейти</a>
+                    </div>
+                  </div>
+                  <div class="banner__block__right"></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="banner__btns container">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+      </section>
     </main>
     <footer class="footer">
     </footer>
   </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script type="module" src="./js/main.js"></script>
 </body>
 
