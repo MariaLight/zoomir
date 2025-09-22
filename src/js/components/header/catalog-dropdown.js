@@ -7,6 +7,17 @@ function initCatalogDropdown(container, prefix = '') {
 
     if (!catalogBtn || !catalogDropdown) return;
 
+    if (catalogCategories.length > 0 && subcategoriesBlocks.length > 0) {
+        const firstCategory = catalogCategories[0];
+        const firstCategoryType = firstCategory.getAttribute('data-category');
+        const firstSubcategories = container.querySelector(`.header__catalog__subcategories[data-category="${firstCategoryType}"]`);
+        
+        if (firstCategory && firstSubcategories) {
+            firstCategory.classList.add('active');
+            firstSubcategories.classList.add('active');
+        }
+    }
+
     catalogBtn.addEventListener('click', (e) => {
         e.preventDefault();
         catalogDropdown.classList.toggle('active');

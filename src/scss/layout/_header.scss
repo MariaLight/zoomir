@@ -598,6 +598,8 @@
 
     &__btn {
         @extend %catalog-btn;
+
+        padding: 5px 10px;
     }
 
     .header__catalog__dropdown__content--fixed {
@@ -628,7 +630,7 @@
 
     &__content {
         @include mixins.flex-between;
-        gap: 30px;
+        gap: 20px;
     }
 
     &__logo {
@@ -659,7 +661,7 @@
             padding: 9px 44px 9px 15px;
             border-radius: variables.$border-radius-xs;
             width: 100%;
-            font-size: variables.$font-size-base;
+            font-size: 12px;
             font-weight: variables.$font-weight-regular;
             line-height: variables.$line-height-base;
             color: variables.$text-color;
