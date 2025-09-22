@@ -11,6 +11,7 @@
 @use 'components/_forms';
 @use 'components/_headings';
 @use 'components/_modal';
+@use 'components/_breadcrumbs';
 
 // Макеты
 @use 'layout/_header';
@@ -18,4 +19,5 @@
 
 // Страницы
 @use 'pages/_home';
+@use 'pages/_catalog';
 

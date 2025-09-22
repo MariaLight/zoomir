@@ -16,3 +16,12 @@
 .section__title {
     margin-bottom: 30px;
 }
+
+.page-title {
+    font-size: 32px;
+    font-weight: variables.$font-weight-medium;
+    line-height: variables.$line-height-base;
+    color: variables.$text-color;
+    padding: 0;
+    margin-bottom: 30px;
+}
