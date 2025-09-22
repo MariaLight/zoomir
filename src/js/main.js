@@ -1,4 +1,5 @@
-import './components/header/header-dropdown';
+import './components/header/header-fixed';
+import './components/header/catalog-dropdown';
 import './components/swipers/banner-swiper';
 import './components/swipers/images-swiper';
 import './components/swipers/products-swiper';
