@@ -30,3 +30,11 @@
     height: 1px;
     clip: rect(0 0 0 0)
 }
+
+.relative-container {
+    position: relative;
+}
+
+.star-inactive {
+    filter: brightness(0) saturate(100%) invert(56%) sepia(2%) saturate(13%) hue-rotate(315deg) brightness(99%) contrast(95%);
+}
