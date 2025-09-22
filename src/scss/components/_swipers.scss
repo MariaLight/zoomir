@@ -38,9 +38,24 @@
     }
 
     &-button-prev {
+        left: -20px;
 
         &::after {
             transform: rotate(180deg);
         }
+    }
+
+    &-button-next {
+        right: -20px;
+    }
+
+
+}
+
+.relative-container:has(.section__title) {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: calc(50% + 50px);
     }
 }

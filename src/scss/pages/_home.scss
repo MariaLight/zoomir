@@ -113,11 +113,19 @@
         height: 100%;
         overflow: hidden;
         aspect-ratio: 1/1;
+        display: block;
+
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: variables.$transition-base;
         }
     }
 }
