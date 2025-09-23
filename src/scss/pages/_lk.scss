@@ -1,0 +1,44 @@
+@use '../mixins';
+@use '../variables';
+
+.lk {
+    &__nav {
+        margin-top: 30px;
+        &__list {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        &__link {
+            padding: 10px 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: variables.$font-weight-regular;
+            border: 1px solid white;
+            transition: variables.$transition-base;
+
+            &.active {
+                background-color: variables.$accent-color;
+                color: variables.$text-white;
+                border: 1px solid variables.$accent-color;
+            }
+
+            &:hover {
+                border: 1px solid variables.$accent-color;
+            }
+        }
+    }
+    &__title {
+        margin-bottom: 30px;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+
+    &__favorites__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
