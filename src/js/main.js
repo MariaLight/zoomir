@@ -6,6 +6,8 @@ import './components/swipers/products-swiper';
 import './components/swipers/categories-swiper';
 import './components/swipers/faq';
 import './components/catalog/catalog-accordion';
+import './components/catalog/catalog-sort';
+import { initCatalogFilters } from './components/catalog/catalog-filters';
 
 document.addEventListener('DOMContentLoaded', () => {
     

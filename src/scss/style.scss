@@ -12,6 +12,8 @@
 @use 'components/_headings';
 @use 'components/_modal';
 @use 'components/_breadcrumbs';
+@use 'components/_sort';
+@use 'components/_filters';
 
 // Макеты
 @use 'layout/_header';

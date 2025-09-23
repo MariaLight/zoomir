@@ -1,2 +1,187 @@
 @use "../variables";
-@use "../mixins";
+
+.catalog__filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.catalog__filter {
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: variables.$font-weight-bold;
+        color: variables.$text-color;
+        margin: 0;
+    }
+
+    &__reset {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 4px;
+        border-radius: 50%;
+        background-color: #000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 14px;
+        height: 14px;
+
+        img {
+            width: 8px;
+            height: 8px;
+            object-fit: contain;
+        }
+
+        &:hover {
+            background-color: #ccc;
+        }
+    }
+
+    &__fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 9px 10px;
+        border: 1px solid #D9D9D9;
+        border-radius: 5px;
+        font-size: 14px;
+        color: variables.$text-color;
+        background-color: #fff;
+        transition: border-color 0.2s ease;
+        cursor: text;
+
+        &::placeholder {
+            color: #9B9CA0;
+            font-size: 14px;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: variables.$accent-color;
+        }
+
+        &:hover {
+            border-color: #ccc;
+        }
+
+        &[type="number"] {
+            appearance: textfield;
+            -moz-appearance: textfield;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                appearance: none;
+                margin: 0;
+            }
+        }
+    }
+
+    &__checkboxes {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        padding: 4px 0;
+
+        &--hidden {
+            display: none;
+        }
+
+        &__input {
+            display: none;
+        }
+
+        &__custom {
+            width: 18px;
+            height: 18px;
+            border: 1px solid #D9D9D9;
+            border-radius: 5px;
+            background-color: #fff;
+            position: relative;
+            flex-shrink: 0;
+            transition: all 0.2s ease;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 10px;
+                height: 8px;
+                background-image: url('../../img/svg/check.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                opacity: 0;
+                transition: opacity 0.2s ease;
+            }
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+            flex-grow: 1;
+        }
+
+        &__count {
+            font-size: 14px;
+            font-weight: 400;
+            color: #BFBDBD;
+            flex-shrink: 0;
+        }
+
+        &__input:checked + &__custom {
+            background-color: variables.$accent-color;
+            border-color: variables.$accent-color;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &:hover &__custom {
+            border-color: variables.$accent-color;
+        }
+    }
+
+    &__show-more {
+        background: none;
+        border: none;
+        padding: 0;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        color: variables.$accent-color;
+        cursor: pointer;
+        text-align: left;
+        transition: color 0.2s ease;
+        font-weight: variables.$font-weight-regular;
+        font-family: variables.$font-family-primary;
+
+        &:hover {
+            color: darken(variables.$accent-color, 10%);
+        }
+    }
+}
