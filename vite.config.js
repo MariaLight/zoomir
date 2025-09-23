@@ -12,6 +12,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'src/index.html'),
         catalog: resolve(__dirname, 'src/catalog.html'),
+        catalog_products: resolve(__dirname, 'src/catalog-products.html'),
+        lk_favorites: resolve(__dirname, 'src/lk-favorites.html'),
+        lk_bonus: resolve(__dirname, 'src/lk-bonus.html'),
       },
       output: {
         entryFileNames: 'js/[name]-[hash].js',
