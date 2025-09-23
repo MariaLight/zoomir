@@ -665,6 +665,8 @@
             font-weight: variables.$font-weight-regular;
             line-height: variables.$line-height-base;
             color: variables.$text-color;
+            cursor: text;
+            transition: width 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
 
             &::placeholder {
                 color: #999;
@@ -764,5 +766,40 @@
             line-height: 1;
             aspect-ratio: 1/1;
         }
+    }
+
+    &.search-focused {
+        padding: 0;
+        
+        .header-fixed__searchform {
+            flex: 1;
+            max-width: none;
+            width: 100%;
+            margin: 0;
+            transition: flex 0.3s ease, max-width 0.3s ease, width 0.3s ease, margin 0.3s ease;
+        }
+
+        .header-fixed__searchform__input {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 8px;
+            transition: width 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+        }
+
+        .header-fixed__address,
+        .header-fixed__catalog,
+        .header-fixed__btns {
+            opacity: 0;
+            transform: translateX(20px);
+            pointer-events: none;
+            width: 0;
+            overflow: hidden;
+        }
+    }
+
+    .header-fixed__address,
+    .header-fixed__catalog,
+    .header-fixed__btns {
+        transition: opacity 0.3s ease, transform 0.3s ease, width 0.3s ease;
     }
 }
