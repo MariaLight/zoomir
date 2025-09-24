@@ -155,7 +155,7 @@ textarea {
 
 @include mixins.media-down(xl) {
     .container {
-        padding: 0 50px;
+        padding: 0 20px;
     }
 }
 @include mixins.media-down(md) {

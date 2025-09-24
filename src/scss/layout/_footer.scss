@@ -14,21 +14,40 @@
         gap: 20px;
         justify-content: space-between;
 
+        @include mixins.media-down(xl) {
+            gap: 10px;
+        }
+
         @include mixins.media-down(md) {
             flex-direction: column;
-            align-items: center;
-            gap: 20px;
+            align-items: stretch;
+            gap: 30px;
         }
     }
 
     &__column {
         max-width: 25%;
 
+        @include mixins.media-down(md) {
+            max-width: 100%;
+
+            &:has(.footer__contacts) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+                margin-top: 10px;
+            }
+        }
+
         &__title {
             font-size: 32px;
             margin-bottom: 20px;
             font-weight: variables.$font-weight-bold;
 
+            @include mixins.media-down(xl) {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
         }
 
         &__item {
@@ -43,6 +62,10 @@
             a:hover {
                 color: variables.$primary-color;
             }
+
+            @include mixins.media-down(xl) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -52,6 +75,10 @@
         flex-direction: column;
         align-items: start;
         gap: 10px;
+
+        @include mixins.media-down(md) {
+            margin-bottom: 0;
+        }
     }
 
     &__tel {
@@ -62,6 +89,14 @@
 
         &:hover {
             color: variables.$accent-color-hover;
+        }
+
+        @include mixins.media-down(xl) {
+            font-size: 20px;
+        }
+
+        @include mixins.media-down(md) {
+            font-size: 32px;
         }
     }
 
@@ -77,6 +112,9 @@
 
     &__socials {
         margin-bottom: 36px;
+        @include mixins.media-down(md) {
+            margin-bottom: 0;
+        }
 
         &__list {
             display: flex;
