@@ -795,6 +795,11 @@
         position: relative;
         flex-grow: 1;
 
+        @include mixins.media-down(lg) {
+            display: none;
+
+        }
+
         &__input {
             outline: none;
             border: none;
@@ -841,6 +846,11 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        @include mixins.media-down(lg) {
+            display: none;
+
+        }
+
 
         &::before {
             content: '';

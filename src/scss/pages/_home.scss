@@ -134,6 +134,7 @@
                 line-height: variables.$line-height-base;
                 margin-bottom: 0;
                 text-wrap: balance;
+                margin-bottom: 30px;
 
                 @include mixins.media-down(md) {
                     text-align: center;
