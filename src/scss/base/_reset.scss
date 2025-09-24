@@ -46,7 +46,7 @@ html {
     width: 100%;
     flex: 1 0 auto;
 
-    @include mixins.media-down(md) {
+    @include mixins.media-down(lg) {
         overflow: hidden;
     }
 }

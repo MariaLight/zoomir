@@ -69,7 +69,7 @@
     }
 }
 
-@include mixins.media-down(md) {
+@include mixins.media-down(lg) {
     .swiper {
         overflow: visible;
     }

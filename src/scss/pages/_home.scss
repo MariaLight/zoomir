@@ -13,6 +13,13 @@
         position: relative;
         height: 550px;
 
+        @include mixins.media-down(xl) {
+            height: 400px;
+        }
+        @include mixins.media-down(md) {
+            height: 710px;
+        }
+
         &__img {
             position: absolute;
             top: 0;
@@ -47,6 +54,10 @@
                 line-height: variables.$line-height-base;
                 margin-bottom: 20px;
                 text-wrap: balance;
+
+                @include mixins.media-down(xl) {
+                    font-size: 36px;
+                }
 
             }
 
