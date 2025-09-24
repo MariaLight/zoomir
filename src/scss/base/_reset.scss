@@ -45,6 +45,10 @@ html {
     z-index: 2;
     width: 100%;
     flex: 1 0 auto;
+
+    @include mixins.media-down(md) {
+        overflow: hidden;
+    }
 }
 
 .wrapper {

@@ -68,3 +68,9 @@
         top: calc(50% + 50px);
     }
 }
+
+@include mixins.media-down(md) {
+    .swiper {
+        overflow: visible;
+    }
+}
