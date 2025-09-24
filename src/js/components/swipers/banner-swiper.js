@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
             spaceBetween: 0,
             loop: true,
             effect: 'fade',
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     delay: 4000,
+            //     disableOnInteraction: false,
+            // },
         });
     }
 });

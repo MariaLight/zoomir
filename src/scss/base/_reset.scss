@@ -158,6 +158,11 @@ textarea {
         padding: 0 50px;
     }
 }
+@include mixins.media-down(md) {
+    .container {
+        padding: 0 20px;
+    }
+}
 
 *:focus {
     outline-color: variables.$primary-color;
