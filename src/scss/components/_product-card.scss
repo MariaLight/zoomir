@@ -10,6 +10,10 @@
     align-items: stretch;
     height: 100%;
 
+    @include mixins.media-down(sm) {
+        padding: 10px 10px 17px;
+    }
+
     &__img {
         width: 100%;
         overflow: hidden;
@@ -21,6 +25,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        @include mixins.media-down(sm) {
+            margin-bottom: 7px;
         }
     }
 
@@ -34,6 +42,11 @@
         @include mixins.hover {
             color: variables.$accent-color;
         }
+
+        @include mixins.media-down(sm) {
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
     }
 
     &__text {
@@ -43,6 +56,11 @@
         margin-bottom: 12px;
         color: #4E4F54;
         text-wrap: balance;
+
+        @include mixins.media-down(sm) {
+            font-size: 10px;
+            margin-bottom: 9px;
+        }
     }
 
     &__bottom {
@@ -55,6 +73,11 @@
         gap: 7px;
         margin-bottom: 12px;
 
+        @include mixins.media-down(sm) {
+            margin-bottom: 9px;
+            gap: 5px;
+        }
+
         &__stars {
             display: flex;
             align-items: center;
@@ -64,6 +87,12 @@
         &__star {
             width: 12px;
             height: 12px;
+
+            @include mixins.media-down(sm) {
+                width: 8px;
+                height: 8px;
+            }
+
             img {
                 width: 100%;
                 height: 100%;
@@ -79,6 +108,10 @@
             display: flex;
             align-items: center;
             gap: 3px;
+            @include mixins.media-down(sm) {
+                font-size: 8px;
+                gap: 2px;
+            }
 
             &::before {
                 content: '';
@@ -89,6 +122,11 @@
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
+
+                @include mixins.media-down(sm) {
+                    width: 8px;
+                    height: 8px;
+                }
             }
         }
     }
@@ -98,6 +136,9 @@
         align-items: center;
         justify-content: space-between;
         gap: 20px;
+        @include mixins.media-down(sm) {
+            gap: 10px;
+        }
     }
 
     &__price {
@@ -110,6 +151,9 @@
             font-weight: variables.$font-weight-medium;
             line-height: 1.2;
             color: #3D3E44;
+            @include mixins.media-down(sm) {
+                font-size: 12px;
+            }
         }
 
         &__old {
@@ -118,6 +162,9 @@
             line-height: 1.2;
             color: #989898;
             text-decoration: line-through;
+            @include mixins.media-down(sm) {
+                font-size: 10px;
+            }
         }
         
         
@@ -127,6 +174,9 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        @include mixins.media-down(sm) {
+            gap: 5px;
+        }
     }
     &__actions__btn {
         width: 24px;
@@ -135,6 +185,11 @@
         border: none;
         cursor: pointer;
         transition: variables.$transition-base;
+
+        @include mixins.media-down(sm) {
+            width: 16px;
+            height: 16px;
+        }
 
         @include mixins.hover {
             opacity: 0.7;

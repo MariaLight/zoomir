@@ -45,3 +45,17 @@
         margin-bottom: 30px;
     }
 }
+@include mixins.media-down(sm) {
+    .title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .section__title {
+        font-size: 24px;
+    }
+    
+    .page-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+}

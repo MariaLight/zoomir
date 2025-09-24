@@ -32,6 +32,10 @@
             height: 710px;
         }
 
+        @include mixins.media-down(sm) {
+            height: 410px;
+        }
+
         &__img {
             position: absolute;
             top: 0;
@@ -78,6 +82,10 @@
                 padding: 50px 0;
                 margin: 0 auto;
             }
+
+            @include mixins.media-down(sm) {
+                padding: 20px 0;
+            }
         }
 
         &__left {
@@ -113,6 +121,11 @@
                     text-align: center;
                 }
 
+                @include mixins.media-down(sm) {
+                    font-size: 24px;
+                    margin-bottom: 6px;
+                }
+
             }
 
             &__text {
@@ -146,11 +159,22 @@
                         background-repeat: no-repeat;
                         background-position: center;
                     }
+
+
+
+                    @include mixins.media-down(sm) {
+                        width: 100%;
+                    }
                 }
 
                 @include mixins.media-down(md) {
                     margin-top: auto;
                 }
+                @include mixins.media-down(sm) {
+                    width: 100%;
+                }
+
+
             }
         }
     }
@@ -232,6 +256,27 @@
             }
         }
     }
+    @include mixins.media-down(sm) {
+        &__swiper-pagination {
+            margin-top: 15px;
+            gap: 6px;
+            justify-content: center;
+
+            .swiper-pagination-bullet {
+                flex-grow: 0;
+                background: #D9D9D9;
+                border-radius: 50%;
+                width: 6px;
+                height: 6px;
+                margin: 0;
+                
+
+                &.swiper-pagination-bullet-active {
+                    background: variables.$accent-color;
+                }
+            }
+        }
+    }
 }
 
 
@@ -280,6 +325,10 @@
         height: 460px;
         overflow: hidden;
         border-radius: 5px;
+
+        @include mixins.media-down(sm) {
+            height: 240px;
+        }
 
         &:hover {
             img {
@@ -356,6 +405,10 @@
                 margin-right: 20px;
             }
         }
+
+        @include mixins.media-down(sm) {
+            font-size: 14px;
+        }
     }
 
     &-arrow {
@@ -411,7 +464,17 @@
 
             p,
             li {
-                font-size: 14px;
+                font-size: 14px !important;
+            }
+        }
+
+        @include mixins.media-down(sm) {
+            font-size: 12px;
+            padding: 0 20px 20px;
+
+            p,
+            li {
+                font-size: 12px !important;
             }
         }
     }

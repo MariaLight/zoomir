@@ -53,9 +53,25 @@
         &-button-prev {
             left: 5px;
         }
-    
+
         &-button-next {
             right: 5px;
+        }
+    }
+
+    @include mixins.media-down(sm) {
+
+        &-button-prev,
+        &-button-next {
+            width: 30px;
+            height: 30px;
+
+
+            &::after {
+                width: 10px;
+                height: 10px;
+            }
+
         }
     }
 
