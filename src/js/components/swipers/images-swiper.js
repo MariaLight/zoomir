@@ -7,8 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     prevEl: swiper.parentElement.querySelector('.swiper-button-prev'),
                 },
                 slidesPerView: 5,
-                spaceBetween: 20,
+                spaceBetween: 10,
                 loop: true,
+
+                breakpoints: {
+                    576: {
+                        slidesPerView: 3.2,
+                    },
+                },
             });
         });
     }

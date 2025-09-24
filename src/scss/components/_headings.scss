@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../mixins";
 
 /**
  * Стили заголовков
@@ -24,4 +25,23 @@
     color: variables.$text-color;
     padding: 0;
     margin-bottom: 30px;
+}
+@include mixins.media-down(md) {
+    .title {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+    .section__title {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+    
+    .page-title {
+        font-size: 32px;
+        font-weight: variables.$font-weight-medium;
+        line-height: variables.$line-height-base;
+        color: variables.$text-color;
+        padding: 0;
+        margin-bottom: 30px;
+    }
 }
