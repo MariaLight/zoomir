@@ -49,6 +49,15 @@
         right: -20px;
     }
 
+    @include mixins.media-down(xl) {
+        &-button-prev {
+            left: 5px;
+        }
+    
+        &-button-next {
+            right: 5px;
+        }
+    }
 
 }
 

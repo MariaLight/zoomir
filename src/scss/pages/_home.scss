@@ -101,7 +101,46 @@
             right: -100px;
         }
     }
+
+    @include mixins.media-down(xxl) {
+        &__block {
+            &__left {
+                padding-left: 30px;
+            }
+        }
+        &__btns {
+
+
+            .swiper-button-prev {
+                left: -20px;
+            }
+
+            .swiper-button-next {
+                right: -20px;
+            }
+        }
+    }
+    @include mixins.media-down(xl) {
+        &__block {
+            &__left {
+                padding-left: 30px;
+            }
+        }
+        &__btns {
+
+
+            .swiper-button-prev {
+                left: 5px;
+            }
+
+            .swiper-button-next {
+                right: 5px;
+            }
+        }
+    }
 }
+
+
 
 .images {
     .container {
@@ -241,7 +280,7 @@
         ul {
             margin: 15px 0;
             padding-left: 20px;
-            
+
             li {
                 margin-bottom: 8px;
                 font-size: 20px;

@@ -31,6 +31,9 @@
         </nav>
 
         <div class="header__btns">
+          <button  class="header__btn btn-icon mobile-search-btn">
+            <img src="./img/svg/search.svg" alt="Поиск">
+          </button>
           <a href="" class="header__btn btn-icon">
             <img src="./img/svg/heart.svg" alt="Избранное">
           </a>
@@ -41,7 +44,11 @@
             <span class="header__btn__counter">12</span>
             <img src="./img/svg/cart.svg" alt="Корзина">
           </a>
+
         </div>
+        <button id="burger" class="burger-btn">
+          <span></span><span></span><span></span>
+        </button>
       </div>
       <div class="header__middle">
         <div class="header__catalog__dropdown">
@@ -332,7 +339,7 @@
         <a href="/" class="header-fixed__logo">
           <img src="./img/base/logo.svg" alt="Логотип">
         </a>
-        
+
         <form class="header-fixed__searchform">
           <input type="text" class="header-fixed__searchform__input" name="s" placeholder="Введите название товара">
           <button type="submit" class="header-fixed__searchform__btn">

@@ -149,6 +149,12 @@ textarea {
     padding: 0 variables.$container-padding;
 }
 
+@include mixins.media-down(xl) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
 *:focus {
     outline-color: variables.$primary-color;
 }

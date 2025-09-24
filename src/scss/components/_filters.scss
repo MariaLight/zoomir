@@ -181,7 +181,7 @@
         font-family: variables.$font-family-primary;
 
         &:hover {
-            color: darken(variables.$accent-color, 10%);
+            color: variables.$accent-color-hover;
         }
     }
 }

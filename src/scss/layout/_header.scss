@@ -8,11 +8,30 @@
 .header {
     background-color: #fff;
     padding: 15px 0;
+    position: relative;
+
+    @include mixins.media-down(md) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: #fff;
+    }
 
     &__top {
         @include mixins.flex-between;
         gap: 30px;
         margin-bottom: 20px;
+
+        @include mixins.media-down(xl) {
+            gap: 10px;
+        }
+
+        @include mixins.media-down(md) {
+            gap: 20px;
+            margin-bottom: 0;
+        }
     }
 
     &__logo {
@@ -26,6 +45,11 @@
             width: 100%;
             height: 100%;
         }
+
+        @include mixins.media-down(xl) {
+            width: 150px;
+            height: 32px;
+        }
     }
 
     a.header__logo:hover {
@@ -38,6 +62,15 @@
         align-items: center;
         gap: 10px;
 
+        @include mixins.media-down(xl) {
+            gap: 5px;
+        }
+
+        @include mixins.media-down(md) {
+            max-width: 140px;
+            gap: 0;
+        }
+
         &::before {
             content: '';
             display: block;
@@ -47,6 +80,7 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+            flex-shrink: 0;
         }
 
         &__inner {
@@ -59,6 +93,13 @@
             font-weight: variables.$font-weight-semibold;
             line-height: variables.$line-height-base;
             color: variables.$text-color;
+
+            @include mixins.media-down(md) {
+                text-wrap: balance;
+                font-size: 12px;
+                line-height: 1.2;
+            }
+
         }
 
         &__link {
@@ -73,15 +114,29 @@
                 text-decoration: underline;
                 text-underline-offset: 3px;
             }
+
+            @include mixins.media-down(md) {
+                display: none;
+            }
         }
+
+
     }
 
     &__nav {
+        @include mixins.media-down(lg) {
+            display: none;
+        }
+
 
         &__list {
             display: flex;
             align-items: center;
             gap: 10px;
+
+            @include mixins.media-down(xl) {
+                gap: 5px;
+            }
         }
 
         &__link {
@@ -95,6 +150,11 @@
 
             &:hover {
                 background-color: variables.$primary-color;
+            }
+
+            @include mixins.media-down(xl) {
+                padding: 5px 10px;
+                text-wrap: nowrap;
             }
         }
 
@@ -133,16 +193,35 @@
         }
     }
 
+    .mobile-search-btn {
+        display: none;
+
+        img {
+            filter: brightness(0) invert(1);
+        }
+
+        @include mixins.media-down(md) {
+            display: flex;
+        }
+    }
+
     &__middle {
         display: flex;
         align-items: center;
         gap: 20px;
         margin-bottom: 13px;
 
+        @include mixins.media-down(lg) {
+            margin-bottom: 0;
+        }
+
+        @include mixins.media-down(md) {
+            display: none;
+        }
 
     }
 
-    position: relative;
+
 
     &__catalog {
 
@@ -354,6 +433,10 @@
 
 
     &__bottom {
+        @include mixins.media-down(lg) {
+            display: none;
+        }
+
         &__list {
             display: flex;
             align-items: center;
@@ -390,6 +473,43 @@
         }
     }
 
+    .burger-btn {
+        display: none;
+
+
+        @include mixins.media-down(lg) {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            width: 30px;
+            height: 30px;
+            justify-content: center;
+        }
+
+        span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background-color: variables.$accent-color;
+            transition: variables.$transition-base;
+
+
+        }
+
+        &.active {
+            span:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            span:nth-child(2) {
+                opacity: 0;
+            }
+
+            span:nth-child(3) {
+                transform: translateY(-8.5px) rotate(-45deg);
+            }
+        }
+    }
 }
 
 %catalog-btn {
@@ -624,6 +744,10 @@
     transition: transform 0.3s ease;
     padding: 15px 0;
 
+    @include mixins.media-down(md) {
+        display: none;
+    }
+
     &.show {
         transform: translateY(0);
     }
@@ -770,7 +894,7 @@
 
     &.search-focused {
         padding: 0;
-        
+
         .header-fixed__searchform {
             flex: 1;
             max-width: none;
