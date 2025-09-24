@@ -8,6 +8,10 @@
     background-color: #fff;
     padding: 60px 0;
 
+    @include mixins.media-down(sm) {
+        padding: 20px 0;
+    }
+
     &__inner {
         display: flex;
         align-items: start;
@@ -23,6 +27,10 @@
             align-items: stretch;
             gap: 30px;
         }
+
+        @include mixins.media-down(sm) {
+            gap: 5px;
+        }
     }
 
     &__column {
@@ -36,6 +44,15 @@
                 grid-template-columns: 1fr 1fr;
                 gap: 40px;
                 margin-top: 10px;
+            }
+        }
+
+        @include mixins.media-down(sm) {
+
+            &:has(.footer__contacts) {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                margin-top: 20px;
             }
         }
 
@@ -71,19 +88,27 @@
                     }
                 }
 
-               
-            } &__arrow {
-                    @include mixins.media-down(md) {
-                        width: 16px;
-                        height: 16px;
-                        transition: transform 0.3s ease;
-                        flex-shrink: 0;
-                    }
-
-                    @include mixins.media-up(md) {
-                        display: none;
-                    }
+                @include mixins.media-down(sm) {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                    padding: 12px 0;
                 }
+
+
+            }
+
+            &__arrow {
+                @include mixins.media-down(md) {
+                    width: 16px;
+                    height: 16px;
+                    transition: transform 0.3s ease;
+                    flex-shrink: 0;
+                }
+
+                @include mixins.media-up(md) {
+                    display: none;
+                }
+            }
         }
 
         &__list {
@@ -91,7 +116,7 @@
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.3s ease;
-                
+
                 &.active {
                     max-height: 500px; // Достаточно большое значение для показа всех элементов
                 }
@@ -146,6 +171,9 @@
         @include mixins.media-down(md) {
             font-size: 32px;
         }
+        @include mixins.media-down(sm) {
+            font-size: 24px;
+        }
     }
 
     &__email {
@@ -160,6 +188,7 @@
 
     &__socials {
         margin-bottom: 36px;
+
         @include mixins.media-down(md) {
             margin-bottom: 0;
         }
@@ -190,6 +219,10 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+
+        @include mixins.media-down(sm) {
+            gap: 10px;
+        }
 
         &__item {
             font-size: 16px;
