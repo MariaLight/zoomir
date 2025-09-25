@@ -4,4 +4,21 @@
 /**
  * Стили форм
  */
+.form-item {
+    width: 100%;
+}
+.form-input {
+    width: 100%;
+    padding: 18px 22px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: variables.$font-family-primary;
+    cursor: text;
+    
 
+    &::placeholder {
+        opacity: 0.5;
+    }
+}

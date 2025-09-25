@@ -11,6 +11,7 @@ import './components/catalog/catalog-accordion';
 import './components/catalog/catalog-sort';
 import { initCatalogFilters } from './components/catalog/catalog-filters';
 import './components/footer/footer-accordion';
+import './components/modals/modals';
 
 document.addEventListener('DOMContentLoaded', () => {
     

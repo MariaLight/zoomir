@@ -37,9 +37,9 @@
           <a href="" class="header__btn btn-icon">
             <img src="./img/svg/heart.svg" alt="Избранное">
           </a>
-          <a href="" class="header__btn btn-icon">
+          <button class="header__btn btn-icon" data-modal="modal-register">
             <img src="./img/svg/user.svg" alt="Личный кабинет">
-          </a>
+          </button>
           <a href="" class="header__btn btn-icon">
             <span class="header__btn__counter">12</span>
             <img src="./img/svg/cart.svg" alt="Корзина">
@@ -1489,81 +1489,133 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__column">
-            <div class="footer__column__title footer__column__title--accordion">
-              Каталог
-              <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
-            </div>
-            <ul class="footer__column__list list-reset">
-              <li class="footer__column__item"><a href="#">Товары для собак</a></li>
-              <li class="footer__column__item"><a href="#">Товары для кошек</a></li>
-              <li class="footer__column__item"><a href="#">Товары для птиц</a></li>
-              <li class="footer__column__item"><a href="#">Товары для рептилий</a></li>
-              <li class="footer__column__item"><a href="#">Товары для грызунов</a></li>
-              <li class="footer__column__item"><a href="#">Товары для аквариумистики</a></li>
-              <li class="footer__column__item"><a href="#">Защита от паразитов</a></li>
-              <li class="footer__column__item"><a href="#">Ветаптека</a></li>
-            </ul>
-          </div>
-          <div class="footer__column">
-            <div class="footer__column__title footer__column__title--accordion">
-              Покупателям
-              <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
-            </div>
-            <ul class="footer__column__list list-reset">
-              <li class="footer__column__item"><a href="#">Акции</a></li>
-              <li class="footer__column__item"><a href="#">Бренды</a></li>
-              <li class="footer__column__item"><a href="#">Бонусная программа</a></li>
-              <li class="footer__column__item"><a href="#">Доставка и оплата</a></li>
-              <li class="footer__column__item"><a href="#">Вопросы и ответы</a></li>
-            </ul>
-          </div>
-          <div class="footer__column">
-            <div class="footer__column__title footer__column__title--accordion">
-              Компания
-              <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
-            </div>
-            <ul class="footer__column__list list-reset">
-              <li class="footer__column__item"><a href="#">О нас</a></li>
-              <li class="footer__column__item"><a href="#">Магазины</a></li>
-              <li class="footer__column__item"><a href="#">Бонусная программа</a></li>
-              <li class="footer__column__item"><a href="#">Доставка и оплата</a></li>
-              <li class="footer__column__item"><a href="#">Вопросы и ответы</a></li>
-            </ul>
-          </div>
-          <div class="footer__column">
-            <div class="footer__contacts">
-              <a href="tel:+78452734935" class="footer__tel">
-                8(8452) 73-49-35
-              </a>
-              <a href="mailto:info@zoomir1.ru" class="footer__email">info@zoomir1.ru</a>
-            </div>
-            <div class="footer__socials">
-              <div class="footer__column__title">
-                Наши соцсети
-              </div>
-              <ul class="footer__socials__list list-reset">
-                <li class="footer__socials__item"><a href="#" target="_blank">
-                    <img src="./img/svg/vk.svg" alt="VK">
-                  </a></li>
-                <li class="footer__socials__item"><a href="#" target="_blank">
-                    <img src="./img/svg/telegram.svg" alt="Telegram">
-                  </a></li>
-              </ul>
-            </div>
 
-            <ul class="footer__docs list-reset">
-              <li class="footer__docs__item"><a href="#">Политика конфиденциальности</a></li>
-              <li class="footer__docs__item"><a href="#">Согласие на обработку ПД</a></li>
-              <li class="footer__docs__item"><a href="#">Согласие на рекламные рассылки</a></li>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__column">
+          <div class="footer__column__title footer__column__title--accordion">
+            Каталог
+            <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
+          </div>
+          <ul class="footer__column__list list-reset">
+            <li class="footer__column__item"><a href="#">Товары для собак</a></li>
+            <li class="footer__column__item"><a href="#">Товары для кошек</a></li>
+            <li class="footer__column__item"><a href="#">Товары для птиц</a></li>
+            <li class="footer__column__item"><a href="#">Товары для рептилий</a></li>
+            <li class="footer__column__item"><a href="#">Товары для грызунов</a></li>
+            <li class="footer__column__item"><a href="#">Товары для аквариумистики</a></li>
+            <li class="footer__column__item"><a href="#">Защита от паразитов</a></li>
+            <li class="footer__column__item"><a href="#">Ветаптека</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <div class="footer__column__title footer__column__title--accordion">
+            Покупателям
+            <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
+          </div>
+          <ul class="footer__column__list list-reset">
+            <li class="footer__column__item"><a href="#">Акции</a></li>
+            <li class="footer__column__item"><a href="#">Бренды</a></li>
+            <li class="footer__column__item"><a href="#">Бонусная программа</a></li>
+            <li class="footer__column__item"><a href="#">Доставка и оплата</a></li>
+            <li class="footer__column__item"><a href="#">Вопросы и ответы</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <div class="footer__column__title footer__column__title--accordion">
+            Компания
+            <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
+          </div>
+          <ul class="footer__column__list list-reset">
+            <li class="footer__column__item"><a href="#">О нас</a></li>
+            <li class="footer__column__item"><a href="#">Магазины</a></li>
+            <li class="footer__column__item"><a href="#">Бонусная программа</a></li>
+            <li class="footer__column__item"><a href="#">Доставка и оплата</a></li>
+            <li class="footer__column__item"><a href="#">Вопросы и ответы</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <div class="footer__contacts">
+            <a href="tel:+78452734935" class="footer__tel">
+              8(8452) 73-49-35
+            </a>
+            <a href="mailto:info@zoomir1.ru" class="footer__email">info@zoomir1.ru</a>
+          </div>
+          <div class="footer__socials">
+            <div class="footer__column__title">
+              Наши соцсети
+            </div>
+            <ul class="footer__socials__list list-reset">
+              <li class="footer__socials__item"><a href="#" target="_blank">
+                  <img src="./img/svg/vk.svg" alt="VK">
+                </a></li>
+              <li class="footer__socials__item"><a href="#" target="_blank">
+                  <img src="./img/svg/telegram.svg" alt="Telegram">
+                </a></li>
             </ul>
           </div>
+
+          <ul class="footer__docs list-reset">
+            <li class="footer__docs__item"><a href="#">Политика конфиденциальности</a></li>
+            <li class="footer__docs__item"><a href="#">Согласие на обработку ПД</a></li>
+            <li class="footer__docs__item"><a href="#">Согласие на рекламные рассылки</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal-register">
+    <button class="modal__close" data-modal-close>
+      <img src="./img/svg/close.svg" alt="Закрыть">
+    </button>
+    <div class="modal__inner">
+      <div class="modal__content">
+        <div class="modal__title">Зарегистрируйтесь</div>
+        <form action="" class="modal__form">
+          <div class="modal__form__item form-item">
+            <input class="form-input" type="email" placeholder="Электронная почта" name="email" required>
+            <span class="modal__form__item__error error-message"></span>
+          </div>
+          <div class="modal__form__item form-item">
+            <input class="form-input" type="password" placeholder="Пароль" name="password" required>
+            <span class="modal__form__item__error error-message"></span>
+          </div>
+
+          <button type="submit" class="modal__form__btn btn-main btn-accent">Зарегистрироваться</button>
+          <div class="modal__form__text">
+            Уже есть аккаунт? <button class="modal__form__text__link" data-modal="modal-login">Войти</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-login">
+    <button class="modal__close" data-modal-close>
+      <img src="./img/svg/close.svg" alt="Закрыть">
+    </button>
+    <div class="modal__inner">
+      <div class="modal__content">
+        <div class="modal__title">Войдите в аккаунт</div>
+        <form action="" class="modal__form">
+          <div class="modal__form__item form-item">
+            <input class="form-input" type="email" placeholder="Электронная почта" name="email" required>
+            <span class="modal__form__item__error error-message"></span>
+          </div>
+          <div class="modal__form__item form-item">
+            <input class="form-input" type="password" placeholder="Пароль" name="password" required>
+            <span class="modal__form__item__error error-message"></span>
+          </div>
+
+          <button type="submit" class="modal__form__btn btn-main btn-accent">Войти</button>
+          <div class="modal__form__text">
+            Ещё нет аккаунта? <button class="modal__form__text__link" data-modal="modal-register">Зарегистрироваться</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script type="module" src="./js/main.js"></script>

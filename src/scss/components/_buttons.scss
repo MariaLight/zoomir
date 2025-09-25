@@ -77,6 +77,17 @@
             background-color: #960C63;
         }
     }
+
+    &-accent {
+        background-color: variables.$accent-color;
+        color: variables.$text-white;
+        text-align: center;
+        justify-content: center;
+        padding: 20px 50px;
+        font-size: 16px;
+        font-weight: variables.$font-weight-semibold;
+        border-radius: variables.$border-radius-xs;
+    }
 }
 
 @include mixins.media-down(sm) {
