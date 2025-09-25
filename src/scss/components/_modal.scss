@@ -5,11 +5,11 @@
  * Стили модальных окон
  */
 
- 
+
 
 .modal {
     position: fixed;
-    z-index: 999;
+    z-index: 1010;
     inset: 0;
     bottom: initial;
     background: rgba(0, 0, 0, 0.2);
@@ -35,14 +35,24 @@
         max-width: 100%;
         width: fit-content;
 
+        @include mixins.media-down(sm) {
+            width: calc(100% - 40px);
+        }
     }
+
     &__content {
         padding: 54px 56px;
         background-color: #fff;
         width: 100%;
         border-radius: 20px;
         width: 455px;
+
+        @include mixins.media-down(sm) {
+            padding: 38px 17px;
+            width: 100%;
+        }
     }
+
     &__content::-webkit-scrollbar {
         width: 0;
         height: 0
@@ -52,8 +62,8 @@
         width: 30px;
         height: 30px;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: -40px;
+        right: 0;
         cursor: pointer;
         transition: variables.$transition-base;
         filter: brightness(0) invert(1);
@@ -67,6 +77,11 @@
             height: 100%;
             object-fit: cover;
         }
+
+        @include mixins.media-down(sm) {
+            width: 20px;
+            height: 20px;
+        }
     }
 
     &__title {
@@ -74,6 +89,12 @@
         font-weight: 700;
         color: #000;
         margin-bottom: 32px;
+        text-align: center;
+
+        @include mixins.media-down(sm) {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
     }
 
     &__form {

@@ -37,6 +37,7 @@
           <a href="" class="header__btn btn-icon">
             <img src="./img/svg/heart.svg" alt="Избранное">
           </a>
+          <!-- Заменить button на a при входе в аккаунт, стили не меняются  -->
           <button class="header__btn btn-icon" data-modal="modal-register">
             <img src="./img/svg/user.svg" alt="Личный кабинет">
           </button>
@@ -550,9 +551,9 @@
           <a href="" class="header-fixed__btn btn-icon">
             <img src="./img/svg/heart.svg" alt="Избранное">
           </a>
-          <a href="" class="header-fixed__btn btn-icon">
+          <button class="header__btn btn-icon" data-modal="modal-register">
             <img src="./img/svg/user.svg" alt="Личный кабинет">
-          </a>
+          </button>
           <a href="" class="header-fixed__btn btn-icon">
             <span class="header-fixed__btn__counter">12</span>
             <img src="./img/svg/cart.svg" alt="Корзина">
@@ -598,9 +599,9 @@
         <a href="" class="header__btn btn-icon">
           <img src="./img/svg/heart.svg" alt="Избранное">
         </a>
-        <a href="" class="header__btn btn-icon">
+        <button class="header__btn btn-icon" data-modal="modal-register">
           <img src="./img/svg/user.svg" alt="Личный кабинет">
-        </a>
+        </button>
         <a href="" class="header__btn btn-icon">
           <span class="header__btn__counter">12</span>
           <img src="./img/svg/cart.svg" alt="Корзина">
@@ -1568,10 +1569,11 @@
   </footer>
 
   <div class="modal" id="modal-register">
-    <button class="modal__close" data-modal-close>
-      <img src="./img/svg/close.svg" alt="Закрыть">
-    </button>
+
     <div class="modal__inner">
+      <button class="modal__close" data-modal-close>
+        <img src="./img/svg/close.svg" alt="Закрыть">
+      </button>
       <div class="modal__content">
         <div class="modal__title">Зарегистрируйтесь</div>
         <form action="" class="modal__form">
@@ -1593,10 +1595,11 @@
     </div>
   </div>
   <div class="modal" id="modal-login">
-    <button class="modal__close" data-modal-close>
-      <img src="./img/svg/close.svg" alt="Закрыть">
-    </button>
+
     <div class="modal__inner">
+      <button class="modal__close" data-modal-close>
+        <img src="./img/svg/close.svg" alt="Закрыть">
+      </button>
       <div class="modal__content">
         <div class="modal__title">Войдите в аккаунт</div>
         <form action="" class="modal__form">
@@ -1611,7 +1614,8 @@
 
           <button type="submit" class="modal__form__btn btn-main btn-accent">Войти</button>
           <div class="modal__form__text">
-            Ещё нет аккаунта? <button class="modal__form__text__link" data-modal="modal-register">Зарегистрироваться</button>
+            Ещё нет аккаунта? <button class="modal__form__text__link"
+              data-modal="modal-register">Зарегистрироваться</button>
           </div>
         </form>
       </div>
