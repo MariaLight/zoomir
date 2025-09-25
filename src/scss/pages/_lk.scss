@@ -92,6 +92,13 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
+        @include mixins.media-down(lg) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include mixins.media-down(md) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
     }
 
     &__bonus {
