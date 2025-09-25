@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../mixins";
 
 .breadcrumbs {
     font-size: 16px;
@@ -7,5 +8,9 @@
 
     a:hover {
         color: variables.$accent-color;
+    }
+
+    @include mixins.media-down(sm) {
+        font-size: 12px;
     }
 }

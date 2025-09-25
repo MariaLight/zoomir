@@ -1,9 +1,99 @@
 @use "../variables";
+@use "../mixins";
 
 .catalog__filters {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    &__close {
+        display: none;
+    }
+
+    &__open {
+        display: none;
+    }
+
+    @include mixins.media-down(md) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        &__close {
+            display: block;
+            cursor: pointer;
+            margin-bottom: 20px;
+            margin-left: auto;
+            height: 30px;
+            width: 30px;
+
+            span {
+                width: 30px;
+                height: 4px;
+                background-color: variables.$accent-color;
+                display: block;
+                margin-bottom: 5px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:first-child {
+                    transform: translateY(4.5px) rotate(45deg);
+
+                }
+
+                &:last-child {
+                    transform: translateY(-4.5px) rotate(-45deg);
+                }
+            }
+        }
+
+        &__open {
+            display: block;
+            cursor: pointer;
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: variables.$font-weight-medium;
+            color: variables.$text-color;
+            font-family: variables.$font-family-primary;
+            gap: 10px;
+            width: 100%;
+
+            @include mixins.media-down(sm) {
+                padding: 8px;
+                font-size: 10px;
+            }
+
+            &::after {
+                content: '';
+                width: 16px;
+                height: 16px;
+                background-image: url('../../img/svg/filters.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            @include mixins.media-down(sm) {
+                &::after {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            &.has-active-filters {
+                color: variables.$accent-color;
+            }
+        }
+    }
+
+    @include mixins.media-down(sm) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .catalog__filter {
@@ -20,6 +110,10 @@
         font-weight: variables.$font-weight-bold;
         color: variables.$text-color;
         margin: 0;
+
+        @include mixins.media-down(sm) {
+            font-size: 14px;
+        }
     }
 
     &__reset {
@@ -62,10 +156,16 @@
         background-color: #fff;
         transition: border-color 0.2s ease;
         cursor: text;
+        @include mixins.media-down(sm) {
+            font-size: 12px;
+        }
 
         &::placeholder {
             color: #9B9CA0;
             font-size: 14px;
+            @include mixins.media-down(sm) {
+                font-size: 12px;
+            }
         }
 
         &:focus {
@@ -120,6 +220,10 @@
             position: relative;
             flex-shrink: 0;
             transition: all 0.2s ease;
+            @include mixins.media-down(sm) {
+                width: 14px;
+                height: 14px;
+            }
 
             &::after {
                 content: '';
@@ -143,6 +247,9 @@
             font-weight: 400;
             color: #000;
             flex-grow: 1;
+            @include mixins.media-down(sm) {
+                font-size: 12px;
+            }
         }
 
         &__count {
@@ -150,9 +257,12 @@
             font-weight: 400;
             color: #BFBDBD;
             flex-shrink: 0;
+            @include mixins.media-down(sm) {
+                font-size: 12px;
+            }
         }
 
-        &__input:checked + &__custom {
+        &__input:checked+&__custom {
             background-color: variables.$accent-color;
             border-color: variables.$accent-color;
 
@@ -179,6 +289,9 @@
         transition: color 0.2s ease;
         font-weight: variables.$font-weight-regular;
         font-family: variables.$font-family-primary;
+        @include mixins.media-down(sm) {
+            font-size: 12px;
+        }
 
         &:hover {
             color: variables.$accent-color-hover;

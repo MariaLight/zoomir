@@ -2,6 +2,8 @@
 @use "../variables";
 
 .catalog {
+    position: relative;
+
     &__inner {
         display: flex;
         gap: 34px;
@@ -13,7 +15,36 @@
         flex-shrink: 0;
 
         @include mixins.media-down(md) {
-            display: none;
+            &--categories {
+                display: none;
+            }
+
+            &--products {
+                width: 100%;
+                position: fixed;
+                background-color: #F4F4F4;
+                inset: 0;
+                z-index: -1;
+                padding: 110px 20px 30px;
+                overflow-y: auto;
+                max-height: 100vh;
+                opacity: 0;
+                visibility: hidden;
+                transition: variables.$transition-base;
+
+                &.active {
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 100;
+
+                }
+            }
+        }
+
+        @include mixins.media-down(sm) {
+            &--products {
+                padding: 90px 20px 30px;
+            }
         }
     }
 
@@ -193,11 +224,30 @@
             align-items: center;
             justify-content: space-between;
             margin-bottom: 20px;
+
+            @include mixins.media-down(md) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            @include mixins.media-down(sm) {
+                gap: 10px;
+            }
+
         }
 
         &__count {
             font-size: 16px;
             color: #BFBDBD;
+
+            @include mixins.media-down(md) {
+                order: 2;
+            }
+
+            @include mixins.media-down(sm) {
+                font-size: 12px;
+            }
         }
     }
 
@@ -210,6 +260,10 @@
             font-size: 16px;
             color: #BFBDBD;
             white-space: nowrap;
+
+            @include mixins.media-down(md) {
+                display: none;
+            }
         }
 
         .choices {
@@ -243,6 +297,35 @@
             &__placeholder {
                 opacity: 1;
             }
+
+            @include mixins.media-down(md) {
+                width: 100%;
+
+                &__inner {
+                    background-color: #fff;
+                    padding: 10px 20px !important;
+                    border-radius: 5px;
+                    min-height: auto;
+                }
+
+                &__list--single {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            @include mixins.media-down(md) {
+
+                &__inner {
+                    min-width: 100%;
+                    padding: 8px !important;
+                    font-size: 10px;
+                }
+
+                &__item {
+                    font-size: 10px !important;
+                } 
+            }
         }
     }
 
@@ -250,6 +333,15 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+
+        @include mixins.media-down(lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mixins.media-down(md) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
     }
 
     &__active {
@@ -273,6 +365,9 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            @include mixins.media-down(sm) {
+                font-size: 12px;
+            }
 
             button {
                 width: 7px;

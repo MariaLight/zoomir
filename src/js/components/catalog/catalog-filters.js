@@ -106,6 +106,19 @@ function initCatalogFilters() {
 
 document.addEventListener('DOMContentLoaded', () => {
     initCatalogFilters();
+
+    const filters = document.querySelector('.catalog__sidebar--products');
+    const filtersClose = document.querySelector('.catalog__filters__close');
+    const filtersOpen = document.querySelector('.catalog__filters__open');
+    if (filters) {
+        filtersOpen.addEventListener('click', () => {
+            filters.classList.add('active');
+        });
+
+        filtersClose.addEventListener('click', () => {
+            filters.classList.remove('active');
+        });
+    }
 });
 
 export { initCatalogFilters };
