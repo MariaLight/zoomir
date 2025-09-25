@@ -2,995 +2,986 @@
 <html lang="ru" class="page">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Избранное - ЗооМир</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./scss/style.scss">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Избранное - ЗооМир</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./scss/style.scss">
 </head>
 
 <body class="page__body">
-    <header class="header">
-        <div class="container">
-          <div class="header__top">
-            <a href="/" class="header__logo">
-              <img src="./img/base/logo.svg" alt="Логотип">
-            </a>
-            <div class="header__address">
-              <div class="header__address__inner">
-                <span class="header__address__location">Укажите адрес и способ получения</span>
-                <a href="" class="header__address__link">Указать</a>
-              </div>
-            </div>
-            <nav class="header__nav">
-              <ul class="header__nav__list list-reset">
-                <li class="header__nav__item"><a href="#" class="header__nav__link">Оплата и доставка</a></li>
-                <li class="header__nav__item"><a href="#" class="header__nav__link">Магазин</a></li>
-                <li class="header__nav__item"><a href="#" class="header__nav__link">Контакты</a></li>
-              </ul>
-            </nav>
-    
-            <div class="header__btns">
-              <button class="header__btn btn-icon mobile-search-btn">
-                <img src="./img/svg/search.svg" alt="Поиск">
-              </button>
-              <a href="" class="header__btn btn-icon">
-                <img src="./img/svg/heart.svg" alt="Избранное">
-              </a>
-              <a href="" class="header__btn btn-icon">
-                <img src="./img/svg/user.svg" alt="Личный кабинет">
-              </a>
-              <a href="" class="header__btn btn-icon">
-                <span class="header__btn__counter">12</span>
-                <img src="./img/svg/cart.svg" alt="Корзина">
-              </a>
-    
-            </div>
-            <button id="burger" class="burger-btn">
-              <span></span><span></span><span></span>
-            </button>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <a href="/" class="header__logo">
+          <img src="./img/base/logo.svg" alt="Логотип">
+        </a>
+        <div class="header__address">
+          <div class="header__address__inner">
+            <span class="header__address__location">Укажите адрес и способ получения</span>
+            <a href="" class="header__address__link">Указать</a>
           </div>
-          <div class="header__middle">
-            <div class="header__catalog__dropdown">
-              <button class="header__catalog__btn btn-main">
-                <span class="header__catalog__btn__text">Каталог товаров</span>
-              </button>
-              <div class="header__catalog__dropdown__content">
-                <div class="header__catalog__dropdown__inner container">
-                  <div class="header__catalog__dropdown__left">
-                    <ul class="header__catalog__categories list-reset">
-                      <li class="header__catalog__category" data-category="dogs">
-                        <a href="#" class="header__catalog__category__link">Собаки</a>
-                      </li>
-                      <li class="header__catalog__category" data-category="cats">
-                        <a href="#" class="header__catalog__category__link">Кошки</a>
-                      </li>
-                      <li class="header__catalog__category" data-category="fish">
-                        <a href="#" class="header__catalog__category__link">Рыбы</a>
-                      </li>
-                      <li class="header__catalog__category" data-category="birds">
-                        <a href="#" class="header__catalog__category__link">Птицы</a>
-                      </li>
-                      <li class="header__catalog__category" data-category="reptiles">
-                        <a href="#" class="header__catalog__category__link">Рептилии</a>
-                      </li>
-                    </ul>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav__list list-reset">
+            <li class="header__nav__item"><a href="#" class="header__nav__link">Оплата и доставка</a></li>
+            <li class="header__nav__item"><a href="#" class="header__nav__link">Магазин</a></li>
+            <li class="header__nav__item"><a href="#" class="header__nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__btns">
+          <button class="header__btn btn-icon mobile-search-btn">
+            <img src="./img/svg/search.svg" alt="Поиск">
+          </button>
+          <a href="" class="header__btn btn-icon">
+            <img src="./img/svg/heart.svg" alt="Избранное">
+          </a>
+          <a href="" class="header__btn btn-icon">
+            <img src="./img/svg/user.svg" alt="Личный кабинет">
+          </a>
+          <a href="" class="header__btn btn-icon">
+            <span class="header__btn__counter">12</span>
+            <img src="./img/svg/cart.svg" alt="Корзина">
+          </a>
+
+        </div>
+        <button id="burger" class="burger-btn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="header__middle">
+        <div class="header__catalog__dropdown">
+          <button class="header__catalog__btn btn-main">
+            <span class="header__catalog__btn__text">Каталог товаров</span>
+          </button>
+          <div class="header__catalog__dropdown__content">
+            <div class="header__catalog__dropdown__inner container">
+              <div class="header__catalog__dropdown__left">
+                <ul class="header__catalog__categories list-reset">
+                  <li class="header__catalog__category" data-category="dogs">
+                    <a href="#" class="header__catalog__category__link">Собаки</a>
+                  </li>
+                  <li class="header__catalog__category" data-category="cats">
+                    <a href="#" class="header__catalog__category__link">Кошки</a>
+                  </li>
+                  <li class="header__catalog__category" data-category="fish">
+                    <a href="#" class="header__catalog__category__link">Рыбы</a>
+                  </li>
+                  <li class="header__catalog__category" data-category="birds">
+                    <a href="#" class="header__catalog__category__link">Птицы</a>
+                  </li>
+                  <li class="header__catalog__category" data-category="reptiles">
+                    <a href="#" class="header__catalog__category__link">Рептилии</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__catalog__dropdown__right">
+                <!-- Контент для категории "Собаки" -->
+                <div class="header__catalog__subcategories" data-category="dogs">
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Собаки</a></div>
+                  <div class="header__catalog__subcategories__grid">
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Корм для собак</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Влажный корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Лакомства</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Аксессуары</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Ошейники</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Поводки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Миски</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Аксессуары</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Ошейники</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Поводки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Миски</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Уход</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Шампуни</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Расчески</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Когтерезы</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Зубные щетки</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Здоровье</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Лекарства</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">БАДы</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Ветеринария</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Аптечка</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="header__catalog__dropdown__right">
-                    <!-- Контент для категории "Собаки" -->
-                    <div class="header__catalog__subcategories" data-category="dogs">
-                      <div class="header__catalog__subcategories__main__title"><a href="#">Собаки</a></div>
-                      <div class="header__catalog__subcategories__grid">
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Корм для собак</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Влажный корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Лакомства</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Аксессуары</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Ошейники</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Поводки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Миски</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Аксессуары</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Ошейники</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Поводки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Миски</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Уход</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Шампуни</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Расчески</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Когтерезы</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Зубные щетки</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Здоровье</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Лекарства</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">БАДы</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Ветеринария</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Аптечка</a></li>
-                          </ul>
-                        </div>
-                      </div>
+                </div>
+
+                <!-- Контент для категории "Кошки" -->
+                <div class="header__catalog__subcategories" data-category="cats">
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Кошки</a></div>
+
+                  <div class="header__catalog__subcategories__grid">
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Корм для кошек</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Влажный корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Лакомства</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
+                      </ul>
                     </div>
-    
-                    <!-- Контент для категории "Кошки" -->
-                    <div class="header__catalog__subcategories" data-category="cats">
-                      <div class="header__catalog__subcategories__main__title"><a href="#">Кошки</a></div>
-    
-                      <div class="header__catalog__subcategories__grid">
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Корм для кошек</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Влажный корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Лакомства</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Аксессуары</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Ошейники</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Поводки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Когтеточки</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Уход</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Шампуни</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Расчески</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Когтерезы</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Зубные щетки</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Туалеты</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Лотки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Наполнители</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Совки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Домики</a></li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Аксессуары</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Ошейники</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Поводки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Когтеточки</a></li>
+                      </ul>
                     </div>
-    
-                    <!-- Контент для категории "Рыбы" -->
-                    <div class="header__catalog__subcategories" data-category="fish">
-                      <div class="header__catalog__subcategories__main__title"><a href="#">Рыбы</a></div>
-    
-                      <div class="header__catalog__subcategories__grid">
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Корм для рыб</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Живой корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Замороженный</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Аквариумы</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Аквариумы</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Фильтры</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Компрессоры</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Обогреватели</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Декорации</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Растения</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Камни</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Коряги</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Грунт</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Уход</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Тесты воды</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Кондиционеры</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Сифоны</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Сачки</a></li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Уход</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Шампуни</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Расчески</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Когтерезы</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Зубные щетки</a></li>
+                      </ul>
                     </div>
-    
-                    <!-- Контент для категории "Птицы" -->
-                    <div class="header__catalog__subcategories" data-category="birds">
-                      <div class="header__catalog__subcategories__main__title"><a href="#">Птицы</a></div>
-                      <div class="header__catalog__subcategories__grid">
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Корм для птиц</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Зерновые смеси</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Лакомства</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Минералы</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Клетки</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Клетки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Вольеры</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Домики</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Жердочки</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Аксессуары</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Поилки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Кормушки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Зеркала</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Уход</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Песок</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Купалки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Щетки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Когтерезы</a></li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Туалеты</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Лотки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Наполнители</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Совки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Домики</a></li>
+                      </ul>
                     </div>
-    
-                    <!-- Контент для категории "Рептилии" -->
-                    <div class="header__catalog__subcategories" data-category="reptiles">
-                      <div class="header__catalog__subcategories__main__title"><a href="#">Рептилии</a></div>
-                      <div class="header__catalog__subcategories__grid">
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Корм для рептилий</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Живой корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Замороженный</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Террариумы</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Террариумы</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Обогрев</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Освещение</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Вентиляция</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Субстрат</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Грунт</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Кора</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Мох</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Песок</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Декорации</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Укрытия</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Камни</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Растения</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Ветки</a></li>
-                          </ul>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+
+                <!-- Контент для категории "Рыбы" -->
+                <div class="header__catalog__subcategories" data-category="fish">
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Рыбы</a></div>
+
+                  <div class="header__catalog__subcategories__grid">
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Корм для рыб</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Живой корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Замороженный</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Аквариумы</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Аквариумы</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Фильтры</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Компрессоры</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Обогреватели</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Декорации</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Растения</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Камни</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Коряги</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Грунт</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Уход</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Тесты воды</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Кондиционеры</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Сифоны</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Сачки</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Контент для категории "Птицы" -->
+                <div class="header__catalog__subcategories" data-category="birds">
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Птицы</a></div>
+                  <div class="header__catalog__subcategories__grid">
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Корм для птиц</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Зерновые смеси</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Лакомства</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Минералы</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Клетки</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Клетки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Вольеры</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Домики</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Жердочки</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Аксессуары</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Поилки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Кормушки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Зеркала</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Уход</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Песок</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Купалки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Щетки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Когтерезы</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Контент для категории "Рептилии" -->
+                <div class="header__catalog__subcategories" data-category="reptiles">
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Рептилии</a></div>
+                  <div class="header__catalog__subcategories__grid">
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Корм для рептилий</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Живой корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Замороженный</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Террариумы</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Террариумы</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Обогрев</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Освещение</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Вентиляция</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Субстрат</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Грунт</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Кора</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Мох</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Песок</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Декорации</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Укрытия</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Камни</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Растения</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Ветки</a></li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-    
-            <form class="header__searchform">
-              <input type="text" class="header__searchform__input" name="s" placeholder="Введите название товара">
-              <button type="submit" class="header__searchform__btn">
-                <img src="./img/svg/search.svg" alt="Поиск">
-              </button>
-            </form>
-          </div>
-          <div class="header__bottom">
-            <nav class="header__bottom__nav">
-              <ul class="header__bottom__list list-reset">
-                <li class="header__bottom__item"><a href="#" class="header__bottom__link">Акции</a></li>
-                <li class="header__bottom__item"><a href="#" class="header__bottom__link">Собаки</a></li>
-                <li class="header__bottom__item"><a href="#" class="header__bottom__link">Кошки</a></li>
-                <li class="header__bottom__item"><a href="#" class="header__bottom__link">Рыбы</a></li>
-                <li class="header__bottom__item"><a href="#" class="header__bottom__link">Птицы</a></li>
-                <li class="header__bottom__item"><a href="#" class="header__bottom__link">Грызуны</a></li>
-                <li class="header__bottom__item"><a href="#" class="header__bottom__link">Рептилии</a></li>
-                <li class="header__bottom__item"><a href="#" class="header__bottom__link">Ветаптека</a></li>
-                <li class="header__bottom__item active"><a href="#" class="header__bottom__link">Защита от паразитов</a>
-                </li>
-              </ul>
-            </nav>
           </div>
         </div>
-      </header>
-    
-      <!-- Мобильный поиск -->
-      <div class="mobile-search" id="mobile-search">
-        <div class="container">
-          <form class="header__searchform">
-            <input type="text" class="header__searchform__input" name="s" placeholder="Введите название товара">
-            <button type="submit" class="header__searchform__btn">
-              <img src="./img/svg/search.svg" alt="Поиск">
-            </button>
-          </form>
-          <button class="mobile-search__close" type="button">
-            <img src="./img/svg/close.svg" alt="Закрыть">
+
+        <form class="header__searchform">
+          <input type="text" class="header__searchform__input" name="s" placeholder="Введите название товара">
+          <button type="submit" class="header__searchform__btn">
+            <img src="./img/svg/search.svg" alt="Поиск">
           </button>
+        </form>
+      </div>
+      <div class="header__bottom">
+        <nav class="header__bottom__nav">
+          <ul class="header__bottom__list list-reset">
+            <li class="header__bottom__item"><a href="#" class="header__bottom__link">Акции</a></li>
+            <li class="header__bottom__item"><a href="#" class="header__bottom__link">Собаки</a></li>
+            <li class="header__bottom__item"><a href="#" class="header__bottom__link">Кошки</a></li>
+            <li class="header__bottom__item"><a href="#" class="header__bottom__link">Рыбы</a></li>
+            <li class="header__bottom__item"><a href="#" class="header__bottom__link">Птицы</a></li>
+            <li class="header__bottom__item"><a href="#" class="header__bottom__link">Грызуны</a></li>
+            <li class="header__bottom__item"><a href="#" class="header__bottom__link">Рептилии</a></li>
+            <li class="header__bottom__item"><a href="#" class="header__bottom__link">Ветаптека</a></li>
+            <li class="header__bottom__item active"><a href="#" class="header__bottom__link">Защита от паразитов</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Мобильный поиск -->
+  <div class="mobile-search" id="mobile-search">
+    <div class="container">
+      <form class="header__searchform">
+        <input type="text" class="header__searchform__input" name="s" placeholder="Введите название товара">
+        <button type="submit" class="header__searchform__btn">
+          <img src="./img/svg/search.svg" alt="Поиск">
+        </button>
+      </form>
+      <button class="mobile-search__close" type="button">
+        <img src="./img/svg/close.svg" alt="Закрыть">
+      </button>
+    </div>
+  </div>
+
+  <header class="header-fixed">
+    <div class="container">
+      <div class="header-fixed__content">
+        <a href="/" class="header-fixed__logo">
+          <img src="./img/base/logo.svg" alt="Логотип">
+        </a>
+
+        <form class="header-fixed__searchform">
+          <input type="text" class="header-fixed__searchform__input" name="s" placeholder="Введите название товара">
+          <button type="submit" class="header-fixed__searchform__btn">
+            <img src="./img/svg/search.svg" alt="Поиск">
+          </button>
+        </form>
+
+        <div class="header-fixed__address">
+          <div class="header-fixed__address__inner">
+            <span class="header-fixed__address__location">Укажите адрес и способ получения</span>
+            <a href="" class="header-fixed__address__link">Указать</a>
+          </div>
+        </div>
+
+        <div class="header-fixed__catalog">
+          <button class="header-fixed__catalog__btn">
+            <span class="header-fixed__catalog__btn__text">Каталог товаров</span>
+          </button>
+          <div class="header__catalog__dropdown__content header__catalog__dropdown__content--fixed">
+            <div class="header__catalog__dropdown__inner container">
+              <div class="header__catalog__dropdown__left">
+                <ul class="header__catalog__categories list-reset">
+                  <li class="header__catalog__category" data-category="dogs">
+                    <a href="#" class="header__catalog__category__link">Собаки</a>
+                  </li>
+                  <li class="header__catalog__category" data-category="cats">
+                    <a href="#" class="header__catalog__category__link">Кошки</a>
+                  </li>
+                  <li class="header__catalog__category" data-category="fish">
+                    <a href="#" class="header__catalog__category__link">Рыбы</a>
+                  </li>
+                  <li class="header__catalog__category" data-category="birds">
+                    <a href="#" class="header__catalog__category__link">Птицы</a>
+                  </li>
+                  <li class="header__catalog__category" data-category="reptiles">
+                    <a href="#" class="header__catalog__category__link">Рептилии</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__catalog__dropdown__right">
+                <div class="header__catalog__subcategories" data-category="dogs">
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Собаки</a></div>
+                  <div class="header__catalog__subcategories__grid">
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Корм для собак</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Влажный корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Лакомства</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Аксессуары</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Ошейники</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Поводки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Миски</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Уход</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Шампуни</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Расчески</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Когтерезы</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Зубные щетки</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="header__catalog__subcategories" data-category="cats">
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Кошки</a></div>
+                  <div class="header__catalog__subcategories__grid">
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Корм для кошек</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Влажный корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Лакомства</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Аксессуары</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Ошейники</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Поводки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Когтеточки</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Уход</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Шампуни</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Расчески</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Когтерезы</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Зубные щетки</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="header__catalog__subcategories" data-category="fish">
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Рыбы</a></div>
+                  <div class="header__catalog__subcategories__grid">
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Корм для рыб</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Живой корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Замороженный корм</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Аквариумы</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Аквариумы</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Фильтры</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Обогреватели</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Освещение</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="header__catalog__subcategories" data-category="birds">
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Птицы</a></div>
+                  <div class="header__catalog__subcategories__grid">
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Корм для птиц</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Зерновые смеси</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Лакомства</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Минеральные добавки</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Клетки и аксессуары</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Клетки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Жердочки</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Кормушки</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="header__catalog__subcategories" data-category="reptiles">
+                  <div class="header__catalog__subcategories__main__title"><a href="#">Рептилии</a></div>
+                  <div class="header__catalog__subcategories__grid">
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Террариумы</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Террариумы</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Обогрев</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Освещение</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Вентиляция</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Субстрат</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Грунт</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Кора</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Мох</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Песок</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__catalog__subcategories__column">
+                      <div class="header__catalog__subcategories__title"><a href="#">Декорации</a></div>
+                      <ul class="header__catalog__subcategories__list list-reset">
+                        <li><a href="#" class="header__catalog__subcategories__link">Укрытия</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Камни</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Растения</a></li>
+                        <li><a href="#" class="header__catalog__subcategories__link">Ветки</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-fixed__btns">
+          <a href="" class="header-fixed__btn btn-icon">
+            <img src="./img/svg/heart.svg" alt="Избранное">
+          </a>
+          <a href="" class="header-fixed__btn btn-icon">
+            <img src="./img/svg/user.svg" alt="Личный кабинет">
+          </a>
+          <a href="" class="header-fixed__btn btn-icon">
+            <span class="header-fixed__btn__counter">12</span>
+            <img src="./img/svg/cart.svg" alt="Корзина">
+          </a>
         </div>
       </div>
-    
-      <header class="header-fixed">
+    </div>
+  </header>
+
+  <header class="header__burger-menu">
+    <!-- header__burger-menu__inner--centered - стиль для центрированного меню. Без него автоматически выравнивается по правому краю -->
+    <div class="header__burger-menu__inner header__burger-menu__inner--centered container">
+      <nav class="header__burger-menu__nav">
+        <ul class="header__burger-menu__nav__list list-reset">
+          <li class="header__burger-menu__nav__item">
+            <a href="#" class="header__burger-menu__nav__link">Акции</a>
+          </li>
+          <li class="header__burger-menu__nav__item">
+            <a href="#" class="header__burger-menu__nav__link">Собаки</a>
+          </li>
+          <li class="header__burger-menu__nav__item">
+            <a href="#" class="header__burger-menu__nav__link">Кошки</a>
+          </li>
+          <li class="header__burger-menu__nav__item">
+            <a href="#" class="header__burger-menu__nav__link">Рыбы</a>
+          </li>
+          <li class="header__burger-menu__nav__item">
+            <a href="#" class="header__burger-menu__nav__link">Птицы</a>
+          </li>
+          <li class="header__burger-menu__nav__item">
+            <a href="#" class="header__burger-menu__nav__link">Рептилии</a>
+          </li>
+          <li class="header__burger-menu__nav__item">
+            <a href="#" class="header__burger-menu__nav__link active">Защита от паразитов</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__burger-menu__contacts">
+        <a href="tel:+78452734935" class="header__burger-menu__contacts__tel">8(8452) 73-49-35</a>
+        <a href="mailto:info@zoomir1.ru" class="header__burger-menu__contacts__email">info@zoomir1.ru</a>
+      </div>
+      <div class="header__btns">
+        <a href="" class="header__btn btn-icon">
+          <img src="./img/svg/heart.svg" alt="Избранное">
+        </a>
+        <a href="" class="header__btn btn-icon">
+          <img src="./img/svg/user.svg" alt="Личный кабинет">
+        </a>
+        <a href="" class="header__btn btn-icon">
+          <span class="header__btn__counter">12</span>
+          <img src="./img/svg/cart.svg" alt="Корзина">
+        </a>
+
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main class="main">
+      <div class="main__inner">
         <div class="container">
-          <div class="header-fixed__content">
-            <a href="/" class="header-fixed__logo">
-              <img src="./img/base/logo.svg" alt="Логотип">
-            </a>
-    
-            <form class="header-fixed__searchform">
-              <input type="text" class="header-fixed__searchform__input" name="s" placeholder="Введите название товара">
-              <button type="submit" class="header-fixed__searchform__btn">
-                <img src="./img/svg/search.svg" alt="Поиск">
-              </button>
-            </form>
-    
-            <div class="header-fixed__address">
-              <div class="header-fixed__address__inner">
-                <span class="header-fixed__address__location">Укажите адрес и способ получения</span>
-                <a href="" class="header-fixed__address__link">Указать</a>
-              </div>
-            </div>
-    
-            <div class="header-fixed__catalog">
-              <button class="header-fixed__catalog__btn">
-                <span class="header-fixed__catalog__btn__text">Каталог товаров</span>
-              </button>
-              <div class="header__catalog__dropdown__content header__catalog__dropdown__content--fixed">
-                <div class="header__catalog__dropdown__inner container">
-                  <div class="header__catalog__dropdown__left">
-                    <ul class="header__catalog__categories list-reset">
-                      <li class="header__catalog__category" data-category="dogs">
-                        <a href="#" class="header__catalog__category__link">Собаки</a>
-                      </li>
-                      <li class="header__catalog__category" data-category="cats">
-                        <a href="#" class="header__catalog__category__link">Кошки</a>
-                      </li>
-                      <li class="header__catalog__category" data-category="fish">
-                        <a href="#" class="header__catalog__category__link">Рыбы</a>
-                      </li>
-                      <li class="header__catalog__category" data-category="birds">
-                        <a href="#" class="header__catalog__category__link">Птицы</a>
-                      </li>
-                      <li class="header__catalog__category" data-category="reptiles">
-                        <a href="#" class="header__catalog__category__link">Рептилии</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="header__catalog__dropdown__right">
-                    <div class="header__catalog__subcategories" data-category="dogs">
-                      <div class="header__catalog__subcategories__main__title"><a href="#">Собаки</a></div>
-                      <div class="header__catalog__subcategories__grid">
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Корм для собак</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Влажный корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Лакомства</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Аксессуары</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Ошейники</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Поводки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Миски</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Уход</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Шампуни</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Расчески</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Когтерезы</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Зубные щетки</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="header__catalog__subcategories" data-category="cats">
-                      <div class="header__catalog__subcategories__main__title"><a href="#">Кошки</a></div>
-                      <div class="header__catalog__subcategories__grid">
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Корм для кошек</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Влажный корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Лакомства</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Аксессуары</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Ошейники</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Поводки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Когтеточки</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Уход</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Шампуни</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Расчески</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Когтерезы</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Зубные щетки</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="header__catalog__subcategories" data-category="fish">
-                      <div class="header__catalog__subcategories__main__title"><a href="#">Рыбы</a></div>
-                      <div class="header__catalog__subcategories__grid">
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Корм для рыб</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Сухой корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Живой корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Замороженный корм</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Аквариумы</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Аквариумы</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Фильтры</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Обогреватели</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Освещение</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="header__catalog__subcategories" data-category="birds">
-                      <div class="header__catalog__subcategories__main__title"><a href="#">Птицы</a></div>
-                      <div class="header__catalog__subcategories__grid">
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Корм для птиц</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Зерновые смеси</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Лакомства</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Витамины</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Минеральные добавки</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Клетки и аксессуары</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Клетки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Жердочки</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Кормушки</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="header__catalog__subcategories" data-category="reptiles">
-                      <div class="header__catalog__subcategories__main__title"><a href="#">Рептилии</a></div>
-                      <div class="header__catalog__subcategories__grid">
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Террариумы</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Террариумы</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Обогрев</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Освещение</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Вентиляция</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Субстрат</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Грунт</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Кора</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Мох</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Песок</a></li>
-                          </ul>
-                        </div>
-                        <div class="header__catalog__subcategories__column">
-                          <div class="header__catalog__subcategories__title"><a href="#">Декорации</a></div>
-                          <ul class="header__catalog__subcategories__list list-reset">
-                            <li><a href="#" class="header__catalog__subcategories__link">Укрытия</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Камни</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Растения</a></li>
-                            <li><a href="#" class="header__catalog__subcategories__link">Ветки</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="header-fixed__btns">
-              <a href="" class="header-fixed__btn btn-icon">
-                <img src="./img/svg/heart.svg" alt="Избранное">
-              </a>
-              <a href="" class="header-fixed__btn btn-icon">
-                <img src="./img/svg/user.svg" alt="Личный кабинет">
-              </a>
-              <a href="" class="header-fixed__btn btn-icon">
-                <span class="header-fixed__btn__counter">12</span>
-                <img src="./img/svg/cart.svg" alt="Корзина">
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
-    
-      <header class="header__burger-menu">
-        <!-- header__burger-menu__inner--centered - стиль для центрированного меню. Без него автоматически выравнивается по правому краю -->
-        <div class="header__burger-menu__inner header__burger-menu__inner--centered container">
-          <nav class="header__burger-menu__nav">
-            <ul class="header__burger-menu__nav__list list-reset">
-              <li class="header__burger-menu__nav__item">
-                <a href="#" class="header__burger-menu__nav__link">Акции</a>
-              </li>
-              <li class="header__burger-menu__nav__item">
-                <a href="#" class="header__burger-menu__nav__link">Собаки</a>
-              </li>
-              <li class="header__burger-menu__nav__item">
-                <a href="#" class="header__burger-menu__nav__link">Кошки</a>
-              </li>
-              <li class="header__burger-menu__nav__item">
-                <a href="#" class="header__burger-menu__nav__link">Рыбы</a>
-              </li>
-              <li class="header__burger-menu__nav__item">
-                <a href="#" class="header__burger-menu__nav__link">Птицы</a>
-              </li>
-              <li class="header__burger-menu__nav__item">
-                <a href="#" class="header__burger-menu__nav__link">Рептилии</a>
-              </li>
-              <li class="header__burger-menu__nav__item">
-                <a href="#" class="header__burger-menu__nav__link active">Защита от паразитов</a>
-              </li>
+          <nav class="lk__nav">
+            <ul class="lk__nav__list list-reset">
+              <li class="lk__nav__item"><a href="#" class="lk__nav__link">Мои заказы</a></li>
+              <li class="lk__nav__item"><a href="#" class="lk__nav__link active">Избранное</a></li>
+              <li class="lk__nav__item"><a href="#" class="lk__nav__link">Бонусы</a></li>
+              <li class="lk__nav__item"><a href="#" class="lk__nav__link">Личные данные</a></li>
             </ul>
           </nav>
-          <div class="header__burger-menu__contacts">
-            <a href="tel:+78452734935" class="header__burger-menu__contacts__tel">8(8452) 73-49-35</a>
-            <a href="mailto:info@zoomir1.ru" class="header__burger-menu__contacts__email">info@zoomir1.ru</a>
-          </div>
-          <div class="header__btns">
-            <a href="" class="header__btn btn-icon">
-              <img src="./img/svg/heart.svg" alt="Избранное">
-            </a>
-            <a href="" class="header__btn btn-icon">
-              <img src="./img/svg/user.svg" alt="Личный кабинет">
-            </a>
-            <a href="" class="header__btn btn-icon">
-              <span class="header__btn__counter">12</span>
-              <img src="./img/svg/cart.svg" alt="Корзина">
-            </a>
-    
-          </div>
-        </div>
-      </header>
-    <div class="wrapper">
-        <main class="main">
-            <div class="main__inner">
-                <div class="container">
-                    <nav class="lk__nav">
-                        <ul class="lk__nav__list list-reset">
-                            <li class="lk__nav__item"><a href="#" class="lk__nav__link">Мои заказы</a></li>
-                            <li class="lk__nav__item"><a href="#" class="lk__nav__link active">Избранное</a></li>
-                            <li class="lk__nav__item"><a href="#" class="lk__nav__link">Бонусы</a></li>
-                            <li class="lk__nav__item"><a href="#" class="lk__nav__link">Личные данные</a></li>
-                        </ul>
-                    </nav>
-                    <h1 class="title lk__title">Избранные товары</h1>
-                    <div class="lk__favorites__list">
-                        <div class="products__card">
-                            <div class="products__card__img">
-                                <img src="./img/temp/product.png" alt="">
-                            </div>
-                            <a href="#" class="products__card__title">Мильбемакс</a>
-                            <div class="products__card__text">Таблетки жевательные Мильбемакс Антигельминтик для кошек
-                                всех
-                                пород 2 табл.</div>
-                            <div class="products__card__bottom">
-                                <div class="products__card__raiting">
-                                    <div class="products__card__raiting__stars">
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star star-inactive">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="products__card__raiting__reviews">23</div>
-                                </div>
-
-                                <div class="products__card__actions">
-                                    <div class="products__card__price">
-                                        <div class="products__card__price__current">1 507 ₽</div>
-                                    </div>
-                                    <div class="products__card__actions__btns">
-                                        <button class="products__card__actions__btn" aria-label="Добавить в избранное">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M16.5537 2C20.2582 2.01561 23 5.14026 23 9.12012C22.9999 12.1578 21.3062 15.0922 18.1514 17.9297C16.4953 19.4191 14.3805 20.8936 12.8662 21.6777L12 22.126L11.1338 21.6777C9.61951 20.8936 7.50469 19.4191 5.84863 17.9297C2.69385 15.0922 1.00009 12.1578 1 9.12012C1 5.09767 3.71622 2.00025 7.4541 2C8.84984 2 9.83138 2.18916 10.9219 2.72852C11.3015 2.91628 11.6585 3.13845 11.9902 3.39551C12.3352 3.12328 12.7067 2.89008 13.1025 2.69629C14.1723 2.17268 15.106 1.99998 16.5537 2ZM16.5488 4C15.3869 4.00001 14.7453 4.11828 13.9814 4.49219C13.5117 4.72218 13.095 5.03322 12.7314 5.42773L12.002 6.21875L11.2666 5.43359C10.911 5.05422 10.5 4.75042 10.0352 4.52051C9.2482 4.1313 8.56378 4 7.4541 4C4.88342 4.00025 3 6.14813 3 9.12012C3.0001 11.5 4.41423 13.949 7.18652 16.4424C8.69807 17.8019 10.641 19.1613 12 19.874C13.359 19.1613 15.3019 17.8019 16.8135 16.4424C19.5858 13.949 20.9999 11.5 21 9.12012C21 6.18921 19.088 4.01052 16.5488 4Z"
-                                                    fill="#BE0A7C" />
-                                            </svg>
-                                        </button>
-                                        <button class="products__card__actions__btn" aria-label="Добавить в корзину">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M2 2C3.24155 2 4.13836 2.2243 4.70703 2.79297C5.04208 3.12802 5.33655 3.56901 5.55957 4.06055C5.72226 4.02233 5.89369 4.00255 6.07129 4.00293L20.041 5C21.2926 5.02227 22.5166 6.06068 21.9121 7.40918C21.7942 7.67222 21.2629 8.74164 20.418 10.4238C20.0729 11.1108 19.7184 11.8137 19.3643 12.5156C19.1636 12.9133 19.1641 12.9138 19.0225 13.1943C18.9578 13.3223 18.9322 13.3722 18.917 13.4023C18.6296 14.1414 18.0228 14.7125 17.2646 14.9531L17.1172 15H7.03809L7.02344 14.999H5.0498C4.48156 15.0272 4.02697 15.4813 4 16L3.99805 16.9404C4.03252 17.5126 4.4901 17.9694 5 18H5.1709C5.58275 16.8348 6.6938 16 8 16C9.3062 16 10.4172 16.8348 10.8291 18H13.1709C13.5828 16.8348 14.6938 16 16 16C17.6569 16 19 17.3431 19 19C19 20.6569 17.6569 22 16 22C14.6938 22 13.5828 21.1652 13.1709 20H10.8291C10.4172 21.1652 9.3062 22 8 22C6.69337 22 5.58144 21.1648 5.16992 19.999L4.94336 19.998C3.36287 19.9082 2.09682 18.6439 2 17L2.00098 15.9502C2.08006 14.3587 3.35075 13.086 4.99023 13.001L4.00977 6.1416L4 6C4 5.35306 3.67094 4.585 3.29297 4.20703C3.19497 4.10904 2.75845 4 2 4V2ZM8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18ZM16 18C15.4477 18 15 18.4477 15 19C15 19.5523 15.4477 20 16 20C16.5523 20 17 19.5523 17 19C17 18.4477 16.5523 18 16 18ZM6.99023 12.8604C6.9999 12.9279 7.04919 12.9822 7.11328 13H16.7695C16.9029 12.9274 17.0073 12.8076 17.0596 12.6621L17.1084 12.5488C17.1318 12.5025 17.1313 12.5017 17.2373 12.292C17.3786 12.0121 17.3789 12.012 17.5791 11.6152C17.9327 10.9142 18.2872 10.2116 18.6172 9.55469L18.6309 9.52637C19.2089 8.37565 19.6506 7.49057 19.8936 6.99512L6.01074 6.00098L6.99023 12.8604Z"
-                                                    fill="#BE0A7C" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="products__card">
-                            <div class="products__card__img">
-                                <img src="./img/temp/product.png" alt="">
-                            </div>
-                            <a href="#" class="products__card__title">Мильбемакс</a>
-                            <div class="products__card__text">Таблетки жевательные Мильбемакс Антигельминтик для кошек
-                                всех
-                                пород 2 табл.</div>
-                            <div class="products__card__bottom">
-                                <div class="products__card__raiting">
-                                    <div class="products__card__raiting__stars">
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star star-inactive">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="products__card__raiting__reviews">23</div>
-                                </div>
-
-                                <div class="products__card__actions">
-                                    <div class="products__card__price">
-                                        <div class="products__card__price__current">1 507 ₽</div>
-                                    </div>
-                                    <div class="products__card__actions__btns">
-                                        <button class="products__card__actions__btn" aria-label="Добавить в избранное">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M16.5537 2C20.2582 2.01561 23 5.14026 23 9.12012C22.9999 12.1578 21.3062 15.0922 18.1514 17.9297C16.4953 19.4191 14.3805 20.8936 12.8662 21.6777L12 22.126L11.1338 21.6777C9.61951 20.8936 7.50469 19.4191 5.84863 17.9297C2.69385 15.0922 1.00009 12.1578 1 9.12012C1 5.09767 3.71622 2.00025 7.4541 2C8.84984 2 9.83138 2.18916 10.9219 2.72852C11.3015 2.91628 11.6585 3.13845 11.9902 3.39551C12.3352 3.12328 12.7067 2.89008 13.1025 2.69629C14.1723 2.17268 15.106 1.99998 16.5537 2ZM16.5488 4C15.3869 4.00001 14.7453 4.11828 13.9814 4.49219C13.5117 4.72218 13.095 5.03322 12.7314 5.42773L12.002 6.21875L11.2666 5.43359C10.911 5.05422 10.5 4.75042 10.0352 4.52051C9.2482 4.1313 8.56378 4 7.4541 4C4.88342 4.00025 3 6.14813 3 9.12012C3.0001 11.5 4.41423 13.949 7.18652 16.4424C8.69807 17.8019 10.641 19.1613 12 19.874C13.359 19.1613 15.3019 17.8019 16.8135 16.4424C19.5858 13.949 20.9999 11.5 21 9.12012C21 6.18921 19.088 4.01052 16.5488 4Z"
-                                                    fill="#BE0A7C" />
-                                            </svg>
-                                        </button>
-                                        <button class="products__card__actions__btn" aria-label="Добавить в корзину">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M2 2C3.24155 2 4.13836 2.2243 4.70703 2.79297C5.04208 3.12802 5.33655 3.56901 5.55957 4.06055C5.72226 4.02233 5.89369 4.00255 6.07129 4.00293L20.041 5C21.2926 5.02227 22.5166 6.06068 21.9121 7.40918C21.7942 7.67222 21.2629 8.74164 20.418 10.4238C20.0729 11.1108 19.7184 11.8137 19.3643 12.5156C19.1636 12.9133 19.1641 12.9138 19.0225 13.1943C18.9578 13.3223 18.9322 13.3722 18.917 13.4023C18.6296 14.1414 18.0228 14.7125 17.2646 14.9531L17.1172 15H7.03809L7.02344 14.999H5.0498C4.48156 15.0272 4.02697 15.4813 4 16L3.99805 16.9404C4.03252 17.5126 4.4901 17.9694 5 18H5.1709C5.58275 16.8348 6.6938 16 8 16C9.3062 16 10.4172 16.8348 10.8291 18H13.1709C13.5828 16.8348 14.6938 16 16 16C17.6569 16 19 17.3431 19 19C19 20.6569 17.6569 22 16 22C14.6938 22 13.5828 21.1652 13.1709 20H10.8291C10.4172 21.1652 9.3062 22 8 22C6.69337 22 5.58144 21.1648 5.16992 19.999L4.94336 19.998C3.36287 19.9082 2.09682 18.6439 2 17L2.00098 15.9502C2.08006 14.3587 3.35075 13.086 4.99023 13.001L4.00977 6.1416L4 6C4 5.35306 3.67094 4.585 3.29297 4.20703C3.19497 4.10904 2.75845 4 2 4V2ZM8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18ZM16 18C15.4477 18 15 18.4477 15 19C15 19.5523 15.4477 20 16 20C16.5523 20 17 19.5523 17 19C17 18.4477 16.5523 18 16 18ZM6.99023 12.8604C6.9999 12.9279 7.04919 12.9822 7.11328 13H16.7695C16.9029 12.9274 17.0073 12.8076 17.0596 12.6621L17.1084 12.5488C17.1318 12.5025 17.1313 12.5017 17.2373 12.292C17.3786 12.0121 17.3789 12.012 17.5791 11.6152C17.9327 10.9142 18.2872 10.2116 18.6172 9.55469L18.6309 9.52637C19.2089 8.37565 19.6506 7.49057 19.8936 6.99512L6.01074 6.00098L6.99023 12.8604Z"
-                                                    fill="#BE0A7C" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="products__card">
-                            <div class="products__card__img">
-                                <img src="./img/temp/product.png" alt="">
-                            </div>
-                            <a href="#" class="products__card__title">Мильбемакс</a>
-                            <div class="products__card__text">Таблетки жевательные Мильбемакс Антигельминтик для кошек
-                                всех
-                                пород 2 табл.</div>
-                            <div class="products__card__bottom">
-                                <div class="products__card__raiting">
-                                    <div class="products__card__raiting__stars">
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star star-inactive">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="products__card__raiting__reviews">23</div>
-                                </div>
-
-                                <div class="products__card__actions">
-                                    <div class="products__card__price">
-                                        <div class="products__card__price__current">1 507 ₽</div>
-                                    </div>
-                                    <div class="products__card__actions__btns">
-                                        <button class="products__card__actions__btn" aria-label="Добавить в избранное">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M16.5537 2C20.2582 2.01561 23 5.14026 23 9.12012C22.9999 12.1578 21.3062 15.0922 18.1514 17.9297C16.4953 19.4191 14.3805 20.8936 12.8662 21.6777L12 22.126L11.1338 21.6777C9.61951 20.8936 7.50469 19.4191 5.84863 17.9297C2.69385 15.0922 1.00009 12.1578 1 9.12012C1 5.09767 3.71622 2.00025 7.4541 2C8.84984 2 9.83138 2.18916 10.9219 2.72852C11.3015 2.91628 11.6585 3.13845 11.9902 3.39551C12.3352 3.12328 12.7067 2.89008 13.1025 2.69629C14.1723 2.17268 15.106 1.99998 16.5537 2ZM16.5488 4C15.3869 4.00001 14.7453 4.11828 13.9814 4.49219C13.5117 4.72218 13.095 5.03322 12.7314 5.42773L12.002 6.21875L11.2666 5.43359C10.911 5.05422 10.5 4.75042 10.0352 4.52051C9.2482 4.1313 8.56378 4 7.4541 4C4.88342 4.00025 3 6.14813 3 9.12012C3.0001 11.5 4.41423 13.949 7.18652 16.4424C8.69807 17.8019 10.641 19.1613 12 19.874C13.359 19.1613 15.3019 17.8019 16.8135 16.4424C19.5858 13.949 20.9999 11.5 21 9.12012C21 6.18921 19.088 4.01052 16.5488 4Z"
-                                                    fill="#BE0A7C" />
-                                            </svg>
-                                        </button>
-                                        <button class="products__card__actions__btn" aria-label="Добавить в корзину">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M2 2C3.24155 2 4.13836 2.2243 4.70703 2.79297C5.04208 3.12802 5.33655 3.56901 5.55957 4.06055C5.72226 4.02233 5.89369 4.00255 6.07129 4.00293L20.041 5C21.2926 5.02227 22.5166 6.06068 21.9121 7.40918C21.7942 7.67222 21.2629 8.74164 20.418 10.4238C20.0729 11.1108 19.7184 11.8137 19.3643 12.5156C19.1636 12.9133 19.1641 12.9138 19.0225 13.1943C18.9578 13.3223 18.9322 13.3722 18.917 13.4023C18.6296 14.1414 18.0228 14.7125 17.2646 14.9531L17.1172 15H7.03809L7.02344 14.999H5.0498C4.48156 15.0272 4.02697 15.4813 4 16L3.99805 16.9404C4.03252 17.5126 4.4901 17.9694 5 18H5.1709C5.58275 16.8348 6.6938 16 8 16C9.3062 16 10.4172 16.8348 10.8291 18H13.1709C13.5828 16.8348 14.6938 16 16 16C17.6569 16 19 17.3431 19 19C19 20.6569 17.6569 22 16 22C14.6938 22 13.5828 21.1652 13.1709 20H10.8291C10.4172 21.1652 9.3062 22 8 22C6.69337 22 5.58144 21.1648 5.16992 19.999L4.94336 19.998C3.36287 19.9082 2.09682 18.6439 2 17L2.00098 15.9502C2.08006 14.3587 3.35075 13.086 4.99023 13.001L4.00977 6.1416L4 6C4 5.35306 3.67094 4.585 3.29297 4.20703C3.19497 4.10904 2.75845 4 2 4V2ZM8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18ZM16 18C15.4477 18 15 18.4477 15 19C15 19.5523 15.4477 20 16 20C16.5523 20 17 19.5523 17 19C17 18.4477 16.5523 18 16 18ZM6.99023 12.8604C6.9999 12.9279 7.04919 12.9822 7.11328 13H16.7695C16.9029 12.9274 17.0073 12.8076 17.0596 12.6621L17.1084 12.5488C17.1318 12.5025 17.1313 12.5017 17.2373 12.292C17.3786 12.0121 17.3789 12.012 17.5791 11.6152C17.9327 10.9142 18.2872 10.2116 18.6172 9.55469L18.6309 9.52637C19.2089 8.37565 19.6506 7.49057 19.8936 6.99512L6.01074 6.00098L6.99023 12.8604Z"
-                                                    fill="#BE0A7C" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="products__card">
-                            <div class="products__card__img">
-                                <img src="./img/temp/product.png" alt="">
-                            </div>
-                            <a href="#" class="products__card__title">Мильбемакс</a>
-                            <div class="products__card__text">Таблетки жевательные Мильбемакс Антигельминтик для кошек
-                                всех
-                                пород 2 табл.</div>
-                            <div class="products__card__bottom">
-                                <div class="products__card__raiting">
-                                    <div class="products__card__raiting__stars">
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star star-inactive">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="products__card__raiting__reviews">23</div>
-                                </div>
-
-                                <div class="products__card__actions">
-                                    <div class="products__card__price">
-                                        <div class="products__card__price__current">1 507 ₽</div>
-                                    </div>
-                                    <div class="products__card__actions__btns">
-                                        <button class="products__card__actions__btn" aria-label="Добавить в избранное">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M16.5537 2C20.2582 2.01561 23 5.14026 23 9.12012C22.9999 12.1578 21.3062 15.0922 18.1514 17.9297C16.4953 19.4191 14.3805 20.8936 12.8662 21.6777L12 22.126L11.1338 21.6777C9.61951 20.8936 7.50469 19.4191 5.84863 17.9297C2.69385 15.0922 1.00009 12.1578 1 9.12012C1 5.09767 3.71622 2.00025 7.4541 2C8.84984 2 9.83138 2.18916 10.9219 2.72852C11.3015 2.91628 11.6585 3.13845 11.9902 3.39551C12.3352 3.12328 12.7067 2.89008 13.1025 2.69629C14.1723 2.17268 15.106 1.99998 16.5537 2ZM16.5488 4C15.3869 4.00001 14.7453 4.11828 13.9814 4.49219C13.5117 4.72218 13.095 5.03322 12.7314 5.42773L12.002 6.21875L11.2666 5.43359C10.911 5.05422 10.5 4.75042 10.0352 4.52051C9.2482 4.1313 8.56378 4 7.4541 4C4.88342 4.00025 3 6.14813 3 9.12012C3.0001 11.5 4.41423 13.949 7.18652 16.4424C8.69807 17.8019 10.641 19.1613 12 19.874C13.359 19.1613 15.3019 17.8019 16.8135 16.4424C19.5858 13.949 20.9999 11.5 21 9.12012C21 6.18921 19.088 4.01052 16.5488 4Z"
-                                                    fill="#BE0A7C" />
-                                            </svg>
-                                        </button>
-                                        <button class="products__card__actions__btn" aria-label="Добавить в корзину">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M2 2C3.24155 2 4.13836 2.2243 4.70703 2.79297C5.04208 3.12802 5.33655 3.56901 5.55957 4.06055C5.72226 4.02233 5.89369 4.00255 6.07129 4.00293L20.041 5C21.2926 5.02227 22.5166 6.06068 21.9121 7.40918C21.7942 7.67222 21.2629 8.74164 20.418 10.4238C20.0729 11.1108 19.7184 11.8137 19.3643 12.5156C19.1636 12.9133 19.1641 12.9138 19.0225 13.1943C18.9578 13.3223 18.9322 13.3722 18.917 13.4023C18.6296 14.1414 18.0228 14.7125 17.2646 14.9531L17.1172 15H7.03809L7.02344 14.999H5.0498C4.48156 15.0272 4.02697 15.4813 4 16L3.99805 16.9404C4.03252 17.5126 4.4901 17.9694 5 18H5.1709C5.58275 16.8348 6.6938 16 8 16C9.3062 16 10.4172 16.8348 10.8291 18H13.1709C13.5828 16.8348 14.6938 16 16 16C17.6569 16 19 17.3431 19 19C19 20.6569 17.6569 22 16 22C14.6938 22 13.5828 21.1652 13.1709 20H10.8291C10.4172 21.1652 9.3062 22 8 22C6.69337 22 5.58144 21.1648 5.16992 19.999L4.94336 19.998C3.36287 19.9082 2.09682 18.6439 2 17L2.00098 15.9502C2.08006 14.3587 3.35075 13.086 4.99023 13.001L4.00977 6.1416L4 6C4 5.35306 3.67094 4.585 3.29297 4.20703C3.19497 4.10904 2.75845 4 2 4V2ZM8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18ZM16 18C15.4477 18 15 18.4477 15 19C15 19.5523 15.4477 20 16 20C16.5523 20 17 19.5523 17 19C17 18.4477 16.5523 18 16 18ZM6.99023 12.8604C6.9999 12.9279 7.04919 12.9822 7.11328 13H16.7695C16.9029 12.9274 17.0073 12.8076 17.0596 12.6621L17.1084 12.5488C17.1318 12.5025 17.1313 12.5017 17.2373 12.292C17.3786 12.0121 17.3789 12.012 17.5791 11.6152C17.9327 10.9142 18.2872 10.2116 18.6172 9.55469L18.6309 9.52637C19.2089 8.37565 19.6506 7.49057 19.8936 6.99512L6.01074 6.00098L6.99023 12.8604Z"
-                                                    fill="#BE0A7C" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="products__card">
-                            <div class="products__card__img">
-                                <img src="./img/temp/product.png" alt="">
-                            </div>
-                            <a href="#" class="products__card__title">Мильбемакс</a>
-                            <div class="products__card__text">Таблетки жевательные Мильбемакс Антигельминтик для кошек
-                                всех
-                                пород 2 табл.</div>
-                            <div class="products__card__bottom">
-                                <div class="products__card__raiting">
-                                    <div class="products__card__raiting__stars">
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                        <div class="products__card__raiting__star star-inactive">
-                                            <img src="img/svg/star.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="products__card__raiting__reviews">23</div>
-                                </div>
-
-                                <div class="products__card__actions">
-                                    <div class="products__card__price">
-                                        <div class="products__card__price__current">1 507 ₽</div>
-                                    </div>
-                                    <div class="products__card__actions__btns">
-                                        <button class="products__card__actions__btn" aria-label="Добавить в избранное">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M16.5537 2C20.2582 2.01561 23 5.14026 23 9.12012C22.9999 12.1578 21.3062 15.0922 18.1514 17.9297C16.4953 19.4191 14.3805 20.8936 12.8662 21.6777L12 22.126L11.1338 21.6777C9.61951 20.8936 7.50469 19.4191 5.84863 17.9297C2.69385 15.0922 1.00009 12.1578 1 9.12012C1 5.09767 3.71622 2.00025 7.4541 2C8.84984 2 9.83138 2.18916 10.9219 2.72852C11.3015 2.91628 11.6585 3.13845 11.9902 3.39551C12.3352 3.12328 12.7067 2.89008 13.1025 2.69629C14.1723 2.17268 15.106 1.99998 16.5537 2ZM16.5488 4C15.3869 4.00001 14.7453 4.11828 13.9814 4.49219C13.5117 4.72218 13.095 5.03322 12.7314 5.42773L12.002 6.21875L11.2666 5.43359C10.911 5.05422 10.5 4.75042 10.0352 4.52051C9.2482 4.1313 8.56378 4 7.4541 4C4.88342 4.00025 3 6.14813 3 9.12012C3.0001 11.5 4.41423 13.949 7.18652 16.4424C8.69807 17.8019 10.641 19.1613 12 19.874C13.359 19.1613 15.3019 17.8019 16.8135 16.4424C19.5858 13.949 20.9999 11.5 21 9.12012C21 6.18921 19.088 4.01052 16.5488 4Z"
-                                                    fill="#BE0A7C" />
-                                            </svg>
-                                        </button>
-                                        <button class="products__card__actions__btn" aria-label="Добавить в корзину">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M2 2C3.24155 2 4.13836 2.2243 4.70703 2.79297C5.04208 3.12802 5.33655 3.56901 5.55957 4.06055C5.72226 4.02233 5.89369 4.00255 6.07129 4.00293L20.041 5C21.2926 5.02227 22.5166 6.06068 21.9121 7.40918C21.7942 7.67222 21.2629 8.74164 20.418 10.4238C20.0729 11.1108 19.7184 11.8137 19.3643 12.5156C19.1636 12.9133 19.1641 12.9138 19.0225 13.1943C18.9578 13.3223 18.9322 13.3722 18.917 13.4023C18.6296 14.1414 18.0228 14.7125 17.2646 14.9531L17.1172 15H7.03809L7.02344 14.999H5.0498C4.48156 15.0272 4.02697 15.4813 4 16L3.99805 16.9404C4.03252 17.5126 4.4901 17.9694 5 18H5.1709C5.58275 16.8348 6.6938 16 8 16C9.3062 16 10.4172 16.8348 10.8291 18H13.1709C13.5828 16.8348 14.6938 16 16 16C17.6569 16 19 17.3431 19 19C19 20.6569 17.6569 22 16 22C14.6938 22 13.5828 21.1652 13.1709 20H10.8291C10.4172 21.1652 9.3062 22 8 22C6.69337 22 5.58144 21.1648 5.16992 19.999L4.94336 19.998C3.36287 19.9082 2.09682 18.6439 2 17L2.00098 15.9502C2.08006 14.3587 3.35075 13.086 4.99023 13.001L4.00977 6.1416L4 6C4 5.35306 3.67094 4.585 3.29297 4.20703C3.19497 4.10904 2.75845 4 2 4V2ZM8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18ZM16 18C15.4477 18 15 18.4477 15 19C15 19.5523 15.4477 20 16 20C16.5523 20 17 19.5523 17 19C17 18.4477 16.5523 18 16 18ZM6.99023 12.8604C6.9999 12.9279 7.04919 12.9822 7.11328 13H16.7695C16.9029 12.9274 17.0073 12.8076 17.0596 12.6621L17.1084 12.5488C17.1318 12.5025 17.1313 12.5017 17.2373 12.292C17.3786 12.0121 17.3789 12.012 17.5791 11.6152C17.9327 10.9142 18.2872 10.2116 18.6172 9.55469L18.6309 9.52637C19.2089 8.37565 19.6506 7.49057 19.8936 6.99512L6.01074 6.00098L6.99023 12.8604Z"
-                                                    fill="#BE0A7C" />
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+          <h1 class="title lk__title">Избранные товары</h1>
+          <div class="lk__favorites__list">
+            <div class="products__card">
+              <div class="products__card__img">
+                <img src="./img/temp/product.png" alt="">
+              </div>
+              <a href="#" class="products__card__title">Мильбемакс</a>
+              <div class="products__card__text">Таблетки жевательные Мильбемакс Антигельминтик для кошек
+                всех
+                пород 2 табл.</div>
+              <div class="products__card__bottom">
+                <div class="products__card__raiting">
+                  <div class="products__card__raiting__stars">
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
                     </div>
-
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="container">
-              <div class="footer__inner">
-                <div class="footer__column">
-                  <div class="footer__column__title footer__column__title--accordion">
-                    Каталог
-                    <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
-                  </div>
-                  <ul class="footer__column__list list-reset">
-                    <li class="footer__column__item"><a href="#">Товары для собак</a></li>
-                    <li class="footer__column__item"><a href="#">Товары для кошек</a></li>
-                    <li class="footer__column__item"><a href="#">Товары для птиц</a></li>
-                    <li class="footer__column__item"><a href="#">Товары для рептилий</a></li>
-                    <li class="footer__column__item"><a href="#">Товары для грызунов</a></li>
-                    <li class="footer__column__item"><a href="#">Товары для аквариумистики</a></li>
-                    <li class="footer__column__item"><a href="#">Защита от паразитов</a></li>
-                    <li class="footer__column__item"><a href="#">Ветаптека</a></li>
-                  </ul>
-                </div>
-                <div class="footer__column">
-                  <div class="footer__column__title footer__column__title--accordion">
-                    Покупателям
-                    <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
-                  </div>
-                  <ul class="footer__column__list list-reset">
-                    <li class="footer__column__item"><a href="#">Акции</a></li>
-                    <li class="footer__column__item"><a href="#">Бренды</a></li>
-                    <li class="footer__column__item"><a href="#">Бонусная программа</a></li>
-                    <li class="footer__column__item"><a href="#">Доставка и оплата</a></li>
-                    <li class="footer__column__item"><a href="#">Вопросы и ответы</a></li>
-                  </ul>
-                </div>
-                <div class="footer__column">
-                  <div class="footer__column__title footer__column__title--accordion">
-                    Компания
-                    <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
-                  </div>
-                  <ul class="footer__column__list list-reset">
-                    <li class="footer__column__item"><a href="#">О нас</a></li>
-                    <li class="footer__column__item"><a href="#">Магазины</a></li>
-                    <li class="footer__column__item"><a href="#">Бонусная программа</a></li>
-                    <li class="footer__column__item"><a href="#">Доставка и оплата</a></li>
-                    <li class="footer__column__item"><a href="#">Вопросы и ответы</a></li>
-                  </ul>
-                </div>
-                <div class="footer__column">
-                  <div class="footer__contacts">
-                    <a href="tel:+78452734935" class="footer__tel">
-                      8(8452) 73-49-35
-                    </a>
-                    <a href="mailto:info@zoomir1.ru" class="footer__email">info@zoomir1.ru</a>
-                  </div>
-                  <div class="footer__socials">
-                    <div class="footer__column__title">
-                      Наши соцсети
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
                     </div>
-                    <ul class="footer__socials__list list-reset">
-                      <li class="footer__socials__item"><a href="#" target="_blank">
-                          <img src="./img/svg/vk.svg" alt="VK">
-                        </a></li>
-                      <li class="footer__socials__item"><a href="#" target="_blank">
-                          <img src="./img/svg/telegram.svg" alt="Telegram">
-                        </a></li>
-                    </ul>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star star-inactive">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
                   </div>
-      
-                  <ul class="footer__docs list-reset">
-                    <li class="footer__docs__item"><a href="#">Политика конфиденциальности</a></li>
-                    <li class="footer__docs__item"><a href="#">Согласие на обработку ПД</a></li>
-                    <li class="footer__docs__item"><a href="#">Согласие на рекламные рассылки</a></li>
-                  </ul>
+                  <div class="products__card__raiting__reviews">23</div>
+                </div>
+
+                <div class="products__card__actions">
+                  <div class="products__card__price">
+                    <div class="products__card__price__current">1 507 ₽</div>
+                  </div>
+                  <div class="products__card__actions__btns">
+                    <button class="products__card__actions__btn" aria-label="Добавить в избранное">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.5537 2C20.2582 2.01561 23 5.14026 23 9.12012C22.9999 12.1578 21.3062 15.0922 18.1514 17.9297C16.4953 19.4191 14.3805 20.8936 12.8662 21.6777L12 22.126L11.1338 21.6777C9.61951 20.8936 7.50469 19.4191 5.84863 17.9297C2.69385 15.0922 1.00009 12.1578 1 9.12012C1 5.09767 3.71622 2.00025 7.4541 2C8.84984 2 9.83138 2.18916 10.9219 2.72852C11.3015 2.91628 11.6585 3.13845 11.9902 3.39551C12.3352 3.12328 12.7067 2.89008 13.1025 2.69629C14.1723 2.17268 15.106 1.99998 16.5537 2ZM16.5488 4C15.3869 4.00001 14.7453 4.11828 13.9814 4.49219C13.5117 4.72218 13.095 5.03322 12.7314 5.42773L12.002 6.21875L11.2666 5.43359C10.911 5.05422 10.5 4.75042 10.0352 4.52051C9.2482 4.1313 8.56378 4 7.4541 4C4.88342 4.00025 3 6.14813 3 9.12012C3.0001 11.5 4.41423 13.949 7.18652 16.4424C8.69807 17.8019 10.641 19.1613 12 19.874C13.359 19.1613 15.3019 17.8019 16.8135 16.4424C19.5858 13.949 20.9999 11.5 21 9.12012C21 6.18921 19.088 4.01052 16.5488 4Z"
+                          fill="#BE0A7C" />
+                      </svg>
+                    </button>
+                    <button class="products__card__actions__btn" aria-label="Добавить в корзину">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2 2C3.24155 2 4.13836 2.2243 4.70703 2.79297C5.04208 3.12802 5.33655 3.56901 5.55957 4.06055C5.72226 4.02233 5.89369 4.00255 6.07129 4.00293L20.041 5C21.2926 5.02227 22.5166 6.06068 21.9121 7.40918C21.7942 7.67222 21.2629 8.74164 20.418 10.4238C20.0729 11.1108 19.7184 11.8137 19.3643 12.5156C19.1636 12.9133 19.1641 12.9138 19.0225 13.1943C18.9578 13.3223 18.9322 13.3722 18.917 13.4023C18.6296 14.1414 18.0228 14.7125 17.2646 14.9531L17.1172 15H7.03809L7.02344 14.999H5.0498C4.48156 15.0272 4.02697 15.4813 4 16L3.99805 16.9404C4.03252 17.5126 4.4901 17.9694 5 18H5.1709C5.58275 16.8348 6.6938 16 8 16C9.3062 16 10.4172 16.8348 10.8291 18H13.1709C13.5828 16.8348 14.6938 16 16 16C17.6569 16 19 17.3431 19 19C19 20.6569 17.6569 22 16 22C14.6938 22 13.5828 21.1652 13.1709 20H10.8291C10.4172 21.1652 9.3062 22 8 22C6.69337 22 5.58144 21.1648 5.16992 19.999L4.94336 19.998C3.36287 19.9082 2.09682 18.6439 2 17L2.00098 15.9502C2.08006 14.3587 3.35075 13.086 4.99023 13.001L4.00977 6.1416L4 6C4 5.35306 3.67094 4.585 3.29297 4.20703C3.19497 4.10904 2.75845 4 2 4V2ZM8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18ZM16 18C15.4477 18 15 18.4477 15 19C15 19.5523 15.4477 20 16 20C16.5523 20 17 19.5523 17 19C17 18.4477 16.5523 18 16 18ZM6.99023 12.8604C6.9999 12.9279 7.04919 12.9822 7.11328 13H16.7695C16.9029 12.9274 17.0073 12.8076 17.0596 12.6621L17.1084 12.5488C17.1318 12.5025 17.1313 12.5017 17.2373 12.292C17.3786 12.0121 17.3789 12.012 17.5791 11.6152C17.9327 10.9142 18.2872 10.2116 18.6172 9.55469L18.6309 9.52637C19.2089 8.37565 19.6506 7.49057 19.8936 6.99512L6.01074 6.00098L6.99023 12.8604Z"
+                          fill="#BE0A7C" />
+                      </svg>
+
+                    </button>
+                  </div>
                 </div>
               </div>
+
             </div>
-          </footer>
+            <div class="products__card">
+              <div class="products__card__img">
+                <img src="./img/temp/product.png" alt="">
+              </div>
+              <a href="#" class="products__card__title">Мильбемакс</a>
+              <div class="products__card__text">Таблетки жевательные Мильбемакс Антигельминтик для кошек
+                всех
+                пород 2 табл.</div>
+              <div class="products__card__bottom">
+                <div class="products__card__raiting">
+                  <div class="products__card__raiting__stars">
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star star-inactive">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="products__card__raiting__reviews">23</div>
+                </div>
+
+                <div class="products__card__actions">
+                  <div class="products__card__price">
+                    <div class="products__card__price__current">1 507 ₽</div>
+                  </div>
+                  <div class="products__card__actions__btns">
+                    <button class="products__card__actions__btn" aria-label="Добавить в избранное">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.5537 2C20.2582 2.01561 23 5.14026 23 9.12012C22.9999 12.1578 21.3062 15.0922 18.1514 17.9297C16.4953 19.4191 14.3805 20.8936 12.8662 21.6777L12 22.126L11.1338 21.6777C9.61951 20.8936 7.50469 19.4191 5.84863 17.9297C2.69385 15.0922 1.00009 12.1578 1 9.12012C1 5.09767 3.71622 2.00025 7.4541 2C8.84984 2 9.83138 2.18916 10.9219 2.72852C11.3015 2.91628 11.6585 3.13845 11.9902 3.39551C12.3352 3.12328 12.7067 2.89008 13.1025 2.69629C14.1723 2.17268 15.106 1.99998 16.5537 2ZM16.5488 4C15.3869 4.00001 14.7453 4.11828 13.9814 4.49219C13.5117 4.72218 13.095 5.03322 12.7314 5.42773L12.002 6.21875L11.2666 5.43359C10.911 5.05422 10.5 4.75042 10.0352 4.52051C9.2482 4.1313 8.56378 4 7.4541 4C4.88342 4.00025 3 6.14813 3 9.12012C3.0001 11.5 4.41423 13.949 7.18652 16.4424C8.69807 17.8019 10.641 19.1613 12 19.874C13.359 19.1613 15.3019 17.8019 16.8135 16.4424C19.5858 13.949 20.9999 11.5 21 9.12012C21 6.18921 19.088 4.01052 16.5488 4Z"
+                          fill="#BE0A7C" />
+                      </svg>
+                    </button>
+                    <button class="products__card__actions__btn" aria-label="Добавить в корзину">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2 2C3.24155 2 4.13836 2.2243 4.70703 2.79297C5.04208 3.12802 5.33655 3.56901 5.55957 4.06055C5.72226 4.02233 5.89369 4.00255 6.07129 4.00293L20.041 5C21.2926 5.02227 22.5166 6.06068 21.9121 7.40918C21.7942 7.67222 21.2629 8.74164 20.418 10.4238C20.0729 11.1108 19.7184 11.8137 19.3643 12.5156C19.1636 12.9133 19.1641 12.9138 19.0225 13.1943C18.9578 13.3223 18.9322 13.3722 18.917 13.4023C18.6296 14.1414 18.0228 14.7125 17.2646 14.9531L17.1172 15H7.03809L7.02344 14.999H5.0498C4.48156 15.0272 4.02697 15.4813 4 16L3.99805 16.9404C4.03252 17.5126 4.4901 17.9694 5 18H5.1709C5.58275 16.8348 6.6938 16 8 16C9.3062 16 10.4172 16.8348 10.8291 18H13.1709C13.5828 16.8348 14.6938 16 16 16C17.6569 16 19 17.3431 19 19C19 20.6569 17.6569 22 16 22C14.6938 22 13.5828 21.1652 13.1709 20H10.8291C10.4172 21.1652 9.3062 22 8 22C6.69337 22 5.58144 21.1648 5.16992 19.999L4.94336 19.998C3.36287 19.9082 2.09682 18.6439 2 17L2.00098 15.9502C2.08006 14.3587 3.35075 13.086 4.99023 13.001L4.00977 6.1416L4 6C4 5.35306 3.67094 4.585 3.29297 4.20703C3.19497 4.10904 2.75845 4 2 4V2ZM8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18ZM16 18C15.4477 18 15 18.4477 15 19C15 19.5523 15.4477 20 16 20C16.5523 20 17 19.5523 17 19C17 18.4477 16.5523 18 16 18ZM6.99023 12.8604C6.9999 12.9279 7.04919 12.9822 7.11328 13H16.7695C16.9029 12.9274 17.0073 12.8076 17.0596 12.6621L17.1084 12.5488C17.1318 12.5025 17.1313 12.5017 17.2373 12.292C17.3786 12.0121 17.3789 12.012 17.5791 11.6152C17.9327 10.9142 18.2872 10.2116 18.6172 9.55469L18.6309 9.52637C19.2089 8.37565 19.6506 7.49057 19.8936 6.99512L6.01074 6.00098L6.99023 12.8604Z"
+                          fill="#BE0A7C" />
+                      </svg>
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="products__card">
+              <div class="products__card__img">
+                <img src="./img/temp/product.png" alt="">
+              </div>
+              <a href="#" class="products__card__title">Мильбемакс</a>
+              <div class="products__card__text">Таблетки жевательные Мильбемакс Антигельминтик для кошек
+                всех
+                пород 2 табл.</div>
+              <div class="products__card__bottom">
+                <div class="products__card__raiting">
+                  <div class="products__card__raiting__stars">
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star star-inactive">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="products__card__raiting__reviews">23</div>
+                </div>
+
+                <div class="products__card__actions">
+                  <div class="products__card__price">
+                    <div class="products__card__price__current">1 507 ₽</div>
+                  </div>
+                  <div class="products__card__actions__btns">
+                    <button class="products__card__actions__btn" aria-label="Добавить в избранное">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.5537 2C20.2582 2.01561 23 5.14026 23 9.12012C22.9999 12.1578 21.3062 15.0922 18.1514 17.9297C16.4953 19.4191 14.3805 20.8936 12.8662 21.6777L12 22.126L11.1338 21.6777C9.61951 20.8936 7.50469 19.4191 5.84863 17.9297C2.69385 15.0922 1.00009 12.1578 1 9.12012C1 5.09767 3.71622 2.00025 7.4541 2C8.84984 2 9.83138 2.18916 10.9219 2.72852C11.3015 2.91628 11.6585 3.13845 11.9902 3.39551C12.3352 3.12328 12.7067 2.89008 13.1025 2.69629C14.1723 2.17268 15.106 1.99998 16.5537 2ZM16.5488 4C15.3869 4.00001 14.7453 4.11828 13.9814 4.49219C13.5117 4.72218 13.095 5.03322 12.7314 5.42773L12.002 6.21875L11.2666 5.43359C10.911 5.05422 10.5 4.75042 10.0352 4.52051C9.2482 4.1313 8.56378 4 7.4541 4C4.88342 4.00025 3 6.14813 3 9.12012C3.0001 11.5 4.41423 13.949 7.18652 16.4424C8.69807 17.8019 10.641 19.1613 12 19.874C13.359 19.1613 15.3019 17.8019 16.8135 16.4424C19.5858 13.949 20.9999 11.5 21 9.12012C21 6.18921 19.088 4.01052 16.5488 4Z"
+                          fill="#BE0A7C" />
+                      </svg>
+                    </button>
+                    <button class="products__card__actions__btn" aria-label="Добавить в корзину">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2 2C3.24155 2 4.13836 2.2243 4.70703 2.79297C5.04208 3.12802 5.33655 3.56901 5.55957 4.06055C5.72226 4.02233 5.89369 4.00255 6.07129 4.00293L20.041 5C21.2926 5.02227 22.5166 6.06068 21.9121 7.40918C21.7942 7.67222 21.2629 8.74164 20.418 10.4238C20.0729 11.1108 19.7184 11.8137 19.3643 12.5156C19.1636 12.9133 19.1641 12.9138 19.0225 13.1943C18.9578 13.3223 18.9322 13.3722 18.917 13.4023C18.6296 14.1414 18.0228 14.7125 17.2646 14.9531L17.1172 15H7.03809L7.02344 14.999H5.0498C4.48156 15.0272 4.02697 15.4813 4 16L3.99805 16.9404C4.03252 17.5126 4.4901 17.9694 5 18H5.1709C5.58275 16.8348 6.6938 16 8 16C9.3062 16 10.4172 16.8348 10.8291 18H13.1709C13.5828 16.8348 14.6938 16 16 16C17.6569 16 19 17.3431 19 19C19 20.6569 17.6569 22 16 22C14.6938 22 13.5828 21.1652 13.1709 20H10.8291C10.4172 21.1652 9.3062 22 8 22C6.69337 22 5.58144 21.1648 5.16992 19.999L4.94336 19.998C3.36287 19.9082 2.09682 18.6439 2 17L2.00098 15.9502C2.08006 14.3587 3.35075 13.086 4.99023 13.001L4.00977 6.1416L4 6C4 5.35306 3.67094 4.585 3.29297 4.20703C3.19497 4.10904 2.75845 4 2 4V2ZM8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18ZM16 18C15.4477 18 15 18.4477 15 19C15 19.5523 15.4477 20 16 20C16.5523 20 17 19.5523 17 19C17 18.4477 16.5523 18 16 18ZM6.99023 12.8604C6.9999 12.9279 7.04919 12.9822 7.11328 13H16.7695C16.9029 12.9274 17.0073 12.8076 17.0596 12.6621L17.1084 12.5488C17.1318 12.5025 17.1313 12.5017 17.2373 12.292C17.3786 12.0121 17.3789 12.012 17.5791 11.6152C17.9327 10.9142 18.2872 10.2116 18.6172 9.55469L18.6309 9.52637C19.2089 8.37565 19.6506 7.49057 19.8936 6.99512L6.01074 6.00098L6.99023 12.8604Z"
+                          fill="#BE0A7C" />
+                      </svg>
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="products__card">
+              <div class="products__card__img">
+                <img src="./img/temp/product.png" alt="">
+              </div>
+              <a href="#" class="products__card__title">Мильбемакс</a>
+              <div class="products__card__text">Таблетки жевательные Мильбемакс Антигельминтик для кошек
+                всех
+                пород 2 табл.</div>
+              <div class="products__card__bottom">
+                <div class="products__card__raiting">
+                  <div class="products__card__raiting__stars">
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star star-inactive">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="products__card__raiting__reviews">23</div>
+                </div>
+
+                <div class="products__card__actions">
+                  <div class="products__card__price">
+                    <div class="products__card__price__current">1 507 ₽</div>
+                  </div>
+                  <div class="products__card__actions__btns">
+                    <button class="products__card__actions__btn" aria-label="Добавить в избранное">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.5537 2C20.2582 2.01561 23 5.14026 23 9.12012C22.9999 12.1578 21.3062 15.0922 18.1514 17.9297C16.4953 19.4191 14.3805 20.8936 12.8662 21.6777L12 22.126L11.1338 21.6777C9.61951 20.8936 7.50469 19.4191 5.84863 17.9297C2.69385 15.0922 1.00009 12.1578 1 9.12012C1 5.09767 3.71622 2.00025 7.4541 2C8.84984 2 9.83138 2.18916 10.9219 2.72852C11.3015 2.91628 11.6585 3.13845 11.9902 3.39551C12.3352 3.12328 12.7067 2.89008 13.1025 2.69629C14.1723 2.17268 15.106 1.99998 16.5537 2ZM16.5488 4C15.3869 4.00001 14.7453 4.11828 13.9814 4.49219C13.5117 4.72218 13.095 5.03322 12.7314 5.42773L12.002 6.21875L11.2666 5.43359C10.911 5.05422 10.5 4.75042 10.0352 4.52051C9.2482 4.1313 8.56378 4 7.4541 4C4.88342 4.00025 3 6.14813 3 9.12012C3.0001 11.5 4.41423 13.949 7.18652 16.4424C8.69807 17.8019 10.641 19.1613 12 19.874C13.359 19.1613 15.3019 17.8019 16.8135 16.4424C19.5858 13.949 20.9999 11.5 21 9.12012C21 6.18921 19.088 4.01052 16.5488 4Z"
+                          fill="#BE0A7C" />
+                      </svg>
+                    </button>
+                    <button class="products__card__actions__btn" aria-label="Добавить в корзину">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2 2C3.24155 2 4.13836 2.2243 4.70703 2.79297C5.04208 3.12802 5.33655 3.56901 5.55957 4.06055C5.72226 4.02233 5.89369 4.00255 6.07129 4.00293L20.041 5C21.2926 5.02227 22.5166 6.06068 21.9121 7.40918C21.7942 7.67222 21.2629 8.74164 20.418 10.4238C20.0729 11.1108 19.7184 11.8137 19.3643 12.5156C19.1636 12.9133 19.1641 12.9138 19.0225 13.1943C18.9578 13.3223 18.9322 13.3722 18.917 13.4023C18.6296 14.1414 18.0228 14.7125 17.2646 14.9531L17.1172 15H7.03809L7.02344 14.999H5.0498C4.48156 15.0272 4.02697 15.4813 4 16L3.99805 16.9404C4.03252 17.5126 4.4901 17.9694 5 18H5.1709C5.58275 16.8348 6.6938 16 8 16C9.3062 16 10.4172 16.8348 10.8291 18H13.1709C13.5828 16.8348 14.6938 16 16 16C17.6569 16 19 17.3431 19 19C19 20.6569 17.6569 22 16 22C14.6938 22 13.5828 21.1652 13.1709 20H10.8291C10.4172 21.1652 9.3062 22 8 22C6.69337 22 5.58144 21.1648 5.16992 19.999L4.94336 19.998C3.36287 19.9082 2.09682 18.6439 2 17L2.00098 15.9502C2.08006 14.3587 3.35075 13.086 4.99023 13.001L4.00977 6.1416L4 6C4 5.35306 3.67094 4.585 3.29297 4.20703C3.19497 4.10904 2.75845 4 2 4V2ZM8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18ZM16 18C15.4477 18 15 18.4477 15 19C15 19.5523 15.4477 20 16 20C16.5523 20 17 19.5523 17 19C17 18.4477 16.5523 18 16 18ZM6.99023 12.8604C6.9999 12.9279 7.04919 12.9822 7.11328 13H16.7695C16.9029 12.9274 17.0073 12.8076 17.0596 12.6621L17.1084 12.5488C17.1318 12.5025 17.1313 12.5017 17.2373 12.292C17.3786 12.0121 17.3789 12.012 17.5791 11.6152C17.9327 10.9142 18.2872 10.2116 18.6172 9.55469L18.6309 9.52637C19.2089 8.37565 19.6506 7.49057 19.8936 6.99512L6.01074 6.00098L6.99023 12.8604Z"
+                          fill="#BE0A7C" />
+                      </svg>
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="products__card">
+              <div class="products__card__img">
+                <img src="./img/temp/product.png" alt="">
+              </div>
+              <a href="#" class="products__card__title">Мильбемакс</a>
+              <div class="products__card__text">Таблетки жевательные Мильбемакс Антигельминтик для кошек
+                всех
+                пород 2 табл.</div>
+              <div class="products__card__bottom">
+                <div class="products__card__raiting">
+                  <div class="products__card__raiting__stars">
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                    <div class="products__card__raiting__star star-inactive">
+                      <img src="img/svg/star.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="products__card__raiting__reviews">23</div>
+                </div>
+
+                <div class="products__card__actions">
+                  <div class="products__card__price">
+                    <div class="products__card__price__current">1 507 ₽</div>
+                  </div>
+                  <div class="products__card__actions__btns">
+                    <button class="products__card__actions__btn" aria-label="Добавить в избранное">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.5537 2C20.2582 2.01561 23 5.14026 23 9.12012C22.9999 12.1578 21.3062 15.0922 18.1514 17.9297C16.4953 19.4191 14.3805 20.8936 12.8662 21.6777L12 22.126L11.1338 21.6777C9.61951 20.8936 7.50469 19.4191 5.84863 17.9297C2.69385 15.0922 1.00009 12.1578 1 9.12012C1 5.09767 3.71622 2.00025 7.4541 2C8.84984 2 9.83138 2.18916 10.9219 2.72852C11.3015 2.91628 11.6585 3.13845 11.9902 3.39551C12.3352 3.12328 12.7067 2.89008 13.1025 2.69629C14.1723 2.17268 15.106 1.99998 16.5537 2ZM16.5488 4C15.3869 4.00001 14.7453 4.11828 13.9814 4.49219C13.5117 4.72218 13.095 5.03322 12.7314 5.42773L12.002 6.21875L11.2666 5.43359C10.911 5.05422 10.5 4.75042 10.0352 4.52051C9.2482 4.1313 8.56378 4 7.4541 4C4.88342 4.00025 3 6.14813 3 9.12012C3.0001 11.5 4.41423 13.949 7.18652 16.4424C8.69807 17.8019 10.641 19.1613 12 19.874C13.359 19.1613 15.3019 17.8019 16.8135 16.4424C19.5858 13.949 20.9999 11.5 21 9.12012C21 6.18921 19.088 4.01052 16.5488 4Z"
+                          fill="#BE0A7C" />
+                      </svg>
+                    </button>
+                    <button class="products__card__actions__btn" aria-label="Добавить в корзину">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2 2C3.24155 2 4.13836 2.2243 4.70703 2.79297C5.04208 3.12802 5.33655 3.56901 5.55957 4.06055C5.72226 4.02233 5.89369 4.00255 6.07129 4.00293L20.041 5C21.2926 5.02227 22.5166 6.06068 21.9121 7.40918C21.7942 7.67222 21.2629 8.74164 20.418 10.4238C20.0729 11.1108 19.7184 11.8137 19.3643 12.5156C19.1636 12.9133 19.1641 12.9138 19.0225 13.1943C18.9578 13.3223 18.9322 13.3722 18.917 13.4023C18.6296 14.1414 18.0228 14.7125 17.2646 14.9531L17.1172 15H7.03809L7.02344 14.999H5.0498C4.48156 15.0272 4.02697 15.4813 4 16L3.99805 16.9404C4.03252 17.5126 4.4901 17.9694 5 18H5.1709C5.58275 16.8348 6.6938 16 8 16C9.3062 16 10.4172 16.8348 10.8291 18H13.1709C13.5828 16.8348 14.6938 16 16 16C17.6569 16 19 17.3431 19 19C19 20.6569 17.6569 22 16 22C14.6938 22 13.5828 21.1652 13.1709 20H10.8291C10.4172 21.1652 9.3062 22 8 22C6.69337 22 5.58144 21.1648 5.16992 19.999L4.94336 19.998C3.36287 19.9082 2.09682 18.6439 2 17L2.00098 15.9502C2.08006 14.3587 3.35075 13.086 4.99023 13.001L4.00977 6.1416L4 6C4 5.35306 3.67094 4.585 3.29297 4.20703C3.19497 4.10904 2.75845 4 2 4V2ZM8 18C7.44772 18 7 18.4477 7 19C7 19.5523 7.44772 20 8 20C8.55228 20 9 19.5523 9 19C9 18.4477 8.55228 18 8 18ZM16 18C15.4477 18 15 18.4477 15 19C15 19.5523 15.4477 20 16 20C16.5523 20 17 19.5523 17 19C17 18.4477 16.5523 18 16 18ZM6.99023 12.8604C6.9999 12.9279 7.04919 12.9822 7.11328 13H16.7695C16.9029 12.9274 17.0073 12.8076 17.0596 12.6621L17.1084 12.5488C17.1318 12.5025 17.1313 12.5017 17.2373 12.292C17.3786 12.0121 17.3789 12.012 17.5791 11.6152C17.9327 10.9142 18.2872 10.2116 18.6172 9.55469L18.6309 9.52637C19.2089 8.37565 19.6506 7.49057 19.8936 6.99512L6.01074 6.00098L6.99023 12.8604Z"
+                          fill="#BE0A7C" />
+                      </svg>
+
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__column">
+          <div class="footer__column__title footer__column__title--accordion">
+            Каталог
+            <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
+          </div>
+          <ul class="footer__column__list list-reset">
+            <li class="footer__column__item"><a href="#">Товары для собак</a></li>
+            <li class="footer__column__item"><a href="#">Товары для кошек</a></li>
+            <li class="footer__column__item"><a href="#">Товары для птиц</a></li>
+            <li class="footer__column__item"><a href="#">Товары для рептилий</a></li>
+            <li class="footer__column__item"><a href="#">Товары для грызунов</a></li>
+            <li class="footer__column__item"><a href="#">Товары для аквариумистики</a></li>
+            <li class="footer__column__item"><a href="#">Защита от паразитов</a></li>
+            <li class="footer__column__item"><a href="#">Ветаптека</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <div class="footer__column__title footer__column__title--accordion">
+            Покупателям
+            <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
+          </div>
+          <ul class="footer__column__list list-reset">
+            <li class="footer__column__item"><a href="#">Акции</a></li>
+            <li class="footer__column__item"><a href="#">Бренды</a></li>
+            <li class="footer__column__item"><a href="#">Бонусная программа</a></li>
+            <li class="footer__column__item"><a href="#">Доставка и оплата</a></li>
+            <li class="footer__column__item"><a href="#">Вопросы и ответы</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <div class="footer__column__title footer__column__title--accordion">
+            Компания
+            <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
+          </div>
+          <ul class="footer__column__list list-reset">
+            <li class="footer__column__item"><a href="#">О нас</a></li>
+            <li class="footer__column__item"><a href="#">Магазины</a></li>
+            <li class="footer__column__item"><a href="#">Бонусная программа</a></li>
+            <li class="footer__column__item"><a href="#">Доставка и оплата</a></li>
+            <li class="footer__column__item"><a href="#">Вопросы и ответы</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <div class="footer__contacts">
+            <a href="tel:+78452734935" class="footer__tel">
+              8(8452) 73-49-35
+            </a>
+            <a href="mailto:info@zoomir1.ru" class="footer__email">info@zoomir1.ru</a>
+          </div>
+          <div class="footer__socials">
+            <div class="footer__column__title">
+              Наши соцсети
+            </div>
+            <ul class="footer__socials__list list-reset">
+              <li class="footer__socials__item"><a href="#" target="_blank">
+                  <img src="./img/svg/vk.svg" alt="VK">
+                </a></li>
+              <li class="footer__socials__item"><a href="#" target="_blank">
+                  <img src="./img/svg/telegram.svg" alt="Telegram">
+                </a></li>
+            </ul>
+          </div>
+
+          <ul class="footer__docs list-reset">
+            <li class="footer__docs__item"><a href="#">Политика конфиденциальности</a></li>
+            <li class="footer__docs__item"><a href="#">Согласие на обработку ПД</a></li>
+            <li class="footer__docs__item"><a href="#">Согласие на рекламные рассылки</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="module" src="./js/main.js"></script>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
