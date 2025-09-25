@@ -11,6 +11,10 @@
     &__sidebar {
         width: 220px;
         flex-shrink: 0;
+
+        @include mixins.media-down(md) {
+            display: none;
+        }
     }
 
     &__category {
@@ -106,6 +110,11 @@
                 margin-bottom: 15px;
                 transition: variables.$transition-base;
 
+                @include mixins.media-down(sm) {
+                    padding: 10px 10px;
+                    font-size: 18px;
+                }
+
                 a {
                     width: 100%;
                     display: block;
@@ -120,6 +129,10 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 15px;
+
+                @include mixins.media-down(lg) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
             }
 
             &__item {
@@ -127,6 +140,10 @@
                 border-radius: 5px;
                 padding: 13px 13px 25px;
                 position: relative;
+
+                @include mixins.media-down(sm) {
+                    padding: 10px 10px 15px;
+                }
 
                 &__img {
                     width: 100%;
@@ -146,6 +163,12 @@
                     text-align: center;
                     line-height: 1.2;
                     color: #000;
+                    text-wrap: balance;
+
+                    @include mixins.media-down(sm) {
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
                 }
 
                 &__link {
@@ -255,6 +278,7 @@
                 width: 7px;
                 height: 7px;
                 flex-shrink: 0;
+
                 img {
                     width: 100%;
                     height: 100%;
