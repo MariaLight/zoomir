@@ -12,6 +12,7 @@ import './components/catalog/catalog-sort';
 import { initCatalogFilters } from './components/catalog/catalog-filters';
 import './components/footer/footer-accordion';
 import './components/modals/modals';
+import './components/modals/validation';
 
 document.addEventListener('DOMContentLoaded', () => {
     

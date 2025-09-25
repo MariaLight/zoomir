@@ -22,3 +22,16 @@
         opacity: 0.5;
     }
 }
+
+.error-message {
+    font-size: 12px;
+    margin-top: 5px;
+    color: variables.$error-color;
+    font-weight: 400;
+    font-family: variables.$font-family-primary;
+    display: none; // Скрываем по умолчанию
+}
+
+.error-input {
+    border-color: variables.$error-color;
+}

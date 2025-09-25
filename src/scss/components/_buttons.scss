@@ -87,6 +87,10 @@
         font-size: 16px;
         font-weight: variables.$font-weight-semibold;
         border-radius: variables.$border-radius-xs;
+
+        @include mixins.hover {
+            background-color: variables.$accent-color-hover;
+        }
     }
 }
 
