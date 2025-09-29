@@ -17,6 +17,8 @@ export default defineConfig({
         lk_bonus: resolve(__dirname, 'src/lk-bonus.html'),
         lk_orders: resolve(__dirname, 'src/lk-orders.html'),
         lk_orders_empty: resolve(__dirname, 'src/lk-orders-empty.html'),
+        lk_info: resolve(__dirname, 'src/lk-info.html'),
+        product: resolve(__dirname, 'src/product.html'),
       },
       output: {
         entryFileNames: 'js/[name]-[hash].js',
