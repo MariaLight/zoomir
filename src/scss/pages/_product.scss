@@ -1,0 +1,200 @@
+@use "../variables";
+@use "../mixins";
+
+.product {
+    background-color: #fff;
+    padding: 30px 40px 40px;
+    border-radius: 0 0 5px 5px;
+
+    &__title {
+        text-wrap: balance;
+        span {
+            color: variables.$accent-color;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        gap: 40px;
+        margin-top: 30px;
+
+        &__left {
+            flex: 0 0 auto;
+        }
+
+        &__right {
+            flex: 1;
+        }
+    }
+}
+
+.product-gallery {
+    display: flex;
+    gap: 20px;
+    width: 600px;
+
+    &__thumbnails {
+        flex: 0 0 80px;
+        height: 320px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .swiper {
+            height: 280px;
+            flex: 1;
+        }
+
+        .swiper-slide {
+            width: 58px;
+            height: 58px;
+            flex-shrink: 0;
+            border: 2px solid transparent;
+            border-radius: variables.$border-radius-xs;
+            overflow: hidden;
+            cursor: pointer;
+            transition: variables.$transition-base;
+
+            &:hover {
+                border-color: variables.$accent-color-hover;
+            }
+
+            &.swiper-slide-thumb-active {
+                border-color: variables.$accent-color;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 24px;
+            height: 24px;
+            background: variables.$white-color;
+            color: #D9D9D9;
+            transition: variables.$transition-base;
+            margin: 0 auto;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: static;
+            transform: none;
+
+            &::after {
+                color: #D9D9D9;
+                background-image: url(../../img/svg/product-btn-arrow-down.svg);
+                filter: none;
+            }
+            
+
+            &:hover {
+                background: variables.$primary-color;
+                color: variables.$white-color;
+                border-color: variables.$primary-color;
+            }
+
+            &.swiper-button-disabled {
+                opacity: 0.3;
+                cursor: not-allowed;
+            }
+        }
+
+    }
+
+    &__main {
+        flex: 1;
+
+        .swiper {
+            width: 520px;
+            height: 520px;
+            border-radius: variables.$border-radius;
+            overflow: hidden;
+            // border: 1px solid variables.$border-white;
+        }
+
+        .swiper-slide {
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+}
+
+.product__about {
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+    &__left {
+        font-size: 18px;
+        line-height: 1.3;
+        font-weight: 400;
+        p:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        h3 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            line-height: 1.3;
+            font-weight: 700;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style: none;
+            li {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__right {
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        &__item {
+            &__name {
+                font-size: 18px;
+                line-height: 1.3;
+                font-weight: 400;
+                color: #838383;
+                margin-bottom: 3px;
+            }
+            &__value {
+                font-size: 18px;
+                line-height: 1.3;
+                font-weight: 400;
+                color: #000;
+                a {
+                    color: variables.$accent-color;
+                    &:hover {
+                        color: variables.$accent-color-hover;
+                    }
+                }
+            }
+        }
+    }
+}
