@@ -151,13 +151,14 @@
                         min-width: 80px;
                         position: relative;
                         overflow: hidden;
+                        width: 100%;
 
                         &:hover {
                             border-color: variables.$accent-color-hover;
                         }
                     }
 
-                    input[type="radio"]:checked + &__content {
+                    input[type="radio"]:checked+&__content {
                         border-color: variables.$accent-color;
                     }
 
@@ -204,6 +205,7 @@
                 align-items: center;
                 padding: 1.1rem 1.5rem;
                 gap: 10px;
+
                 img {
                     width: 24px;
                     height: 24px;
@@ -224,6 +226,7 @@
                     align-items: center;
                     justify-content: space-between;
                     gap: 10px;
+
                     span {
                         color: variables.$accent-color;
                     }
