@@ -8,6 +8,7 @@
 
     &__title {
         text-wrap: balance;
+
         span {
             color: variables.$accent-color;
         }
@@ -23,7 +24,211 @@
         }
 
         &__right {
-            flex: 1;
+            &__header {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 15px;
+
+            }
+
+            &__reviews {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                &__star {
+                    width: 19px;
+                    height: 19px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        display: block;
+                    }
+                }
+
+                &__raiting {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #000;
+                }
+
+                &__text {
+                    font-size: 16px;
+                    color: #838383;
+                }
+            }
+
+            &__fav {
+
+                button,
+                a {
+                    font-family: variables.$font-family-primary;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #838383;
+                    background-color: #fff;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    &:hover {
+                        color: variables.$accent-color;
+
+                        img {
+                            filter: none;
+                        }
+                    }
+
+                    img {
+                        transition: variables.$transition-base;
+                        width: 17px;
+                        height: 17px;
+                        display: block;
+                        flex-shrink: 0;
+                        filter: brightness(0) saturate(100%) invert(56%) sepia(2%) saturate(13%) hue-rotate(315deg) brightness(99%) contrast(95%);
+                    }
+                }
+            }
+
+            &__sku {
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 30px;
+
+                span {
+                    color: #838383;
+                }
+            }
+
+            &__variables {
+                margin-bottom: 25px;
+
+                &__block {
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &__label {
+                    font-weight: variables.$font-weight-regular;
+                    color: #838383;
+                    font-size: 16px;
+                    margin-bottom: 12px;
+                }
+
+                &__options {
+                    display: flex;
+                    gap: 12px;
+                    flex-wrap: wrap;
+                }
+
+                &__option {
+                    position: relative;
+                    cursor: pointer;
+                    flex-grow: 1;
+
+                    input[type="radio"] {
+                        position: absolute;
+                        opacity: 0;
+                        pointer-events: none;
+                    }
+
+                    &__content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        padding: 10px;
+                        border: 2px solid #838383;
+                        border-radius: variables.$border-radius-xs;
+                        background: variables.$white-color;
+                        transition: variables.$transition-base;
+                        min-width: 80px;
+                        position: relative;
+                        overflow: hidden;
+
+                        &:hover {
+                            border-color: variables.$accent-color-hover;
+                        }
+                    }
+
+                    input[type="radio"]:checked + &__content {
+                        border-color: variables.$accent-color;
+                    }
+
+                    &__value {
+                        font-weight: variables.$font-weight-regular;
+                        color: #000000;
+                        margin-bottom: 2px;
+                    }
+
+                    &__price {
+                        font-size: 16px;
+                        color: #838383;
+                        font-weight: variables.$font-weight-regular;
+                    }
+
+                    &__tag {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background: variables.$accent-color;
+                        color: variables.$white-color;
+                        font-size: 10px;
+                        font-weight: variables.$font-weight-regular;
+                        padding: 2px;
+                        line-height: 1;
+                    }
+                }
+            }
+
+            &__price {
+                font-size: 30px;
+                font-weight: 700;
+                color: #000;
+                margin-bottom: 25px;
+            }
+
+            &__btn {
+                width: 100%;
+                margin-bottom: 20px;
+                justify-content: space-between;
+                font-size: 18px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                padding: 1.1rem 1.5rem;
+                gap: 10px;
+                img {
+                    width: 24px;
+                    height: 24px;
+                    flex-shrink: 0;
+                    object-fit: cover;
+                }
+            }
+
+            &__delivery {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 16px;
+                font-weight: 400;
+
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+                    span {
+                        color: variables.$accent-color;
+                    }
+                }
+            }
         }
     }
 }
@@ -93,7 +298,7 @@
                 background-image: url(../../img/svg/product-btn-arrow-down.svg);
                 filter: none;
             }
-            
+
 
             &:hover {
                 background: variables.$primary-color;
@@ -143,13 +348,16 @@
         grid-template-columns: 1fr 1fr;
         gap: 60px;
     }
+
     &__left {
         font-size: 18px;
         line-height: 1.3;
         font-weight: 400;
+
         p:not(:last-child) {
             margin-bottom: 30px;
         }
+
         h3 {
             margin-bottom: 15px;
             font-size: 24px;
@@ -160,11 +368,13 @@
         ul {
             padding-left: 20px;
             list-style: none;
+
             li {
                 margin-bottom: 15px;
             }
         }
     }
+
     &__title {
         margin-bottom: 15px;
     }
@@ -175,6 +385,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
+
         &__item {
             &__name {
                 font-size: 18px;
@@ -183,15 +394,54 @@
                 color: #838383;
                 margin-bottom: 3px;
             }
+
             &__value {
                 font-size: 18px;
                 line-height: 1.3;
                 font-weight: 400;
                 color: #000;
+
                 a {
                     color: variables.$accent-color;
+
                     &:hover {
                         color: variables.$accent-color-hover;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        &__inner {
+            &__right {
+                &__variables {
+                    &__options {
+                        gap: 8px;
+                    }
+
+                    &__option {
+                        &__content {
+                            padding: 10px 12px;
+                            min-width: 70px;
+                        }
+
+                        &__value {
+                            font-size: variables.$font-size-sm;
+                        }
+
+                        &__price {
+                            font-size: variables.$font-size-xs;
+                        }
+
+                        &__tag {
+                            font-size: 10px;
+                            padding: 1px 4px;
+                        }
                     }
                 }
             }
