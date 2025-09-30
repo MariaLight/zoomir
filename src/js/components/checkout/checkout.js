@@ -1,4 +1,5 @@
 import './checkout-delivery';
+import './checkout-products';
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.checkout__form');
@@ -176,7 +177,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = Object.fromEntries(formData.entries());
             console.log('Отправляем форму:', data);
             
-            // Открываем модальное окно успеха
             openSuccessModal();
         }
     });
