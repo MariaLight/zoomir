@@ -86,6 +86,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Открыть модальное окно успеха
+    function openSuccessModal() {
+        const modal = document.getElementById('modal-success');
+        const body = document.querySelector('body');
+        
+        if (modal) {
+            modal.classList.add('modal--active');
+            body.style.overflow = 'hidden';
+            
+            // Закрываем модальное окно через 5 секунд
+            setTimeout(() => {
+                modal.classList.remove('modal--active');
+                body.style.overflow = '';
+            }, 5000);
+        }
+    }
+
     // Валидация конкретного поля
     async function validateField(fieldName, value) {
         clearError(fieldName);
@@ -158,6 +175,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData(form);
             const data = Object.fromEntries(formData.entries());
             console.log('Отправляем форму:', data);
+            
+            // Открываем модальное окно успеха
+            openSuccessModal();
         }
     });
 })
