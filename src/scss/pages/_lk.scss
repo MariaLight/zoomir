@@ -495,3 +495,51 @@
         }
     }
 }
+
+@include mixins.media-down(lg) {
+    .lk__info {
+        &__inner {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    }
+}
+@include mixins.media-down(sm) {
+    .lk__info {
+        &__box {
+            padding: 20px;
+        }
+        &__actions {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        &__list {
+            gap: 20px 25px;
+            grid-template-columns: 1fr;
+            margin-bottom: 20px;
+        }
+
+        &__item {
+            &__title {
+                font-size: 14px;
+            }
+            &__value {
+                font-size: 18px;
+            }
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__checkbox {
+            &__label__text {
+                font-size: 16px;
+                small {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
