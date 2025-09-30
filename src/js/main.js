@@ -15,6 +15,7 @@ import './components/modals/modals';
 import './components/modals/validation';
 import './components/swipers/product-gallery-swiper';
 import './components/checkout/checkout';
+import './components/checkout/checkout-mobile';
 
 document.addEventListener('DOMContentLoaded', () => {
     
