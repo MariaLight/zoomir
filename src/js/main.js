@@ -14,6 +14,7 @@ import './components/footer/footer-accordion';
 import './components/modals/modals';
 import './components/modals/validation';
 import './components/swipers/product-gallery-swiper';
+import './components/checkout/checkout';
 
 document.addEventListener('DOMContentLoaded', () => {
     
