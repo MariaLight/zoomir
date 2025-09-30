@@ -69,7 +69,7 @@
                     font-size: 16px;
                     font-weight: 400;
                     color: #838383;
-                    background-color: #fff;
+                    background-color: transparent;
                     padding: 0;
                     display: flex;
                     align-items: center;
@@ -146,7 +146,7 @@
                         padding: 10px;
                         border: 2px solid #838383;
                         border-radius: variables.$border-radius-xs;
-                        background: variables.$white-color;
+                        background: transparent;
                         transition: variables.$transition-base;
                         min-width: 80px;
                         position: relative;
@@ -227,6 +227,10 @@
                     justify-content: space-between;
                     gap: 10px;
 
+                    &__text {
+                        text-align: right;
+                    }
+
                     span {
                         color: variables.$accent-color;
                     }
@@ -285,7 +289,7 @@
         .swiper-button-next {
             width: 24px;
             height: 24px;
-            background: variables.$white-color;
+            background: transparent;
             color: #D9D9D9;
             transition: variables.$transition-base;
             margin: 0 auto;
@@ -418,36 +422,102 @@
     }
 }
 
-@media (max-width: 768px) {
+@include mixins.media-down(xl) {
+    .product-gallery__main .swiper {
+        max-width: 400px;
+        width: 100%;
+        height: 100%;
+        max-height: 400px;
+    }
+
+    .product-gallery {
+        flex-direction: column-reverse;
+        max-width: 400px;
+    }
+
+    .product-gallery__thumbnails {
+        flex-direction: row;
+    }
+
+    .product-gallery__thumbnails .swiper {
+        height: auto;
+        max-width: 100%;
+        overflow: hidden !important;
+    }
+
+    .product-gallery__thumbnails .swiper-slide {
+        height: 70px;
+    }
+
+    .product-gallery__thumbnails .swiper-button-next {
+        transform: rotate(-90deg);
+    }
+    .product-gallery__thumbnails .swiper-button-prev {
+        transform: rotate(-90deg);
+    }
+}
+
+@include mixins.media-down(lg) {
     .product {
+        padding-left: 0;
+        padding-right: 0;
+        background-color: transparent;
         &__inner {
-            &__right {
-                &__variables {
-                    &__options {
-                        gap: 8px;
-                    }
+            flex-direction: column;
+        }
 
-                    &__option {
-                        &__content {
-                            padding: 10px 12px;
-                            min-width: 70px;
-                        }
+        &-gallery {
+            max-width: 100%;
+            width: 100%;
 
-                        &__value {
-                            font-size: variables.$font-size-sm;
-                        }
-
-                        &__price {
-                            font-size: variables.$font-size-xs;
-                        }
-
-                        &__tag {
-                            font-size: 10px;
-                            padding: 1px 4px;
-                        }
-                    }
+            &__main {
+                .swiper {
+                    max-width: 100%;
+                    width: 100%;
+                    height: 100%;
+                    max-height: 100%;
                 }
             }
         }
+    }
+    .product__inner__right__variables {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .product__about__inner {
+        grid-template-columns: 1fr;
+    }
+}
+@include mixins.media-down(md) {
+    .product {
+        padding-top: 100px;
+    }
+}
+@include mixins.media-down(sm) {
+    .product__inner__right__variables {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .product__title {
+        font-size: 17px;
+        margin-bottom: 19px;
+    }
+    .product-gallery__thumbnails .swiper, .product-gallery__thumbnails .swiper-slide {
+        height: 58px;
+    }
+    .product__about__left {
+        font-size: 14px;
+    }
+    .product__about__left ul {
+        padding-left: 0;
+    }
+    .product__about__inner {
+        gap: 20px;
+    }
+    .product__about__right__item__name, .product__about__right__item__value {
+        font-size: 14px;
     }
 }

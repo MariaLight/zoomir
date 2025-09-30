@@ -16,7 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 direction: 'horizontal',
                 slidesPerView: 4,
             },
-            768: {
+            576: {
+                direction: 'horizontal',
+                slidesPerView: 6,
+            },
+            1200: {
                 direction: 'vertical',
                 slidesPerView: 5,
             },
