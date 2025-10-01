@@ -1,5 +1,22 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
+import { readdirSync } from 'fs'
+
+// Автоматическое сканирование всех HTML файлов в папке src
+function getHtmlEntries() {
+  const srcPath = resolve(__dirname, 'src')
+  const files = readdirSync(srcPath)
+  const entries = {}
+  
+  files.forEach(file => {
+    if (file.endsWith('.html')) {
+      const name = file.replace('.html', '')
+      entries[name === 'index' ? 'main' : name] = resolve(srcPath, file)
+    }
+  })
+  
+  return entries
+}
 
 export default defineConfig({
   mode: process.env.NODE_ENV || 'development',
@@ -9,18 +26,7 @@ export default defineConfig({
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'src/index.html'),
-        catalog: resolve(__dirname, 'src/catalog.html'),
-        catalog_products: resolve(__dirname, 'src/catalog-products.html'),
-        lk_favorites: resolve(__dirname, 'src/lk-favorites.html'),
-        lk_bonus: resolve(__dirname, 'src/lk-bonus.html'),
-        lk_orders: resolve(__dirname, 'src/lk-orders.html'),
-        lk_orders_empty: resolve(__dirname, 'src/lk-orders-empty.html'),
-        lk_info: resolve(__dirname, 'src/lk-info.html'),
-        product: resolve(__dirname, 'src/product.html'),
-        checkout: resolve(__dirname, 'src/checkout.html'),
-      },
+      input: getHtmlEntries(),
       output: {
         entryFileNames: 'js/[name]-[hash].js',
         chunkFileNames: 'js/[name]-[hash].js',
