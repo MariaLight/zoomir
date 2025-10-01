@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои заказы (пусто) - ЗооМир</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Контакты - ЗооМир</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script type="module" crossorigin src="/zoomir/dist/js/main-CvtoueN4.js"></script>
   <link rel="stylesheet" crossorigin href="/zoomir/dist/css/main-C2ZulWM3.css">
 </head>
@@ -799,23 +799,155 @@
         <main class="main">
             <div class="main__inner">
                 <div class="container">
-                    <nav class="lk__nav">
-                        <ul class="lk__nav__list list-reset">
-                            <li class="lk__nav__item"><a href="#" class="lk__nav__link active">Мои заказы</a></li>
-                            <li class="lk__nav__item"><a href="#" class="lk__nav__link">Избранное</a></li>
-                            <li class="lk__nav__item"><a href="#" class="lk__nav__link">Бонусы</a></li>
-                            <li class="lk__nav__item"><a href="#" class="lk__nav__link">Личные данные</a></li>
-                        </ul>
-                    </nav>
-                    <div class="lk__orders__empty">
-                        <h1 class="title lk__title">У вас пока нет заказов</h1>
-                        <div class="lk__orders__empty__text">
-                            <p>Здесь будет находиться информация о ваших онлайн-заказах и покупках в магазине</p>
+                    <div class="breadcrumbs">
+                        <a href="/">Главная</a> /
+                        <a href="/contacts.html">Контакты</a>
+                    </div>
+                    <div class="contacts">
+                        <div class="contacts__map">
+                            <!-- Вставьте нужный скрипт  -->
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/org/zoomir/1094504850/?ll=46.012409%2C51.527915&z=16.7"
+                                width="560" height="400" frameborder="1" allowfullscreen="true"
+                                style="position:relative;"></iframe>
                         </div>
-                        <div class="lk__orders__empty__btn">
-                            <a href="#"
-                                class="lk__orders__empty__btn__link banner__block__left__btn__link btn-main">Перейти в
-                                каталог</a>
+                        <div class="contacts__info">
+                            <div class="contacts__info__item">
+                                <div class="contacts__info__item__icon">
+                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                </div>
+                                <div class="contacts__info__item__inner">
+                                    <div class="contacts__info__item__title">Центральный офис</div>
+                                    <div class="contacts__info__item__value">г. Саратов, ул. Рахова, 64/70
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__info__item">
+                                <div class="contacts__info__item__icon">
+                                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                </div>
+                                <div class="contacts__info__item__inner">
+                                    <div class="contacts__info__item__title">Справочная служба
+                                    </div>
+                                    <div class="contacts__info__item__value"></div>
+                                </div>
+                            </div>
+                            <div class="contacts__info__item">
+                                <div class="contacts__info__item__icon">
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <div class="contacts__info__item__inner">
+                                    <div class="contacts__info__item__title">E-mail</div>
+                                    <div class="contacts__info__item__value">
+                                        <a href="mailto:info@zoomir1.ru">info@zoomir1.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="contacts__info__btn btn-accent" data-modal="callback">Задать вопрос</button>
+
+                        </div>
+
+                        <h2 class="title page-title">Сеть магазинов ZooМир</h2>
+                        <div class="contacts__stores">
+                            <div class="contacts__stores__item">
+                                <div class="contacts__stores__item__content">
+                                    <div class="contacts__stores__item__content__title">
+                                        г.Саратов, ул. Рахова, 64/70 (угол ул. Рабочей)</div>
+                                    <div class="contacts__stores__item__content__time">
+                                        <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                        <span>Пн - Вс: 9:00 - 21:00
+                                            <br>
+                                            Без перерывов и выходных</span>
+                                    </div>
+                                </div>
+                                <div class="contacts__stores__item__tel">
+                                    <a href="tel:+78452734935">+7(8452) 73-49-35</a>
+                                </div>
+                                <div class="contacts__stores__item__payment">
+                                    <div class="contacts__stores__item__payment__item">
+                                        <i class="fa-brands fa-cc-visa" aria-hidden="true"></i>
+                                        Visa
+                                    </div>
+                                    <div class="contacts__stores__item__payment__item">
+                                        <i class="fa-brands fa-cc-mastercard" aria-hidden="true"></i>
+                                        MasterCard
+                                    </div>
+                                    <div class="contacts__stores__item__payment__item">
+                                        <i><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20120'%3e%3clinearGradient%20id='a'%20x1='370'%20x2='290'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%231F5CD7'/%3e%3cstop%20stop-color='%2302AEFF'%20offset='1'/%3e%3c/linearGradient%3e%3cpath%20d='m31%2013h33c3%200%2012-1%2016%2013%203%209%207%2023%2013%2044h2c6-22%2011-37%2013-44%204-14%2014-13%2018-13h31v96h-32v-57h-2l-17%2057h-24l-17-57h-3v57h-31m139-96h32v57h3l21-47c4-9%2013-10%2013-10h30v96h-32v-57h-2l-21%2047c-4%209-14%2010-14%2010h-30m142-29v29h-30v-50h98c-4%2012-18%2021-34%2021'%20fill='%230f754e'/%3e%3cpath%20d='m382%2053c4-18-8-40-34-40h-68c2%2021%2020%2040%2039%2040'%20fill='url(%23a)'/%3e%3c/svg%3e" width="17" alt="Карты МИР"></i>
+                                        Карты МИР
+                                    </div>
+                                    <div class="contacts__stores__item__payment__item">
+                                        <i class="fa-solid fa-money-bill" aria-hidden="true"></i>
+                                        Наличные
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__stores__item">
+                                <div class="contacts__stores__item__content">
+                                    <div class="contacts__stores__item__content__title">
+                                        г.Саратов, ул. Рахова, 64/70 (угол ул. Рабочей)</div>
+                                    <div class="contacts__stores__item__content__time">
+                                        <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                        <span>Пн - Вс: 9:00 - 21:00
+                                            <br>
+                                            Без перерывов и выходных</span>
+                                    </div>
+                                </div>
+                                <div class="contacts__stores__item__tel">
+                                    <a href="tel:+78452734935">+7(8452) 73-49-35</a>
+                                </div>
+                                <div class="contacts__stores__item__payment">
+                                    <div class="contacts__stores__item__payment__item">
+                                        <i class="fa-brands fa-cc-visa" aria-hidden="true"></i>
+                                        Visa
+                                    </div>
+                                    <div class="contacts__stores__item__payment__item">
+                                        <i class="fa-brands fa-cc-mastercard" aria-hidden="true"></i>
+                                        MasterCard
+                                    </div>
+                                    <div class="contacts__stores__item__payment__item">
+                                        <i><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20120'%3e%3clinearGradient%20id='a'%20x1='370'%20x2='290'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%231F5CD7'/%3e%3cstop%20stop-color='%2302AEFF'%20offset='1'/%3e%3c/linearGradient%3e%3cpath%20d='m31%2013h33c3%200%2012-1%2016%2013%203%209%207%2023%2013%2044h2c6-22%2011-37%2013-44%204-14%2014-13%2018-13h31v96h-32v-57h-2l-17%2057h-24l-17-57h-3v57h-31m139-96h32v57h3l21-47c4-9%2013-10%2013-10h30v96h-32v-57h-2l-21%2047c-4%209-14%2010-14%2010h-30m142-29v29h-30v-50h98c-4%2012-18%2021-34%2021'%20fill='%230f754e'/%3e%3cpath%20d='m382%2053c4-18-8-40-34-40h-68c2%2021%2020%2040%2039%2040'%20fill='url(%23a)'/%3e%3c/svg%3e" width="17" alt="Карты МИР"></i>
+                                        Карты МИР
+                                    </div>
+                                    <div class="contacts__stores__item__payment__item">
+                                        <i class="fa-solid fa-money-bill" aria-hidden="true"></i>
+                                        Наличные
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__stores__item">
+                                <div class="contacts__stores__item__content">
+                                    <div class="contacts__stores__item__content__title">
+                                        г.Саратов, ул. Рахова, 64/70 (угол ул. Рабочей)</div>
+                                    <div class="contacts__stores__item__content__time">
+                                        <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                        <span>Пн - Вс: 9:00 - 21:00
+                                            <br>
+                                            Без перерывов и выходных</span>
+                                    </div>
+                                </div>
+                                <div class="contacts__stores__item__tel">
+                                    <a href="tel:+78452734935">+7(8452) 73-49-35</a>
+                                </div>
+                                <div class="contacts__stores__item__payment">
+                                    <div class="contacts__stores__item__payment__item">
+                                        <i class="fa-brands fa-cc-visa" aria-hidden="true"></i>
+                                        Visa
+                                    </div>
+                                    <div class="contacts__stores__item__payment__item">
+                                        <i class="fa-brands fa-cc-mastercard" aria-hidden="true"></i>
+                                        MasterCard
+                                    </div>
+                                    <div class="contacts__stores__item__payment__item">
+                                        <i><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20120'%3e%3clinearGradient%20id='a'%20x1='370'%20x2='290'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%231F5CD7'/%3e%3cstop%20stop-color='%2302AEFF'%20offset='1'/%3e%3c/linearGradient%3e%3cpath%20d='m31%2013h33c3%200%2012-1%2016%2013%203%209%207%2023%2013%2044h2c6-22%2011-37%2013-44%204-14%2014-13%2018-13h31v96h-32v-57h-2l-17%2057h-24l-17-57h-3v57h-31m139-96h32v57h3l21-47c4-9%2013-10%2013-10h30v96h-32v-57h-2l-21%2047c-4%209-14%2010-14%2010h-30m142-29v29h-30v-50h98c-4%2012-18%2021-34%2021'%20fill='%230f754e'/%3e%3cpath%20d='m382%2053c4-18-8-40-34-40h-68c2%2021%2020%2040%2039%2040'%20fill='url(%23a)'/%3e%3c/svg%3e" width="17" alt="Карты МИР"></i>
+                                        Карты МИР
+                                    </div>
+                                    <div class="contacts__stores__item__payment__item">
+                                        <i class="fa-solid fa-money-bill" aria-hidden="true"></i>
+                                        Наличные
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -899,7 +1031,53 @@
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <div class="modal" id="modal-success">
+
+        <div class="modal__inner">
+            <button class="modal__close" data-modal-close>
+                <img src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.999908%201L7.99959%207.99983L14.9993%201'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.9998%2015L8.00017%208.00017L1.00049%2015'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Закрыть">
+            </button>
+            <div class="modal__content">
+                <div class="modal__title">Успешно отправлено</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="callback">
+
+        <div class="modal__inner">
+            <button class="modal__close" data-modal-close>
+                <img src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.999908%201L7.99959%207.99983L14.9993%201'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.9998%2015L8.00017%208.00017L1.00049%2015'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Закрыть">
+            </button>
+            <div class="modal__content">
+                <div class="modal__title">Задать вопрос</div>
+                <form action="" class="modal__form modal__form--callback">
+                    <div class="modal__form__item form-item">
+                        <input class="form-input" type="text" placeholder="Ваше имя*" name="name" required>
+                        <span class="modal__form__item__error error-message"></span>
+                    </div>
+                    <div class="modal__form__item form-item">
+                        <input class="form-input" type="tel" placeholder="Телефон*" name="phone" required>
+                        <span class="modal__form__item__error error-message"></span>
+                    </div>
+                    <div class="modal__form__item form-item">
+                        <input class="form-input" type="email" placeholder="Ваш email*" name="email" required>
+                        <span class="modal__form__item__error error-message"></span>
+                    </div>
+                    <div class="modal__form__item form-item">
+                        <textarea class="form-input" placeholder="Вопрос*" name="question" required></textarea>
+                        <span class="modal__form__item__error error-message"></span>
+                    </div>
+
+                    <label class="checkbox-item">
+                        <input class="checkbox-input" type="checkbox" name="agreement" required checked>
+                        <span class="checkbox-text">Согласен с <a href="#">политикой конфиденциальности</a></span>
+                    </label>
+                    <button type="submit" class="modal__form__btn btn-main btn-accent">Отправить</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
