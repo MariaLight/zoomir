@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата и доставка - ЗооМир</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./scss/style.scss">
+</head>
+
+<body class="page__body">
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="/" class="header__logo">
+                    <img src="./img/base/logo.svg" alt="Логотип">
+                </a>
+                <div class="header__address">
+                    <div class="header__address__inner">
+                        <span class="header__address__location">Укажите адрес и способ получения</span>
+                        <a href="" class="header__address__link">Указать</a>
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__nav__list list-reset">
+                        <li class="header__nav__item"><a href="#" class="header__nav__link">Оплата и доставка</a></li>
+                        <li class="header__nav__item"><a href="#" class="header__nav__link">Магазин</a></li>
+                        <li class="header__nav__item"><a href="#" class="header__nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__btns">
+                    <button class="header__btn btn-icon mobile-search-btn">
+                        <img src="./img/svg/search.svg" alt="Поиск">
+                    </button>
+                    <a href="" class="header__btn btn-icon">
+                        <img src="./img/svg/heart.svg" alt="Избранное">
+                    </a>
+                    <a href="" class="header__btn btn-icon">
+                        <img src="./img/svg/user.svg" alt="Личный кабинет">
+                    </a>
+                    <a href="" class="header__btn btn-icon">
+                        <span class="header__btn__counter">12</span>
+                        <img src="./img/svg/cart.svg" alt="Корзина">
+                    </a>
+
+                </div>
+                <button id="burger" class="burger-btn">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <div class="header__middle">
+                <div class="header__catalog__dropdown">
+                    <button class="header__catalog__btn btn-main">
+                        <span class="header__catalog__btn__text">Каталог товаров</span>
+                    </button>
+                    <div class="header__catalog__dropdown__content">
+                        <div class="header__catalog__dropdown__inner container">
+                            <div class="header__catalog__dropdown__left">
+                                <ul class="header__catalog__categories list-reset">
+                                    <li class="header__catalog__category" data-category="dogs">
+                                        <a href="#" class="header__catalog__category__link">Собаки</a>
+                                    </li>
+                                    <li class="header__catalog__category" data-category="cats">
+                                        <a href="#" class="header__catalog__category__link">Кошки</a>
+                                    </li>
+                                    <li class="header__catalog__category" data-category="fish">
+                                        <a href="#" class="header__catalog__category__link">Рыбы</a>
+                                    </li>
+                                    <li class="header__catalog__category" data-category="birds">
+                                        <a href="#" class="header__catalog__category__link">Птицы</a>
+                                    </li>
+                                    <li class="header__catalog__category" data-category="reptiles">
+                                        <a href="#" class="header__catalog__category__link">Рептилии</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__catalog__dropdown__right">
+                                <!-- Контент для категории "Собаки" -->
+                                <div class="header__catalog__subcategories" data-category="dogs">
+                                    <div class="header__catalog__subcategories__main__title"><a href="#">Собаки</a>
+                                    </div>
+                                    <div class="header__catalog__subcategories__grid">
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Корм для
+                                                    собак</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Сухой
+                                                        корм</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Влажный
+                                                        корм</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Лакомства</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Витамины</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a
+                                                    href="#">Аксессуары</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Ошейники</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Поводки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Миски</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a
+                                                    href="#">Аксессуары</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Ошейники</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Поводки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Миски</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Уход</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Шампуни</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Расчески</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Когтерезы</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Зубные
+                                                        щетки</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Здоровье</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Лекарства</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">БАДы</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Ветеринария</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Аптечка</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Контент для категории "Кошки" -->
+                                <div class="header__catalog__subcategories" data-category="cats">
+                                    <div class="header__catalog__subcategories__main__title"><a href="#">Кошки</a></div>
+
+                                    <div class="header__catalog__subcategories__grid">
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Корм для
+                                                    кошек</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Сухой
+                                                        корм</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Влажный
+                                                        корм</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Лакомства</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Витамины</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a
+                                                    href="#">Аксессуары</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Ошейники</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Поводки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Когтеточки</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Уход</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Шампуни</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Расчески</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Когтерезы</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Зубные
+                                                        щетки</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Туалеты</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Лотки</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Наполнители</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Совки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Домики</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Контент для категории "Рыбы" -->
+                                <div class="header__catalog__subcategories" data-category="fish">
+                                    <div class="header__catalog__subcategories__main__title"><a href="#">Рыбы</a></div>
+
+                                    <div class="header__catalog__subcategories__grid">
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Корм для
+                                                    рыб</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Сухой
+                                                        корм</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Живой
+                                                        корм</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Замороженный</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Витамины</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Аквариумы</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Аквариумы</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Фильтры</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Компрессоры</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Обогреватели</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Декорации</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Растения</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Камни</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Коряги</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Грунт</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Уход</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Тесты
+                                                        воды</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Кондиционеры</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Сифоны</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Сачки</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Контент для категории "Птицы" -->
+                                <div class="header__catalog__subcategories" data-category="birds">
+                                    <div class="header__catalog__subcategories__main__title"><a href="#">Птицы</a></div>
+                                    <div class="header__catalog__subcategories__grid">
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Корм для
+                                                    птиц</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Зерновые
+                                                        смеси</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Лакомства</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Витамины</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Минералы</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Клетки</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Клетки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Вольеры</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Домики</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Жердочки</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a
+                                                    href="#">Аксессуары</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Поилки</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Кормушки</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Зеркала</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Уход</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Песок</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Купалки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Щетки</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Когтерезы</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Контент для категории "Рептилии" -->
+                                <div class="header__catalog__subcategories" data-category="reptiles">
+                                    <div class="header__catalog__subcategories__main__title"><a href="#">Рептилии</a>
+                                    </div>
+                                    <div class="header__catalog__subcategories__grid">
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Корм для
+                                                    рептилий</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Живой
+                                                        корм</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Замороженный</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Сухой
+                                                        корм</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Витамины</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a
+                                                    href="#">Террариумы</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Террариумы</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Обогрев</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Освещение</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Вентиляция</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Субстрат</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Грунт</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Кора</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Мох</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Песок</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Декорации</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Укрытия</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Камни</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Растения</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Ветки</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="header__searchform">
+                    <input type="text" class="header__searchform__input" name="s" placeholder="Введите название товара">
+                    <button type="submit" class="header__searchform__btn">
+                        <img src="./img/svg/search.svg" alt="Поиск">
+                    </button>
+                </form>
+            </div>
+            <div class="header__bottom">
+                <nav class="header__bottom__nav">
+                    <ul class="header__bottom__list list-reset">
+                        <li class="header__bottom__item"><a href="#" class="header__bottom__link">Акции</a></li>
+                        <li class="header__bottom__item"><a href="#" class="header__bottom__link">Собаки</a></li>
+                        <li class="header__bottom__item"><a href="#" class="header__bottom__link">Кошки</a></li>
+                        <li class="header__bottom__item"><a href="#" class="header__bottom__link">Рыбы</a></li>
+                        <li class="header__bottom__item"><a href="#" class="header__bottom__link">Птицы</a></li>
+                        <li class="header__bottom__item"><a href="#" class="header__bottom__link">Грызуны</a></li>
+                        <li class="header__bottom__item"><a href="#" class="header__bottom__link">Рептилии</a></li>
+                        <li class="header__bottom__item"><a href="#" class="header__bottom__link">Ветаптека</a></li>
+                        <li class="header__bottom__item active"><a href="#" class="header__bottom__link">Защита от
+                                паразитов</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильный поиск -->
+    <div class="mobile-search" id="mobile-search">
+        <div class="container">
+            <form class="header__searchform">
+                <input type="text" class="header__searchform__input" name="s" placeholder="Введите название товара">
+                <button type="submit" class="header__searchform__btn">
+                    <img src="./img/svg/search.svg" alt="Поиск">
+                </button>
+            </form>
+            <button class="mobile-search__close" type="button">
+                <img src="./img/svg/close.svg" alt="Закрыть">
+            </button>
+        </div>
+    </div>
+
+    <header class="header-fixed">
+        <div class="container">
+            <div class="header-fixed__content">
+                <a href="/" class="header-fixed__logo">
+                    <img src="./img/base/logo.svg" alt="Логотип">
+                </a>
+
+                <form class="header-fixed__searchform">
+                    <input type="text" class="header-fixed__searchform__input" name="s"
+                        placeholder="Введите название товара">
+                    <button type="submit" class="header-fixed__searchform__btn">
+                        <img src="./img/svg/search.svg" alt="Поиск">
+                    </button>
+                </form>
+
+                <div class="header-fixed__address">
+                    <div class="header-fixed__address__inner">
+                        <span class="header-fixed__address__location">Укажите адрес и способ получения</span>
+                        <a href="" class="header-fixed__address__link">Указать</a>
+                    </div>
+                </div>
+
+                <div class="header-fixed__catalog">
+                    <button class="header-fixed__catalog__btn">
+                        <span class="header-fixed__catalog__btn__text">Каталог товаров</span>
+                    </button>
+                    <div class="header__catalog__dropdown__content header__catalog__dropdown__content--fixed">
+                        <div class="header__catalog__dropdown__inner container">
+                            <div class="header__catalog__dropdown__left">
+                                <ul class="header__catalog__categories list-reset">
+                                    <li class="header__catalog__category" data-category="dogs">
+                                        <a href="#" class="header__catalog__category__link">Собаки</a>
+                                    </li>
+                                    <li class="header__catalog__category" data-category="cats">
+                                        <a href="#" class="header__catalog__category__link">Кошки</a>
+                                    </li>
+                                    <li class="header__catalog__category" data-category="fish">
+                                        <a href="#" class="header__catalog__category__link">Рыбы</a>
+                                    </li>
+                                    <li class="header__catalog__category" data-category="birds">
+                                        <a href="#" class="header__catalog__category__link">Птицы</a>
+                                    </li>
+                                    <li class="header__catalog__category" data-category="reptiles">
+                                        <a href="#" class="header__catalog__category__link">Рептилии</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__catalog__dropdown__right">
+                                <div class="header__catalog__subcategories" data-category="dogs">
+                                    <div class="header__catalog__subcategories__main__title"><a href="#">Собаки</a>
+                                    </div>
+                                    <div class="header__catalog__subcategories__grid">
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Корм для
+                                                    собак</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Сухой
+                                                        корм</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Влажный
+                                                        корм</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Лакомства</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Витамины</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a
+                                                    href="#">Аксессуары</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Ошейники</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Поводки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Миски</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Уход</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Шампуни</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Расчески</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Когтерезы</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Зубные
+                                                        щетки</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="header__catalog__subcategories" data-category="cats">
+                                    <div class="header__catalog__subcategories__main__title"><a href="#">Кошки</a></div>
+                                    <div class="header__catalog__subcategories__grid">
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Корм для
+                                                    кошек</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Сухой
+                                                        корм</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Влажный
+                                                        корм</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Лакомства</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Витамины</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a
+                                                    href="#">Аксессуары</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Ошейники</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Поводки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Когтеточки</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Уход</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Шампуни</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Расчески</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Когтерезы</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Зубные
+                                                        щетки</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="header__catalog__subcategories" data-category="fish">
+                                    <div class="header__catalog__subcategories__main__title"><a href="#">Рыбы</a></div>
+                                    <div class="header__catalog__subcategories__grid">
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Корм для
+                                                    рыб</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Сухой
+                                                        корм</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Живой
+                                                        корм</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Замороженный
+                                                        корм</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Витамины</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Аквариумы</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Аквариумы</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Фильтры</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Обогреватели</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Освещение</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="header__catalog__subcategories" data-category="birds">
+                                    <div class="header__catalog__subcategories__main__title"><a href="#">Птицы</a></div>
+                                    <div class="header__catalog__subcategories__grid">
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Корм для
+                                                    птиц</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Зерновые
+                                                        смеси</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Лакомства</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Витамины</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Минеральные
+                                                        добавки</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Клетки и
+                                                    аксессуары</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Клетки</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Игрушки</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Жердочки</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Кормушки</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="header__catalog__subcategories" data-category="reptiles">
+                                    <div class="header__catalog__subcategories__main__title"><a href="#">Рептилии</a>
+                                    </div>
+                                    <div class="header__catalog__subcategories__grid">
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a
+                                                    href="#">Террариумы</a></div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Террариумы</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Обогрев</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Освещение</a></li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Вентиляция</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Субстрат</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Грунт</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Кора</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Мох</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Песок</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="header__catalog__subcategories__column">
+                                            <div class="header__catalog__subcategories__title"><a href="#">Декорации</a>
+                                            </div>
+                                            <ul class="header__catalog__subcategories__list list-reset">
+                                                <li><a href="#" class="header__catalog__subcategories__link">Укрытия</a>
+                                                </li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Камни</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="header__catalog__subcategories__link">Растения</a></li>
+                                                <li><a href="#" class="header__catalog__subcategories__link">Ветки</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-fixed__btns">
+                    <a href="" class="header-fixed__btn btn-icon">
+                        <img src="./img/svg/heart.svg" alt="Избранное">
+                    </a>
+                    <a href="" class="header-fixed__btn btn-icon">
+                        <img src="./img/svg/user.svg" alt="Личный кабинет">
+                    </a>
+                    <a href="" class="header-fixed__btn btn-icon">
+                        <span class="header-fixed__btn__counter">12</span>
+                        <img src="./img/svg/cart.svg" alt="Корзина">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="header__burger-menu">
+        <!-- header__burger-menu__inner--centered - стиль для центрированного меню. Без него автоматически выравнивается по правому краю -->
+        <div class="header__burger-menu__inner header__burger-menu__inner--centered container">
+            <nav class="header__burger-menu__nav">
+                <ul class="header__burger-menu__nav__list list-reset">
+                    <li class="header__burger-menu__nav__item">
+                        <a href="#" class="header__burger-menu__nav__link">Акции</a>
+                    </li>
+                    <li class="header__burger-menu__nav__item">
+                        <a href="#" class="header__burger-menu__nav__link">Собаки</a>
+                    </li>
+                    <li class="header__burger-menu__nav__item">
+                        <a href="#" class="header__burger-menu__nav__link">Кошки</a>
+                    </li>
+                    <li class="header__burger-menu__nav__item">
+                        <a href="#" class="header__burger-menu__nav__link">Рыбы</a>
+                    </li>
+                    <li class="header__burger-menu__nav__item">
+                        <a href="#" class="header__burger-menu__nav__link">Птицы</a>
+                    </li>
+                    <li class="header__burger-menu__nav__item">
+                        <a href="#" class="header__burger-menu__nav__link">Рептилии</a>
+                    </li>
+                    <li class="header__burger-menu__nav__item">
+                        <a href="#" class="header__burger-menu__nav__link active">Защита от паразитов</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__burger-menu__contacts">
+                <a href="tel:+78452734935" class="header__burger-menu__contacts__tel">8(8452) 73-49-35</a>
+                <a href="mailto:info@zoomir1.ru" class="header__burger-menu__contacts__email">info@zoomir1.ru</a>
+            </div>
+            <div class="header__btns">
+                <a href="" class="header__btn btn-icon">
+                    <img src="./img/svg/heart.svg" alt="Избранное">
+                </a>
+                <a href="" class="header__btn btn-icon">
+                    <img src="./img/svg/user.svg" alt="Личный кабинет">
+                </a>
+                <a href="" class="header__btn btn-icon">
+                    <span class="header__btn__counter">12</span>
+                    <img src="./img/svg/cart.svg" alt="Корзина">
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <main class="main">
+            <div class="main__inner">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="/">Главная</a> /
+                        <a href="/delivery-payment.html">Оплата и доставка</a>
+                    </div>
+                    <div class="title page-title delivery-payment__title">Оплата</div>
+                    <div class="delivery-payment__text">
+
+
+
+                        <p>
+                            Вы можете выбрать один из двух вариантов оплаты:
+                        </p>
+                        <h3>Оплата наличными</h3>
+                        <p>
+                            При выборе варианта оплаты наличными, вы дожидаетесь приезда курьера и передаёте ему сумму
+                            за товар в рублях. Курьер предоставляет товар, который можно осмотреть на предмет
+                            повреждений, соответствие указанным условиям. Покупатель подписывает товар сопроводительные
+                            документы, вносит денежные средства и получает чек.
+                        </p>
+                        <p>
+                            Также оплата наличными доступна при самовывозе из магазина.
+                        </p>
+                        <h3>Онлайн оплата</h3>
+                        <p>К оплате принимаются платежные карты: VISA Inc, MasterCard WorldWide, МИР. Для оплаты товара
+                            банковской картой при оформлении заказа в интернет-магазине выберите способ оплаты:
+                            банковской картой.</p>
+                        <p>Безопасность обработки интернет-платежей через платежный шлюз банка гарантирована
+                            международным сертификатом безопасности PCI DSS. Передача информации происходит с
+                            применением технологии шифрования SSL. Эта информация недоступна посторонним лицам.</p>
+
+                        <h3>Бонусная карта</h3>
+                        Использование бонусной карты также доступно только при самовывозе из магазина.
+                    </div>
+                    <div class="title page-title delivery-payment__title">Доставка</div>
+                    <div class="delivery-payment__text">
+
+                        <h3>
+                            Курьерская
+                            доставка*
+                        </h3>
+                        <ul>
+                            <li>доставка осуществляется по Саратову и Энгельсу</li>
+                            <li>доставка и обработка заказов осуществляется в течение суток с момента заказа</li>
+                            <li>заказы, оформленные в выходные, обрабатываются в понедельник</li>
+                            <li>доставка осуществляется на следующий день после оформления заказа</li>
+                            <li>заказы на доставку, оформленные в пятницу после 11:00, будут доставлены в понедельник или
+                                в другой день, согласованный с заказчиком</li>
+                            <li>бесплатная доставка осуществляется при заказе от 1500 руб</li>
+                            <li>самовывоз возможен в любой из 11 точек-магазинов розничной продажи</li>
+                        </ul>
+                        <h3>
+                            Условия возврата:
+                        </h3>
+                        <p>
+                            Возврат Товара осуществляется в соответствии с требованиями и положениями, установленными
+                            Законом Российской Федерации от 07.02.1992г. №2300-1 «О защите прав потребителей» (если
+                            Покупателем Товаров у Продавца является физическое лицо), Правил продажи товаров по договору
+                            розничной купли-продажи, утвержденных Постановлением Правительства Российской Федерации от
+                            31 декабря 2020г. N 2463, а также иного применимого законодательства Российской Федерации.
+                        </p>
+                        <p>
+                            Возврат качественного товара: Руководствуясь п. 4 ст. 26.1. Закона РФ «О защите прав
+                            потребителей» Потребитель вправе отказаться от товара в любое время до его передачи, а после
+                            передачи товара - в течение семи дней. Для реализации данного права Потребителю нужно
+                            направить (вручить) Продавцу письменное заявление.
+                        </p>
+                        <p>
+                            Предупреждаем, что возврат товара надлежащего качества возможен в случае, если сохранены его
+                            товарный вид (упаковка, пломбы, ярлыки), потребительские свойства, а также документ,
+                            подтверждающий факт и условия покупки указанного товара (товарный или кассовый чек).
+                            Отсутствие товарного/кассового чека либо иного документа, удостоверяющего факт и условия
+                            покупки товара в нашем интернет-магазине, не является основанием для отказа в удовлетворении
+                            Ваших требований, однако мы оставляем за собой право проверить факт приобретения товара на
+                            интернет-сайте «Зоомир». При обнаружении следов эксплуатации товара Продавец оставляет за
+                            собой право отказать в приемке товара.
+                        </p>
+                        <h3>
+                            Возврату не подлежат товары надлежащего качества:
+                        </h3>
+                        <p>
+                            - имеющие индивидуально-определенные свойства, если указанный товар может быть использован
+                            исключительно приобретающим его покупателем;
+                        </p>
+                        <p>
+                            - входящие в Перечень непродовольственных Товаров надлежащего качества, не подлежащих
+                            обмену, утвержденный Постановлением Правительства РФ от 31.12.2020 N 2463 «Об утверждении
+                            Правил продажи товаров по договору розничной купли-продажи, перечня товаров длительного
+                            пользования, на которые не распространяется требование потребителя о безвозмездном
+                            предоставлении ему товара, обладающего этими же основными потребительскими свойствами, на
+                            период ремонта или замены такого товара, и перечня непродовольственных товаров надлежащего
+                            качества, не подлежащих обмену, а также о внесении изменений в некоторые акты Правительства
+                            Российской Федерации»:
+                        </p>
+                        <p>
+                            - Товары для профилактики и лечения заболеваний в домашних условиях (предметы санитарии и
+                            гигиены из металла, резины, текстиля и других материалов, медицинские изделия, средства
+                            гигиены полости рта, линзы очковые, предметы по уходу за детьми), лекарственные препараты
+                        </p>
+                        <p>
+                            - Предметы личной гигиены (зубные щетки, расчески, заколки, бигуди для волос, парики,
+                            шиньоны и другие аналогичные товары)
+                        </p>
+                        <p>
+                            - Парфюмерно-косметические товары
+                        </p>
+                        <p>
+                            - Текстильные товары (хлопчатобумажные, льняные, шелковые, шерстяные и синтетические ткани,
+                            товары из нетканых материалов типа тканей - ленты, тесьма, кружево и др.), кабельная
+                            продукция (провода, шнуры, кабели), строительные и отделочные материалы (линолеум, пленка,
+                            ковровые покрытия и др.) и другие товары, цена которых определяется за единицу длины
+                        </p>
+                        <p>
+                            - Швейные и трикотажные изделия (изделия швейные и трикотажные бельевые, изделия
+                            чулочно-носочные)
+                        </p>
+                        <p>
+                            - Изделия и материалы, полностью или частично изготовленные из полимерных материалов и
+                            контактирующие с пищевыми продуктами (посуда и принадлежности столовые и кухонные, емкости и
+                            упаковочные материалы для хранения и транспортирования пищевых продуктов, в том числе для
+                            разового использования)
+                        </p>
+                        <p>
+                            - Товары бытовой химии, пестициды и агрохимикаты
+                        </p>
+                        <p>
+                            - Мебельные гарнитуры бытового назначения
+                        </p>
+                        <p>
+                            - Ювелирные и другие изделия из драгоценных металлов и (или) драгоценных камней, ограненные
+                            драгоценные камни
+                        </p>
+                        <p>
+                            - Автомобили и мотовелотовары, прицепы к ним, номерные агрегаты (двигатель, блок цилиндров
+                            двигателя, шасси (рама), кузов (кабина) автотранспортного средства или самоходной машины, а
+                            также коробка передач и мост самоходной машины) к автомобилям и мотовелотоварам, мобильные
+                            средства малой механизации сельскохозяйственных работ, прогулочные суда и иные плавсредства
+                            бытового назначения
+                        </p>
+                        <p>
+                            - Технически сложные товары бытового назначения, на которые установлены гарантийные сроки не
+                            менее одного года
+                        </p>
+                        <p>
+                            - Гражданское оружие, основные части гражданского огнестрельного оружия, патроны к
+                            гражданскому оружию, а также инициирующие и воспламеняющие вещества и материалы для
+                            самостоятельного снаряжения патронов к гражданскому огнестрельному длинноствольному оружию
+                        </p>
+                        <p>
+                            - Животные и растения
+                        </p>
+                        <p>
+                            - Непериодические издания (книги, брошюры, альбомы, картографические и нотные издания,
+                            листовые изоиздания, календари, буклеты, издания, воспроизведенные на технических носителях
+                            информации)
+                        </p>
+                        <p>
+                            Возврат товара и заявления Потребителя принимаются по адресу: г. Саратов, ул. Рахова, 64/70
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    </main>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__column">
+                    <div class="footer__column__title footer__column__title--accordion">
+                        Каталог
+                        <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
+                    </div>
+                    <ul class="footer__column__list list-reset">
+                        <li class="footer__column__item"><a href="#">Товары для собак</a></li>
+                        <li class="footer__column__item"><a href="#">Товары для кошек</a></li>
+                        <li class="footer__column__item"><a href="#">Товары для птиц</a></li>
+                        <li class="footer__column__item"><a href="#">Товары для рептилий</a></li>
+                        <li class="footer__column__item"><a href="#">Товары для грызунов</a></li>
+                        <li class="footer__column__item"><a href="#">Товары для аквариумистики</a></li>
+                        <li class="footer__column__item"><a href="#">Защита от паразитов</a></li>
+                        <li class="footer__column__item"><a href="#">Ветаптека</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column__title footer__column__title--accordion">
+                        Покупателям
+                        <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
+                    </div>
+                    <ul class="footer__column__list list-reset">
+                        <li class="footer__column__item"><a href="#">Акции</a></li>
+                        <li class="footer__column__item"><a href="#">Бренды</a></li>
+                        <li class="footer__column__item"><a href="#">Бонусная программа</a></li>
+                        <li class="footer__column__item"><a href="#">Доставка и оплата</a></li>
+                        <li class="footer__column__item"><a href="#">Вопросы и ответы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column__title footer__column__title--accordion">
+                        Компания
+                        <img src="./img/svg/arrow-bottom.svg" alt="Раскрыть" class="footer__column__title__arrow">
+                    </div>
+                    <ul class="footer__column__list list-reset">
+                        <li class="footer__column__item"><a href="#">О нас</a></li>
+                        <li class="footer__column__item"><a href="#">Магазины</a></li>
+                        <li class="footer__column__item"><a href="#">Бонусная программа</a></li>
+                        <li class="footer__column__item"><a href="#">Доставка и оплата</a></li>
+                        <li class="footer__column__item"><a href="#">Вопросы и ответы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__contacts">
+                        <a href="tel:+78452734935" class="footer__tel">
+                            8(8452) 73-49-35
+                        </a>
+                        <a href="mailto:info@zoomir1.ru" class="footer__email">info@zoomir1.ru</a>
+                    </div>
+                    <div class="footer__socials">
+                        <div class="footer__column__title">
+                            Наши соцсети
+                        </div>
+                        <ul class="footer__socials__list list-reset">
+                            <li class="footer__socials__item"><a href="#" target="_blank">
+                                    <img src="./img/svg/vk.svg" alt="VK">
+                                </a></li>
+                            <li class="footer__socials__item"><a href="#" target="_blank">
+                                    <img src="./img/svg/telegram.svg" alt="Telegram">
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="footer__docs list-reset">
+                        <li class="footer__docs__item"><a href="#">Политика конфиденциальности</a></li>
+                        <li class="footer__docs__item"><a href="#">Согласие на обработку ПД</a></li>
+                        <li class="footer__docs__item"><a href="#">Согласие на рекламные рассылки</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
