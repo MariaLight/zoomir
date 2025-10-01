@@ -4,7 +4,7 @@
 
 label {
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 10px;
     cursor: pointer;
 }
@@ -44,4 +44,16 @@ label {
 .checkbox-input:disabled + span {
     opacity: 0.5;
     cursor: not-allowed;
+}
+.checkbox-text {
+    font-size: 14px;
+    align-items: center;
+    a 
+        {
+            color: variables.$accent-color;
+            text-decoration: underline;
+            :hover {
+                color: variables.$accent-color-hover;
+            }
+        }
 }

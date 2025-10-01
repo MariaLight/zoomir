@@ -952,8 +952,7 @@
 
                 </div>
             </div>
-    </div>
-    </main>
+        </main>
 
     </div>
     <footer class="footer">
@@ -1031,6 +1030,53 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="modal-success">
+
+        <div class="modal__inner">
+            <button class="modal__close" data-modal-close>
+                <img src="./img/svg/close.svg" alt="Закрыть">
+            </button>
+            <div class="modal__content">
+                <div class="modal__title">Успешно отправлено</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="callback">
+
+        <div class="modal__inner">
+            <button class="modal__close" data-modal-close>
+                <img src="./img/svg/close.svg" alt="Закрыть">
+            </button>
+            <div class="modal__content">
+                <div class="modal__title">Задать вопрос</div>
+                <form action="" class="modal__form modal__form--callback">
+                    <div class="modal__form__item form-item">
+                        <input class="form-input" type="text" placeholder="Ваше имя*" name="name" required>
+                        <span class="modal__form__item__error error-message"></span>
+                    </div>
+                    <div class="modal__form__item form-item">
+                        <input class="form-input" type="tel" placeholder="Телефон*" name="phone" required>
+                        <span class="modal__form__item__error error-message"></span>
+                    </div>
+                    <div class="modal__form__item form-item">
+                        <input class="form-input" type="email" placeholder="Ваш email*" name="email" required>
+                        <span class="modal__form__item__error error-message"></span>
+                    </div>
+                    <div class="modal__form__item form-item">
+                        <textarea class="form-input" placeholder="Вопрос*" name="question" required></textarea>
+                        <span class="modal__form__item__error error-message"></span>
+                    </div>
+
+                    <label class="checkbox-item">
+                        <input class="checkbox-input" type="checkbox" name="agreement" required checked>
+                        <span class="checkbox-text">Согласен с <a href="#">политикой конфиденциальности</a></span>
+                    </label>
+                    <button type="submit" class="modal__form__btn btn-main btn-accent">Отправить</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
     <script type="module" src="./js/main.js"></script>
 </body>
 

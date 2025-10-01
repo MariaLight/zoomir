@@ -13,6 +13,7 @@ import { initCatalogFilters } from './components/catalog/catalog-filters';
 import './components/footer/footer-accordion';
 import './components/modals/modals';
 import './components/modals/validation';
+import './components/modals/callback-validation';
 import './components/swipers/product-gallery-swiper';
 import './components/checkout/checkout';
 import './components/checkout/checkout-mobile';
