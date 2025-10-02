@@ -195,6 +195,15 @@
             font-size: 20px;
             font-weight: 500;
             text-align: right;
+
+            &--mobile {
+                display: none;
+
+                @include mixins.media-down(sm) {
+                    display: block;
+                    margin-top: 40px;
+                }
+            }
         }
     }
 }
@@ -301,6 +310,12 @@
                     height: 60px;
                     order: 0;
                 }
+            }
+        }
+
+        &__right {
+            &--hidden {
+                display: none;
             }
         }
     }
