@@ -58,7 +58,7 @@
         text-wrap: balance;
 
         @include mixins.media-down(sm) {
-            font-size: 8px;
+            font-size: 12px;
             margin-bottom: 9px;
         }
     }

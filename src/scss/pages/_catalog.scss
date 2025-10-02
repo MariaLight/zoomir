@@ -314,7 +314,7 @@
                 }
             }
 
-            @include mixins.media-down(md) {
+            @include mixins.media-down(sm) {
 
                 &__inner {
                     min-width: 100%;

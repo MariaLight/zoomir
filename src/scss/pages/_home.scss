@@ -171,6 +171,7 @@
                 @include mixins.media-down(md) {
                     margin-top: auto;
                 }
+
                 @include mixins.media-down(sm) {
                     width: 100%;
                 }
@@ -257,6 +258,7 @@
             }
         }
     }
+
     @include mixins.media-down(sm) {
         &__swiper-pagination {
             margin-top: 15px;
@@ -270,7 +272,7 @@
                 width: 6px;
                 height: 6px;
                 margin: 0;
-                
+
 
                 &.swiper-pagination-bullet-active {
                     background: variables.$accent-color;
@@ -364,7 +366,6 @@
         }
 
         &[open] {
-
             .faq-arrow {
                 transform: rotate(180deg);
             }
@@ -385,8 +386,10 @@
         transition: variables.$transition-base;
         color: #303030;
 
-        &:hover {
-            color: variables.$primary-color;
+        @media (hover:hover) {
+            &:hover {
+                color: variables.$primary-color;
+            }
         }
 
         &::-webkit-details-marker {
@@ -425,8 +428,8 @@
     }
 
     &-answer {
-        padding: 0 30px 30px;
         background: #fff;
+        overflow: hidden;
 
         p {
             margin: 0 0 15px 0;

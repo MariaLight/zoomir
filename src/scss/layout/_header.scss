@@ -956,6 +956,12 @@
     .header-fixed__btns {
         transition: opacity 0.3s ease, transform 0.3s ease, width 0.3s ease;
     }
+
+    @include mixins.media-down(xl) {
+        .header-fixed__catalog {
+            margin-left: auto;
+        }
+    }
 }
 
 .header__burger-menu {

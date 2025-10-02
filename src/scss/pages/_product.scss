@@ -9,8 +9,14 @@
     &__title {
         text-wrap: balance;
 
-        span {
+        span, a {
             color: variables.$accent-color;
+        }
+
+        a {
+            &:hover {
+                color: variables.$accent-color-hover;
+            }
         }
     }
 
@@ -303,7 +309,7 @@
             &::after {
                 color: #D9D9D9;
                 background-image: url(../../img/svg/product-btn-arrow-down.svg);
-                filter: none;
+                filter: invert(1) ;
             }
 
 
