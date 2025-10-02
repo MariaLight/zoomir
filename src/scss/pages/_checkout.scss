@@ -17,15 +17,46 @@
 
     &__left {
         @media (max-width: 767px) {
-            display: none;
             opacity: 0;
             transform: translateY(-20px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
+            height: 0;
+            overflow: hidden;
+            transition: opacity 0.3s ease, transform 0.3s ease, height 0.3s ease;
 
             &.checkout__left--active {
-                display: block;
                 opacity: 1;
                 transform: translateY(0);
+                height: auto;
+                overflow: visible;
+            }
+        }
+    }
+
+    &__back-btn {
+        display: none;
+        
+        @media (max-width: 767px) {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: none;
+            border: none;
+            padding: 0;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #666;
+            cursor: pointer;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: #333;
+            }
+
+            img {
+                width: 16px;
+                height: 16px;
+                transform: rotate(180deg);
             }
         }
     }
@@ -39,9 +70,14 @@
             display: block;
             width: 100%;
             margin-top: 20px;
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.3s ease, transform 0.3s ease;
 
             &.checkout__mobile__open--hidden {
-                display: none;
+                opacity: 0;
+                transform: translateY(-10px);
+                pointer-events: none;
             }
         }
     }
@@ -218,6 +254,10 @@
         &__inner {
             grid-template-columns: 1fr;
             gap: 30px;
+            @media (max-width: 767px) {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
         }
 
         &__left {
@@ -314,8 +354,18 @@
         }
 
         &__right {
+            opacity: 1;
+            transform: translateY(0);
+            height: auto;
+            overflow: visible;
+            transition: opacity 0.3s ease, transform 0.3s ease, height 0.3s ease;
+
             &--hidden {
-                display: none;
+                opacity: 0;
+                transform: translateY(20px);
+                height: 0;
+                overflow: hidden;
+                pointer-events: none;
             }
         }
     }
