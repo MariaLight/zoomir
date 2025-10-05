@@ -9,7 +9,7 @@
     padding: 60px 0;
 
     @include mixins.media-down(sm) {
-        padding: 20px 0;
+        padding: 2rem 0;
     }
 
     &__inner {
@@ -29,7 +29,7 @@
         }
 
         @include mixins.media-down(sm) {
-            gap: 5px;
+            gap: .5rem;
         }
     }
 
@@ -51,8 +51,8 @@
 
             &:has(.footer__contacts) {
                 grid-template-columns: 1fr;
-                gap: 25px;
-                margin-top: 20px;
+                gap: 2.5rem;
+                margin-top: 2rem;
             }
         }
 
@@ -77,8 +77,10 @@
                     font-weight: 500;
                     font-size: 20px;
 
-                    &:hover {
-                        color: variables.$primary-color;
+                    @media (hover: hover) {
+                        &:hover {
+                            color: variables.$primary-color;
+                        }
                     }
 
                     &.active {
@@ -89,9 +91,9 @@
                 }
 
                 @include mixins.media-down(sm) {
-                    font-size: 16px;
+                    font-size: 1.6rem;
                     margin-bottom: 0;
-                    padding: 12px 0;
+                    padding: 1.2rem 0;
                 }
 
 
@@ -171,8 +173,9 @@
         @include mixins.media-down(md) {
             font-size: 32px;
         }
+
         @include mixins.media-down(sm) {
-            font-size: 24px;
+            font-size: 2.4rem;
         }
     }
 
@@ -221,7 +224,7 @@
         gap: 15px;
 
         @include mixins.media-down(sm) {
-            gap: 10px;
+            gap: 1rem;
         }
 
         &__item {

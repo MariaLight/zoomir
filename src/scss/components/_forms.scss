@@ -66,7 +66,7 @@
 
 @include mixins.media-down(sm) {
     .form-label {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 }
 
@@ -76,7 +76,7 @@
     color: variables.$error-color;
     font-weight: 400;
     font-family: variables.$font-family-primary;
-    display: none; // Скрываем по умолчанию
+    display: none;
 }
 
 .error-input {
@@ -92,7 +92,7 @@
     font-weight: 400;
 
     @include mixins.media-down(md) {
-        font-size: 14px;
+        font-size: 1.4rem;
         gap: 5px;
     }
 }

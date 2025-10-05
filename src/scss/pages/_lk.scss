@@ -84,8 +84,8 @@
         }
 
         @include mixins.media-down(sm) {
-            margin-bottom: 10px;
-            font-size: 24px;
+            margin-bottom: 1rem;
+            font-size: 2.4rem;
         }
     }
 
@@ -209,15 +209,15 @@
                 text-wrap: balance;
 
                 @include mixins.media-down(sm) {
-                    font-size: 14px;
-                    margin-bottom: 20px;
+                    font-size: 1.4rem;
+                    margin-bottom: 2rem;
                 }
             }
 
             @include mixins.media-down(sm) {
                 .banner__block__left__btn__link {
                     width: fit-content;
-                    gap: 20px;
+                    gap: 2rem;
                     display: flex;
                     align-items: center;
                 }
@@ -265,13 +265,13 @@
 
                     &__left {
                         &__title {
-                            font-size: 14px;
+                            font-size: 1.4rem;
                         }
                     }
 
                     &__right {
                         &__total {
-                            font-size: 14px;
+                            font-size: 1.4rem;
                         }
                     }
                 }
@@ -286,7 +286,7 @@
 
                 @include mixins.media-down(md) {
                     flex-direction: column-reverse;
-                    gap: 20px;
+                    gap: 2rem;
                 }
 
                 &__left {
@@ -297,7 +297,7 @@
                         line-height: 1.1;
 
                         @include mixins.media-down(sm) {
-                            font-size: 16px;
+                            font-size: 1.6rem;
                             margin-bottom: 15px;
                         }
                     }
@@ -316,12 +316,12 @@
                         }
 
                         @include mixins.media-down(sm) {
-                            font-size: 16px;
-                            margin-bottom: 15px;
+                            font-size: 1.6rem;
+                            margin-bottom: 1.5rem;
 
                             span {
-                                font-size: 14px;
-                                padding: 4px 7px;
+                                font-size: 1.4rem;
+                                padding: .4rem .7rem;
                             }
                         }
                     }
@@ -334,7 +334,7 @@
                         @include mixins.media-down(sm) {
                             flex-direction: column;
                             align-items: start;
-                            gap: 15px;
+                            gap: 1.5rem;
                         }
 
                         &__btn {
@@ -343,6 +343,10 @@
                             font-size: 16px;
                             font-weight: variables.$font-weight-semibold;
                             line-height: 1.1;
+                            @include mixins.media-down(sm) {
+                                font-size: 1.6rem;
+                                padding: 1.3rem 1.5rem;
+                            }
                         }
 
                         &__link {
@@ -352,6 +356,10 @@
                             color: variables.$primary-color;
                             text-decoration: underline;
                             transition: variables.$transition-base;
+
+                            @include mixins.media-down(sm) {
+                                font-size: 1.6rem;
+                            }
 
                             &:hover {
                                 color: variables.$primary-color-hover;

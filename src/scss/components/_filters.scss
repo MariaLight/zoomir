@@ -66,8 +66,8 @@
             width: 100%;
 
             @include mixins.media-down(sm) {
-                padding: 8px;
-                font-size: 10px;
+                padding: .8rem;
+                font-size: 1rem;
             }
 
             &::after {
@@ -80,8 +80,8 @@
             }
             @include mixins.media-down(sm) {
                 &::after {
-                    width: 10px;
-                    height: 10px;
+                    width: 1rem;
+                    height: 1rem;
                 }
             }
 
@@ -112,7 +112,7 @@
         margin: 0;
 
         @include mixins.media-down(sm) {
-            font-size: 14px;
+            font-size: 1.4rem;
         }
     }
 
@@ -157,14 +157,14 @@
         transition: border-color 0.2s ease;
         cursor: text;
         @include mixins.media-down(sm) {
-            font-size: 12px;
+            font-size: 1.2rem;
         }
 
         &::placeholder {
             color: #9B9CA0;
             font-size: 14px;
             @include mixins.media-down(sm) {
-                font-size: 12px;
+                font-size: 1.2rem;
             }
         }
 
@@ -221,8 +221,8 @@
             flex-shrink: 0;
             transition: all 0.2s ease;
             @include mixins.media-down(sm) {
-                width: 14px;
-                height: 14px;
+                width: 1.4rem;
+                height: 1.4rem;
             }
 
             &::after {
@@ -248,7 +248,7 @@
             color: #000;
             flex-grow: 1;
             @include mixins.media-down(sm) {
-                font-size: 12px;
+                font-size: 1.2rem;
             }
         }
 
@@ -258,7 +258,7 @@
             color: #BFBDBD;
             flex-shrink: 0;
             @include mixins.media-down(sm) {
-                font-size: 12px;
+                font-size: 1.2rem;
             }
         }
 
@@ -290,7 +290,7 @@
         font-weight: variables.$font-weight-regular;
         font-family: variables.$font-family-primary;
         @include mixins.media-down(sm) {
-            font-size: 12px;
+            font-size: 1.2rem;
         }
 
         &:hover {

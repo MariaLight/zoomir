@@ -44,7 +44,7 @@
         }
 
         @include mixins.media-down(sm) {
-            font-size: 14px;
+            font-size: 1.4rem;
             margin-bottom: 7px;
         }
     }
@@ -58,7 +58,7 @@
         text-wrap: balance;
 
         @include mixins.media-down(sm) {
-            font-size: 12px;
+            font-size: 1rem;
             margin-bottom: 9px;
         }
     }
@@ -74,8 +74,8 @@
         margin-bottom: 12px;
 
         @include mixins.media-down(sm) {
-            margin-bottom: 9px;
-            gap: 5px;
+            margin-bottom: .9rem;
+            gap: .5rem;
         }
 
         &__stars {
@@ -89,8 +89,8 @@
             height: 12px;
 
             @include mixins.media-down(sm) {
-                width: 8px;
-                height: 8px;
+                width: .8rem;
+                height: .8rem;
             }
 
             img {
@@ -109,7 +109,7 @@
             align-items: center;
             gap: 3px;
             @include mixins.media-down(sm) {
-                font-size: 8px;
+                font-size: .8rem;
                 gap: 2px;
             }
 
@@ -124,8 +124,8 @@
                 background-position: center;
 
                 @include mixins.media-down(sm) {
-                    width: 8px;
-                    height: 8px;
+                    width: .8rem;
+                    height: .8rem;
                 }
             }
         }
@@ -152,7 +152,7 @@
             line-height: 1.2;
             color: #3D3E44;
             @include mixins.media-down(sm) {
-                font-size: 12px;
+                font-size: 1.2rem;
             }
         }
 
@@ -163,7 +163,7 @@
             color: #989898;
             text-decoration: line-through;
             @include mixins.media-down(sm) {
-                font-size: 10px;
+                font-size: 1rem;
             }
         }
         
@@ -175,7 +175,7 @@
         align-items: center;
         gap: 10px;
         @include mixins.media-down(sm) {
-            gap: 5px;
+            gap: .5rem;
         }
     }
     &__actions__btn {
@@ -187,8 +187,8 @@
         transition: variables.$transition-base;
 
         @include mixins.media-down(sm) {
-            width: 16px;
-            height: 16px;
+            width: 1.6rem;
+            height: 1.6rem;
         }
 
         @include mixins.hover {

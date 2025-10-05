@@ -38,6 +38,11 @@ html {
         display: flex;
         flex-direction: column;
     }
+
+    @include mixins.media-down(sm) {
+        font-size: calc(100vw / 320 * 10);
+
+    }
 }
 
 .main {
