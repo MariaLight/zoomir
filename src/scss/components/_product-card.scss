@@ -11,7 +11,7 @@
     height: 100%;
 
     @include mixins.media-down(sm) {
-        padding: 10px 10px 17px;
+        padding: 1rem 1rem 1.7rem;
     }
 
     &__img {
@@ -38,6 +38,8 @@
         line-height: 1.2;
         margin-bottom: 10px;
         color: #3D3E44;
+        padding-left: 13px;
+        padding-right: 14px;
 
         @include mixins.hover {
             color: variables.$accent-color;
@@ -46,6 +48,8 @@
         @include mixins.media-down(sm) {
             font-size: 1.4rem;
             margin-bottom: 7px;
+            padding-left: .8rem;
+            padding-right: .8rem;
         }
     }
 
@@ -56,10 +60,14 @@
         margin-bottom: 12px;
         color: #4E4F54;
         text-wrap: balance;
+        padding-left: 13px;
+        padding-right: 14px;
 
         @include mixins.media-down(sm) {
             font-size: 1rem;
             margin-bottom: 9px;
+            padding-left: .8rem;
+            padding-right: .8rem;
         }
     }
 
@@ -72,10 +80,14 @@
         align-items: center;
         gap: 7px;
         margin-bottom: 12px;
+        padding-left: 13px;
+        padding-right: 14px;
 
         @include mixins.media-down(sm) {
             margin-bottom: .9rem;
             gap: .5rem;
+            padding-left: .8rem;
+            padding-right: .8rem;
         }
 
         &__stars {
@@ -136,8 +148,12 @@
         align-items: center;
         justify-content: space-between;
         gap: 20px;
+        padding-left: 13px;
+        padding-right: 14px;
         @include mixins.media-down(sm) {
             gap: 10px;
+            padding-left: .8rem;
+            padding-right: .8rem;
         }
     }
 
